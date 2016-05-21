@@ -255,6 +255,11 @@ public function updateprdks(Request $r){
 		$s =  \App\Pembayaran::find($id);
 		$s->status = Input::get('bayar');
 		$s->save();
+
+		$p = \App\Prdks::find($s->id_prdks);
+		$jumlah = $p->jumlah - $s->jumlah;
+		$p->jumlah = $jumlah;
+		$p->save();
 		return \Redirect::to('/orderptn');
 
 	}

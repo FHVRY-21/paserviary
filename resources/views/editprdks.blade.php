@@ -180,7 +180,7 @@
                 <span>Dashboard</span>
                 <span class="label label-primary pull-right"></span>
               </a>
-              <li class="treeview">
+              <li class=" treeview">
               <a href="#">
                 <i class="fa fa-leaf"></i> <span>Produksi</span> <i class="fa fa-angle-left pull-right"></i>
               </a>
