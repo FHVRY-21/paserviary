@@ -42,7 +42,7 @@
 
       <header class="main-header">
         <!-- Logo -->
-        <a href="index2.html" class="logo">
+        <a href="/usrdsh" class="logo">
           <!-- mini logo for sidebar mini 50x50 pixels -->
           <span class="logo-mini"><b>A</b>LT</span>
           <!-- logo for regular state and mobile devices -->
@@ -112,7 +112,7 @@
                   <li class="user-header">
                     <img src="/css/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
                     <p>
-                      {{ \Auth::user()->nama_depan }} {{ \Auth::user()->nama_belakang }} - Web Developer
+                      {{ \Auth::user()->nama_depan }} {{ \Auth::user()->nama_belakang }} - {{ \Auth::user()->role }}
                       <small>Member since Nov. 2012</small>
                     </p>
                   </li>
@@ -131,7 +131,7 @@
                   <!-- Menu Footer-->
                   <li class="user-footer">
                     <div class="pull-left">
-                      <a href="#" class="btn btn-default btn-flat">Profile</a>
+                      <a href="/setting" class="btn btn-default btn-flat">Profile</a>
                     </div>
                     <div class="pull-right">
                       <a href="/logout" class="btn btn-default btn-flat">Sign out</a>
@@ -187,8 +187,8 @@
                 <i class="fa  fa-envelope"></i> <span>Pesanan</span> <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li class="active"><a href="/orderusr"><i class="fa fa-circle-o"></i> Daftar Pesanan </a></li>
-                <li><a href="/"><i class="fa fa-circle-o"></i>Riwayat Pemesanan</a></li>
+                <li ><a href="/orderusr"><i class="fa fa-circle-o"></i> Daftar Pesanan </a></li>
+                <li class="active"><a href="/orderusrh"><i class="fa fa-circle-o"></i>Riwayat Pemesanan</a></li>
               </ul>
             </li>
           
@@ -227,13 +227,13 @@
                   <table id="example1" class="table table-bordered table-striped">
                     <thead>
                       <tr>
-                        <th>ID</th>
+                        
                         <th>Tanggal Order</th>
                         <th>Nama Barang</th>
                         <th>Jumlah Pesan</th>
                         <th>Harga Total</th>
                         <th>Status Pembayaran</th>
-                        <th>Aksi</th>
+                        
                       
                       </tr>
                     </thead>
@@ -241,25 +241,12 @@
 @foreach ($data as $pembelian)
                      @if(Auth::user()->id==$pembelian->id_user)
                       <tr>
-                      <td>{{ $pembelian->id }}</td>
+                      
                         <td>{{ $pembelian->tgl_post }}</td>
                         <td>{{ $pembelian->nama }}</td>
                         <td>{{ $pembelian->jumlah }}</td>
                         <td>{{ $pembelian->satuanharga }}</td>
                         <td>{{ $pembelian->status_pembayaran }}</td>
-
-                        <td><div class="btn-group">
-                      <button type="button" class="btn btn-info btn-flat">Pilih Aksi</button>
-                      <button type="button" class="btn btn-info btn-flat dropdown-toggle" data-toggle="dropdown">
-                        <span class="caret"></span>
-                        <span class="sr-only">Toggle Dropdown</span>
-                      </button>
-                      <ul class="dropdown-menu" role="menu">
-                        <li><a href="/bayar/{{ $pembelian->id}}">Konfirmasi Pembayaran</a></li>                      
-                        <li><a href="/editprdks">Edit</a></li>
-                        <li><a href="/deleteprod">Hapus</a></li>
-                      </ul>
-                    </div></td>
                        
                       </tr>
 @endif
@@ -267,11 +254,11 @@
                     </tbody>
                     <tfoot>
                       <tr>
-                        <th>Nama Hasil Produksi</th>
-                        <th>Kategori</th>
-                        <th>Stok</th>
-                        <th>Harga/Satuan</th>
-                        <th>Deskripsi</th>
+                        <th>Tanggal Order</th>
+                        <th>Nama Barang</th>
+                        <th>Jumlah Pesan</th>
+                        <th>Harga Total</th>
+                        <th>Status Pembayaran</th>
                         
                       </tr>
                     </tfoot>

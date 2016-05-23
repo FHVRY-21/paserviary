@@ -4,9 +4,12 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-
+use App\Prdks;
+use App\Pembelian;
+use App\Pembayaran;
 use Illuminate\Support\Facades\Input;
 use App\Http\Requests;
+use App\Http\Controllers\Controller;
 
 class homecontoller extends Controller
 {
@@ -38,10 +41,10 @@ class homecontoller extends Controller
 		return view('ptnusr');
 	}
 
-			public function order()
+			public function orderptnh()
 	{
-$data = \App\Pembayaran::where('status',"Belum Dikonfirmasi")->get();
-		return view('order')->with('data',$data);
+$data = \App\Pembayaran::where('status',"Sudah Dikonfirmasi")->get();
+		return view('orderptnh')->with('data',$data);
 	}
 
 				public function orderusr()
@@ -58,88 +61,89 @@ $data = \App\Pembayaran::where('status',"Belum Dikonfirmasi")->get();
 		return view('orderusrh')->with('data',$data);
 	}
 
-						public function orderptnh()
+						public function orderptn()
 	{
-		$data = \App\Pembayaran::where('status',"Sudah Dikonfirmasi")->get();
-		return view('orderptnh')->with('data',$data);
+		$data = \App\Pembayaran::where('status',"Belum Dikonfirmasi")->get();
+		return view('order')->with('data',$data);
 	}
 		public function usrdsh()
 	{
-		return view('usrdsh');
+		$data = \App\Prdks::all();
+		return view('usrdsh')->with('data',$data);
 	}
 
 	public function inputprod(Request $request)
 	{
-		$nama_barang = $request->input('nama_barang');
-		$jumlah = $request->input('jumlah');
-		$harga = $request->input('harga');
-		$tanggal_panen = $request->input('tanggal_panen');
-		$satuan = $request->input('satuan');
-		$kategori = $request->input('kategori');
-		$id_petani = $request->input('id_petani');
+		$data = new \App\Prdks;
+		$data->nama_barang = Input::get('nama_barang');
+		$data->jumlah = Input::get('jumlah');
+		$data->harga = Input::get('harga');
+		$data->satuan = Input::get('satuan');
+		$data->kategori = Input::get('kategori');
+		$data->tanggal_panen = Input::get('tanggal_panen');
+		$data->id_petani = Input::get('id_petani');
+		$data->nama_petani = Input::get('nama_petani');
+		$data->no_rekening = Input::get('no_rekening');
+		$data->tgl_post =  date("Y-m-d H:i:s");
 
-		// if(Input::hasFile('image')){
-  //           $photo = date("YmdHis")
-  //           .uniqid()
-  //           ."."
-  //           .Input::file('image')->getClientOriginalExtension();
+		if(Input::hasFile('gambar')){
+            $gambar = date("YmdHis").uniqid().".".Input::file('gambar')->getClientOriginalExtension();
         
-  //           Input::file('image')->move(storage_path(),$photo);
-  //           $user->image = $photo;
-  //       }
+            Input::file('gambar')->move(storage_path(),$gambar);
+            $data->gambar = $gambar;
+        }
+		// echo $gambar;
+		// die();
+ 		$data->save();
+ 		return redirect(url('/prdkstab'));
 
-		$data = array (
-				'nama_barang' => $nama_barang,
-				'harga' => $harga,
-				'tanggal_panen' => $tanggal_panen,
-				'jumlah' => $jumlah,
-				'satuan' => $satuan,
-				 'tgl_post' => date("Y-m-d H:i:s"),
-				 'kategori' => $kategori,
-				 // 'image' => $image,
-				 'id_petani' => $id_petani
+	}
 
+	public function profpic(Request $request) {
+		$data = new \App\User;
+				if(Input::hasFile('gambar')){
+            $gambar = date("YmdHis").uniqid().".".Input::file('gambar')->getClientOriginalExtension();
+        
+            Input::file('gambar')->move(storage_path(),$gambar);
+            $data->gambar = $gambar;
+        }
+		// echo $gambar;
+		// die();
+ 		$data->save();
+	}
 
-			);
-		// $file = Input::file('image');
-		// 			$namafile = round(microtime(true)).'.'.$file->getClientOriginalExtension();
-		// 			if(Input::hasFile('image')){
-		// 				if($file->move('images'.'/', $namafile)) {
-		// 					$posting->image = $namafile;
-		// 				} else {
-		// 					return "error";
-		// 				}
-		// 			}
-				\DB::table('prdks')->insert($data);
+	public function inputimage(){
+		 $image = Input::file('image');
+            $filename  = time() . '.' . $image->getClientOriginalExtension();
 
-				return \Redirect::to('/prdkstab');
-
+            $path = public_path('images/' . $filename);
+ 
+        
+                Image::make($image->getRealPath())->resize(200, 200)->save($path);
+                $user->image = $filename;
+                $user->save();
 	}
 
 	public function inputpembelian(Request $request)
 	{
-		$nama = $request->input('nama');
-		$id_petani = $request->input('id_petani');
-		$id_user = $request->input('id_user');
-		$satuanharga = $request->input('satuanharga');
-		$jumlah = $request->input('jumlah');
-		$id_prdks = $request->input('id_prdks');
-		$data = array (
-				'nama' => $nama,
-				'id_petani' => $id_petani,
-				'id_user' => $id_user,
-				'satuanharga' => $satuanharga,
-				 'tgl_post' => date("Y-m-d H:i:s"),
-				 'jumlah' => $jumlah,
-				 'id_prdks' => $id_prdks,
-				 'status_pembayaran' => 'Belum Dibayar',
-				 'status_role' => 'Stok Ada'
-				 
-			);
-				\DB::table('cart')->insert($data);
 
-				return \Redirect::to('/orderusr');
-
+		$data = new \App\Pembelian;
+		$data->nama = Input::get('nama');
+		$data->id_user = Input::get('id_user');
+		$data->id_petani = Input::get('id_petani');
+		$data->satuanharga = Input::get('satuanharga');
+		$data->jumlah = Input::get('jumlah');
+		$data->id_prdks = Input::get('id_prdks');
+		$data->no_rekening = Input::get('no_rekening');
+		$data->status_pembayaran = "Belum Dibayar";
+		$data->status_role = "Stok Ada";
+		$data->tgl_post =  date("Y-m-d H:i:s");
+			if ('jumlah' > $data->jumlah) {
+	# code...
+}
+	
+		$data->save();
+		return redirect(url('/orderusr'));
 	}
 	    	public function welcome()
 	{
@@ -159,15 +163,17 @@ return view('single')->with('data',$data);
 }
 
 
-
 public function deleteprod($id)
 {
+$p = \App\Pembelian::where('id_prdks', $id)->first();
+$satus_role = "Dihapus";
+$p->status_role = $satus_role;
+$p->save();
+	
 $data = \App\Prdks::find($id);
 $data->delete();
-$data = \App\Pembelian::find($id);
-$data->delete();
-$data = \App\Pembayaran::find($id);
-$data =
+
+
 $data = \App\Prdks::all();
 return view('prdkstab')->with('data',$data);
 }
@@ -184,9 +190,10 @@ return view('editprdks')->with('data',$data);
 
 }
 
-public function setting(){
+public function editusr($id){
+$data = \App\User::find($id);
+return view('settinguser')->with('data',$data);
 
-return view('settinguser');
 }
 
 public function bayar($id){
@@ -218,29 +225,36 @@ public function updateprdks(Request $r){
 	return \Redirect::to('/prdkstab');
 }
 
+public function updateusr(Request $r){
+	$s= \App\User::find($r->id);
+	$s->nama_depan = $r->nama_depan;
+	$s->nama_belakang = $r->nama_belakang;
+	$s->email = $r->email;
+	$s->alamat = $r->alamat;
+	$s->no_rekening = $r->no_rekening;
+	$s->no_telp = $r->no_telp;
+	$s->save();
+	return \Redirect::to('/shop');
+}
+
 					public function inputpembayaran(Request $request)
 	{
 
-		$nama = $request->input('nama');
-		$total_pembayaran = $request->input('total_pembayaran');
-		$tanggal_bayar = $request->input('tanggal_bayar');
-		$no_rekening = $request->input('no_rekening');
-		$id_user = $request->input('id_user');
-		$id_petani = $request->input('id_petani');
-		$id_prdks = $request->input('id_prdks');
-		$jumlah = $request->input('jumlah');
-		$no_rekekning = $request->input('no_rekekning');
-		$data = array (
-				'nama' => $nama,
-				'id_petani' => $id_petani,
-				'id_user' => $id_user,
-				'id_prdks' => $id_prdks,
-				'jumlah' => $jumlah,
-				'no_rekening' => $no_rekening,
-				 'total_pembayaran' => $total_pembayaran,
-				 'tanggal_bayar' => 'tanggal_bayar'
-			);
-				\DB::table('pembelian')->insert($data);
+				$data = new \App\Pembayaran;
+		$data->nama = Input::get('nama');
+		$data->total_pembayaran = Input::get('total_pembayaran');
+		$data->tanggal_bayar = Input::get('tanggal_bayar');
+		$data->no_rekening = Input::get('no_rekening');
+		$data->id_user = Input::get('id_user');
+		$data->id_petani = Input::get('id_petani');
+		$data->id_prdks = Input::get('id_prdks');
+		$data->id_cart = Input::get('id_cart');
+		$data->jumlah = Input::get('jumlah');
+		$data->no_rekening = Input::get('no_rekening');
+		$data->status = "Belum Dikonfirmasi";
+		// $data->tgl_post =  date("Y-m-d H:i:s");
+				
+		$data->save();
 
 	$data= \App\Pembelian::find($request->id);
 	$data->status_pembayaran = "Menunggu Konfirmasi";
@@ -256,10 +270,24 @@ public function updateprdks(Request $r){
 		$s->status = Input::get('bayar');
 		$s->save();
 
-		$p = \App\Prdks::find($s->id_prdks);
+		$r = \App\Pembelian::find($id)->first();
+		$status_pembayaran = "Sudah Dikonfirmasi";
+		$r->status_pembayaran = $status_pembayaran;
+		$r->save();
+
+$id = \App\Prkds::orderBy('id', desc)->first();
+
+$p = \App\Prdks::find($id->id_prdks);
 		$jumlah = $p->jumlah - $s->jumlah;
 		$p->jumlah = $jumlah;
+
 		$p->save();
+
+
+		// $z = \App\Pembelian::find($s->id_prdks)
+		// $z->status_pembayaran = Input::get('bayar');
+		// $z->save();
+
 		return \Redirect::to('/orderptn');
 
 	}

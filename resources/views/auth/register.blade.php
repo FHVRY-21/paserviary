@@ -153,11 +153,11 @@
                             <div class="h_nav">
                                 <h4>Favorit</h4>
                                 <ul>
-                                    <li><a href="shop.html">Pertanian Jawa Barat</a></li>
-                                    <li><a href="shop.html">Pertanian Jawa Barat</a></li>
-                                    <li><a href="shop.html">Pertanian Jawa Barat</a></li>
-                                    <li><a href="shop.html">Pertanian Jawa Barat</a></li>
-                                    <li><a href="shop.html">Pertanian Jawa Barat</a></li>
+                                    <li><a href="">Pertanian Jawa Barat</a></li>
+                                    <li><a href="">Pertanian Jawa Barat</a></li>
+                                    <li><a href="">Pertanian Jawa Barat</a></li>
+                                    <li><a href="">Pertanian Jawa Barat</a></li>
+                                    <li><a href="">Pertanian Jawa Barat</a></li>
                                     
                                 </ul>   
                             </div>
@@ -179,9 +179,9 @@
                             <div class="h_nav">
                                 <h4>Buah Favorit</h4>
                                 <ul>
-                                    <li><a href="shop.html">Strawberry</a></li>
-                                    <li><a href="shop.html">Mangga</a></li>
-                                    <li><a href="shop.html">Apel</a></li>
+                                    <li><a href="">Strawberry</a></li>
+                                    <li><a href="">Mangga</a></li>
+                                    <li><a href="">Apel</a></li>
                                     
                                 </ul>   
                             </div>                          
@@ -190,9 +190,9 @@
                             <div class="h_nav">
                                 <h4>Pertanian Favorit</h4>
                                 <ul>
-                                    <li><a href="shop.html">Strawberry Enak</a></li>
-                                    <li><a href="shop.html">Strawberry Sedap</a></li>
-                                    <li><a href="shop.html">Strawberry Maknyus</a></li>
+                                    <li><a href="">Strawberry Enak</a></li>
+                                    <li><a href="">Strawberry Sedap</a></li>
+                                    <li><a href="">Strawberry Maknyus</a></li>
                                     
                                 </ul>   
                             </div>                          
@@ -201,10 +201,10 @@
                             <div class="h_nav">
                                 <h4>Semua Jenis</h4>
                                 <ul>
-                                    <li><a href="shop.html">Apel</a></li>
-                                    <li><a href="shop.html">Apel</a></li>
-                                    <li><a href="shop.html">Apel</a></li>
-                                    <li><a href="shop.html">Apel</a></li>
+                                    <li><a href="">Apel</a></li>
+                                    <li><a href="">Apel</a></li>
+                                    <li><a href="">Apel</a></li>
+                                    <li><a href="">Apel</a></li>
                                     
                                 </ul>   
                             </div>                                              
@@ -233,12 +233,12 @@
                             <div class="h_nav">
                                 <h4>shop</h4>
                                 <ul>
-                                    <li><a href="shop.html">new arrivals</a></li>
-                                    <li><a href="shop.html">men</a></li>
-                                    <li><a href="shop.html">women</a></li>
-                                    <li><a href="shop.html">accessories</a></li>
-                                    <li><a href="shop.html">kids</a></li>
-                                    <li><a href="shop.html">brands</a></li>
+                                    <li><a href="">new arrivals</a></li>
+                                    <li><a href="">men</a></li>
+                                    <li><a href="">women</a></li>
+                                    <li><a href="">accessories</a></li>
+                                    <li><a href="">kids</a></li>
+                                    <li><a href="">brands</a></li>
                                 </ul>   
                             </div>                          
                         </div>
@@ -246,12 +246,12 @@
                             <div class="h_nav">
                                 <h4>help</h4>
                                 <ul>
-                                    <li><a href="shop.html">trends</a></li>
-                                    <li><a href="shop.html">sale</a></li>
-                                    <li><a href="shop.html">style videos</a></li>
-                                    <li><a href="shop.html">accessories</a></li>
-                                    <li><a href="shop.html">kids</a></li>
-                                    <li><a href="shop.html">style videos</a></li>
+                                    <li><a href="">trends</a></li>
+                                    <li><a href="">sale</a></li>
+                                    <li><a href="">style videos</a></li>
+                                    <li><a href="">accessories</a></li>
+                                    <li><a href="">kids</a></li>
+                                    <li><a href="">style videos</a></li>
                                 </ul>   
                             </div>                          
                         </div>
@@ -259,12 +259,12 @@
                             <div class="h_nav">
                                 <h4>my company</h4>
                                 <ul>
-                                    <li><a href="shop.html">trends</a></li>
-                                    <li><a href="shop.html">sale</a></li>
-                                    <li><a href="shop.html">style videos</a></li>
-                                    <li><a href="shop.html">accessories</a></li>
-                                    <li><a href="shop.html">kids</a></li>
-                                    <li><a href="shop.html">style videos</a></li>
+                                    <li><a href="">trends</a></li>
+                                    <li><a href="">sale</a></li>
+                                    <li><a href="">style videos</a></li>
+                                    <li><a href="">accessories</a></li>
+                                    <li><a href="">kids</a></li>
+                                    <li><a href="">style videos</a></li>
                                 </ul>   
                             </div>                                              
                         </div>
@@ -272,12 +272,12 @@
                             <div class="h_nav">
                                 <h4>account</h4>
                                 <ul>
-                                    <li><a href="shop.html">login</a></li>
-                                    <li><a href="shop.html">create an account</a></li>
-                                    <li><a href="shop.html">create wishlist</a></li>
-                                    <li><a href="shop.html">my shopping bag</a></li>
-                                    <li><a href="shop.html">brands</a></li>
-                                    <li><a href="shop.html">create wishlist</a></li>
+                                    <li><a href="">login</a></li>
+                                    <li><a href="">create an account</a></li>
+                                    <li><a href="">create wishlist</a></li>
+                                    <li><a href="">my shopping bag</a></li>
+                                    <li><a href="">brands</a></li>
+                                    <li><a href="">create wishlist</a></li>
                                 </ul>   
                             </div>                      
                         </div>
@@ -285,12 +285,12 @@
                             <div class="h_nav">
                                 <h4>my company</h4>
                                 <ul>
-                                    <li><a href="shop.html">trends</a></li>
-                                    <li><a href="shop.html">sale</a></li>
-                                    <li><a href="shop.html">style videos</a></li>
-                                    <li><a href="shop.html">accessories</a></li>
-                                    <li><a href="shop.html">kids</a></li>
-                                    <li><a href="shop.html">style videos</a></li>
+                                    <li><a href="">trends</a></li>
+                                    <li><a href="">sale</a></li>
+                                    <li><a href="">style videos</a></li>
+                                    <li><a href="">accessories</a></li>
+                                    <li><a href="">kids</a></li>
+                                    <li><a href="">style videos</a></li>
                                 </ul>   
                             </div>
                         </div>
@@ -298,12 +298,12 @@
                             <div class="h_nav">
                                 <h4>popular</h4>
                                 <ul>
-                                    <li><a href="shop.html">new arrivals</a></li>
-                                    <li><a href="shop.html">men</a></li>
-                                    <li><a href="shop.html">women</a></li>
-                                    <li><a href="shop.html">accessories</a></li>
-                                    <li><a href="shop.html">kids</a></li>
-                                    <li><a href="shop.html">style videos</a></li>
+                                    <li><a href="">new arrivals</a></li>
+                                    <li><a href="">men</a></li>
+                                    <li><a href="">women</a></li>
+                                    <li><a href="">accessories</a></li>
+                                    <li><a href="">kids</a></li>
+                                    <li><a href="">style videos</a></li>
                                 </ul>   
                             </div>
                         </div>
@@ -337,10 +337,10 @@
                         <div><input type="text" name="email" value="E-Mail" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'E-Mail';}"></div>
                         <div><input type="password" name="password" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}"></div>
                          <div><input type="password" name="password_confirmation" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password Confirmation';}"></div>
-                 </div>
-                  <div class="col_1_of_2 span_1_of_2">  
+                 
                     <div><input type="text" name="alamat" value="Alamat Lengkap" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Alamat Lengkap';}"></div>
                       <div><input type="text" name="no_telp" value="Nomor Telepon" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Nomor Telepon';}"></div>
+                      <div><input type="text" name="no_rekening" value="Nomor Rekening" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Nomor Rekening';}"></div>
                   </div>
                  <button class="grey">Submit</button>
                  <p class="terms">By clicking 'Create Account' you agree to the <a href="#">Terms &amp; Conditions</a>.</p>

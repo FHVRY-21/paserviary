@@ -112,7 +112,7 @@
                   <li class="user-header">
                     <img src="/css/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
                     <p>
-                      {{ \Auth::user()->nama_depan }} {{ \Auth::user()->nama_belakang }} - Web Developer
+                      {{ \Auth::user()->nama_depan }} {{ \Auth::user()->nama_belakang }} - {{ \Auth::user()->role }}
                       <small>Member since Nov. 2012</small>
                     </p>
                   </li>
@@ -240,7 +240,7 @@
                         <th>Total Pembayaran</th>
                         <th>Tanggal Bayar</th>
                         <th>Nomor Rekeninh</th>
-                        <th>Aksi</th>
+                       
                       
                       </tr>
                     </thead>
@@ -257,17 +257,7 @@
  <form action="{{route('konfirmasiorder',$pembelian->id)}}" method="POST">
                 <input type="hidden" name="_token" value="{{csrf_token()}}">
                 <input type="hidden" name="bayar" value="Sudah Dikonfirmasi">
-                        <td><div class="btn-group">
-                      <button type="button" class="btn btn-info btn-flat">Pilih Aksi</button>
-                      <button type="button" class="btn btn-info btn-flat dropdown-toggle" data-toggle="dropdown">
-                        <span class="caret"></span>
-                        <span class="sr-only">Toggle Dropdown</span>
-                      </button>
-                      <ul class="dropdown-menu" role="menu">
-                        <li><button type="submit" class="btn">Konfirmasi Pembayaran</button></li>
-                        <li><a href="/deleteprod">Hapus</a></li>
-                      </ul>
-                    </div></td>
+                        
                        </form>
                       </tr>
 @endif

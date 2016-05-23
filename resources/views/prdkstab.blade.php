@@ -112,7 +112,7 @@
                   <li class="user-header">
                     <img src="/css/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
                     <p>
-                      {{ \Auth::user()->nama_depan }} {{ \Auth::user()->nama_belakang }} - Web Developer
+                      {{ \Auth::user()->nama_depan }} {{ \Auth::user()->nama_belakang }} - {{ \Auth::user()->role }}
                       <small>Member since Nov. 2012</small>
                     </p>
                   </li>
@@ -195,7 +195,7 @@
               </a>
               <ul class="treeview-menu">
                 <li><a href="/orderptn"><i class="fa fa-circle-o"></i> Daftar Pesanan </a></li>
-                <li><a href="/prdkstab"><i class="fa fa-circle-o"></i>Data Hasi Produksi</a></li>
+                <li><a href="/orderptnh"><i class="fa fa-circle-o"></i>Riwayat Pesanan</a></li>
               </ul>
             </li>
           

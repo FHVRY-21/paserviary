@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class Pembelian extends Migration
+class Cart extends Migration
 {
     /**
      * Run the migrations.
@@ -12,21 +12,19 @@ class Pembelian extends Migration
      */
     public function up()
     {
-        Schema::create('pembelian', function (Blueprint $table) {
-            $table->increments('id');
+        //
+         Schema::create('cart', function (Blueprint $table) {
+        $table->increments('id');
             $table->string('harga');
             $table->string('jumlah');
             $table->string('status_pembayaran');
-            $table->string('total_pembayaran');
+            $table->string('status_role');
             $table->string('tanggal_bayar');
             $table->string('id_petani');
             $table->string('id_pembeli');
             $table->string('nama_barang');
             $table->string('no_rekening');
-            
-            $table->rememberToken();
-            $table->timestamps();
-        });//
+            });
     }
 
     /**

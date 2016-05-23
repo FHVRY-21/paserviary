@@ -136,16 +136,17 @@
             <a href="index.html"><img src="images/logo.png" alt=""/></a>
         </div>
         <div class="cssmenu">
-        @if(Auth::user()->role="Petani")
+        @if(Auth::user()->role == "Petani")
          <ul>
              <li><a href="/ptnusr">Dashboard</a></li> 
             <li><a href="/inputprdks">Input Produksi</a></li> 
            </ul>
+        @elseif(Auth::user()->role == "User")
 
-@elseif(Auth::user()->role="User")
+
            <ul>
              <li><a href="/usrdsh">Dashboard</a></li>
-             <li><a href="/order">Keranjang dan Checkout</a></li> 
+             <li><a href="/orderusr">Keranjang dan Checkout</a></li> 
            </ul>
 @else
      <ul>
@@ -153,7 +154,7 @@
             <li><a href="/register">Register</a></li> 
              <li><a href="checkout.html">Keranjang dan Checkout</a></li> 
            </ul>
-        @endif  
+        @endif
         </div>
         <div class="clear"></div>
     </div>
@@ -170,11 +171,11 @@
                             <div class="h_nav">
                                 <h4>Favorit</h4>
                                 <ul>
-                                    <li><a href="shop.html">Pertanian Jawa Barat</a></li>
-                                    <li><a href="shop.html">Pertanian Jawa Barat</a></li>
-                                    <li><a href="shop.html">Pertanian Jawa Barat</a></li>
-                                    <li><a href="shop.html">Pertanian Jawa Barat</a></li>
-                                    <li><a href="shop.html">Pertanian Jawa Barat</a></li>
+                                    <li><a href="">Pertanian Jawa Barat</a></li>
+                                    <li><a href="">Pertanian Jawa Barat</a></li>
+                                    <li><a href="">Pertanian Jawa Barat</a></li>
+                                    <li><a href="">Pertanian Jawa Barat</a></li>
+                                    <li><a href="">Pertanian Jawa Barat</a></li>
                                     
                                 </ul>   
                             </div>
@@ -196,9 +197,9 @@
                             <div class="h_nav">
                                 <h4>Buah Favorit</h4>
                                 <ul>
-                                    <li><a href="shop.html">Strawberry</a></li>
-                                    <li><a href="shop.html">Mangga</a></li>
-                                    <li><a href="shop.html">Apel</a></li>
+                                    <li><a href="">Strawberry</a></li>
+                                    <li><a href="">Mangga</a></li>
+                                    <li><a href="">Apel</a></li>
                                     
                                 </ul>   
                             </div>                          
@@ -207,9 +208,9 @@
                             <div class="h_nav">
                                 <h4>Pertanian Favorit</h4>
                                 <ul>
-                                    <li><a href="shop.html">Strawberry Enak</a></li>
-                                    <li><a href="shop.html">Strawberry Sedap</a></li>
-                                    <li><a href="shop.html">Strawberry Maknyus</a></li>
+                                    <li><a href="">Strawberry Enak</a></li>
+                                    <li><a href="">Strawberry Sedap</a></li>
+                                    <li><a href="">Strawberry Maknyus</a></li>
                                     
                                 </ul>   
                             </div>                          
@@ -218,10 +219,10 @@
                             <div class="h_nav">
                                 <h4>Semua Jenis</h4>
                                 <ul>
-                                    <li><a href="shop.html">Apel</a></li>
-                                    <li><a href="shop.html">Apel</a></li>
-                                    <li><a href="shop.html">Apel</a></li>
-                                    <li><a href="shop.html">Apel</a></li>
+                                    <li><a href="">Apel</a></li>
+                                    <li><a href="">Apel</a></li>
+                                    <li><a href="">Apel</a></li>
+                                    <li><a href="">Apel</a></li>
                                     
                                 </ul>   
                             </div>                                              
@@ -250,12 +251,12 @@
                             <div class="h_nav">
                                 <h4>shop</h4>
                                 <ul>
-                                    <li><a href="shop.html">new arrivals</a></li>
-                                    <li><a href="shop.html">men</a></li>
-                                    <li><a href="shop.html">women</a></li>
-                                    <li><a href="shop.html">accessories</a></li>
-                                    <li><a href="shop.html">kids</a></li>
-                                    <li><a href="shop.html">brands</a></li>
+                                    <li><a href="">new arrivals</a></li>
+                                    <li><a href="">men</a></li>
+                                    <li><a href="">women</a></li>
+                                    <li><a href="">accessories</a></li>
+                                    <li><a href="">kids</a></li>
+                                    <li><a href="">brands</a></li>
                                 </ul>   
                             </div>                          
                         </div>
@@ -263,12 +264,12 @@
                             <div class="h_nav">
                                 <h4>help</h4>
                                 <ul>
-                                    <li><a href="shop.html">trends</a></li>
-                                    <li><a href="shop.html">sale</a></li>
-                                    <li><a href="shop.html">style videos</a></li>
-                                    <li><a href="shop.html">accessories</a></li>
-                                    <li><a href="shop.html">kids</a></li>
-                                    <li><a href="shop.html">style videos</a></li>
+                                    <li><a href="">trends</a></li>
+                                    <li><a href="">sale</a></li>
+                                    <li><a href="">style videos</a></li>
+                                    <li><a href="">accessories</a></li>
+                                    <li><a href="">kids</a></li>
+                                    <li><a href="">style videos</a></li>
                                 </ul>   
                             </div>                          
                         </div>
@@ -276,12 +277,12 @@
                             <div class="h_nav">
                                 <h4>my company</h4>
                                 <ul>
-                                    <li><a href="shop.html">trends</a></li>
-                                    <li><a href="shop.html">sale</a></li>
-                                    <li><a href="shop.html">style videos</a></li>
-                                    <li><a href="shop.html">accessories</a></li>
-                                    <li><a href="shop.html">kids</a></li>
-                                    <li><a href="shop.html">style videos</a></li>
+                                    <li><a href="">trends</a></li>
+                                    <li><a href="">sale</a></li>
+                                    <li><a href="">style videos</a></li>
+                                    <li><a href="">accessories</a></li>
+                                    <li><a href="">kids</a></li>
+                                    <li><a href="">style videos</a></li>
                                 </ul>   
                             </div>                                              
                         </div>
@@ -289,25 +290,25 @@
                             <div class="h_nav">
                                 <h4>account</h4>
                                 <ul>
-                                    <li><a href="shop.html">login</a></li>
-                                    <li><a href="shop.html">create an account</a></li>
-                                    <li><a href="shop.html">create wishlist</a></li>
-                                    <li><a href="shop.html">my shopping bag</a></li>
-                                    <li><a href="shop.html">brands</a></li>
-                                    <li><a href="shop.html">create wishlist</a></li>
+                                    <li><a href="">login</a></li>
+                                    <li><a href="">create an account</a></li>
+                                    <li><a href="">create wishlist</a></li>
+                                    <li><a href="">my shopping bag</a></li>
+                                    <li><a href="">brands</a></li>
+                                    <li><a href="">create wishlist</a></li>
                                 </ul>   
                             </div>                      
                         </div>
                         <div class="col1">
                             <div class="h_nav">
                                 <h4>my company</h4>
-                                <ul>
-                                    <li><a href="shop.html">trends</a></li>
-                                    <li><a href="shop.html">sale</a></li>
-                                    <li><a href="shop.html">style videos</a></li>
-                                    <li><a href="shop.html">accessories</a></li>
-                                    <li><a href="shop.html">kids</a></li>
-                                    <li><a href="shop.html">style videos</a></li>
+                                <ul>s
+                                    <li><a href="">trends</a></li>
+                                    <li><a href="">sale</a></li>
+                                    <li><a href="">style videos</a></li>
+                                    <li><a href="">accessories</a></li>
+                                    <li><a href="">kids</a></li>
+                                    <li><a href="">style videos</a></li>
                                 </ul>   
                             </div>
                         </div>
@@ -315,12 +316,12 @@
                             <div class="h_nav">
                                 <h4>popular</h4>
                                 <ul>
-                                    <li><a href="shop.html">new arrivals</a></li>
-                                    <li><a href="shop.html">men</a></li>
-                                    <li><a href="shop.html">women</a></li>
-                                    <li><a href="shop.html">accessories</a></li>
-                                    <li><a href="shop.html">kids</a></li>
-                                    <li><a href="shop.html">style videos</a></li>
+                                    <li><a href="">new arrivals</a></li>
+                                    <li><a href="">men</a></li>
+                                    <li><a href="">women</a></li>
+                                    <li><a href="">accessories</a></li>
+                                    <li><a href="">kids</a></li>
+                                    <li><a href="">style videos</a></li>
                                 </ul>   
                             </div>
                         </div>
@@ -431,9 +432,9 @@
                      <div class="view1 view-fifth1">
                       <div class="top_box">
                         <h3 class="m_1">{{ $prdks->nama_barang }}</h3>
-                        <p class="m_2">Lorem ipsum</p>
+                        <p class="m_2">{{ $prdks->nama_petani }}</p>
                          <div class="grid_img">
-                           <div class="css3"><img src="images/pic11.jpg"/></div>
+                           <div class="css3"><img src="images/{{ $prdks->gambar }}" style="width:200px;height:200px"/></div>
                               <div class="mask1">
                                 <div class="info" ><a href="/single/{{ $prdks->id}}" style="text-decoration: none">Quick View</a></div>
                               </div>

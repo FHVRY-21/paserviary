@@ -122,7 +122,7 @@
                   <li class="user-header">
                     <img src="/css/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
                     <p>
-                      {{ \Auth::user()->nama_depan }} {{ \Auth::user()->nama_belakang }} - Web Developer
+                      {{ \Auth::user()->nama_depan }} {{ \Auth::user()->nama_belakang }} - {{ \Auth::user()->role }}
                       <small>Member since Nov. 2012</small>
                     </p>
                   </li>
@@ -204,8 +204,8 @@
                 <i class="fa  fa-envelope"></i> <span>Pesanan</span> <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li class=""><a href="/prdkstab"><i class="fa fa-circle-o"></i> Daftar Pesanan </a></li>
-                <li><a href="/prdkstab"><i class="fa fa-circle-o"></i>Data Hasi Produksi</a></li>
+                <li class=""><a href="/orderptn"><i class="fa fa-circle-o"></i> Daftar Pesanan </a></li>
+                <li><a href="/orderptnh"><i class="fa fa-circle-o"></i>Data Hasi Produksi</a></li>
               </ul>
             </li>
           
@@ -238,10 +238,11 @@
                   <h3 class="box-title">Input Hasil Produksi</h3>
                 </div><!-- /.box-header -->
                 <!-- form start -->
-                <form role="form" method="POST" action="inputprod">
+                <form role="form" method="POST" action="inputprod" enctype="multipart/form-data">
                   <div class="box-body">
                   
-                                  <input type="hidden" name="_token" value="{{csrf_token()}}">          
+                                  <input type="hidden" name="_token" value="{{csrf_token()}}">  
+                                  <input type="hidden" name="nama_petani" value=" ">            
 
                   <label for="exampleInputEmail1">Nama Hasil Produksi</label>
   <div class="input-group">
@@ -284,6 +285,7 @@
                   <br>
 <input type="hidden" name="id_petani" value="{{ \Auth::user()->id }} ">
 <input type="hidden" name="nama_petani" value="{{ \Auth::user()->nama_depan }} ">
+<input type="hidden" name="no_rekening" value="{{ \Auth::user()->no_rekening }} ">
 
 
                                          <label for="exampleInputEmail1">Harga</label>
@@ -303,17 +305,15 @@
                       </select>
                     </div>
                     <div class="form-group">
-                      <label for="exampleInputFile">Input Gambar</label>
-                      <input type="file" name="image" >
-                      <input type="file" name="image2" >
-                      <input type="file" name="image3" >
-                      <input type="file" name="image4" >
+                      <label>Input Gambar</label>
+                      <input type="file" name="gambar">
+
                       <p class="help-block">Example block-level help text here.</p>
                     </div>
                   </div><!-- /.box-body -->
 
                   <div class="box-footer">
-                    <button type="submit" class="btn btn-primary" formmethod="POST" action="inputprod">Submit</button>
+                    <button type="submit" class="btn btn-primary" formmethod="POST" action="inputprod" enctype="multipart/form-data">Submit</button>
                   </div>
                 </form>
               </div><!-- /.box -->

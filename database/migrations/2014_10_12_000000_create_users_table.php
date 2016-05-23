@@ -14,11 +14,13 @@ class CreateUsersTable extends Migration
     {
         Schema::create('users', function(Blueprint $table) {
             $table->increments('id');
+             $table->integer('id_log');
             $table->string('nama_depan');
             $table->string('nama_belakang');
             $table->string('email')->unique();
             $table->string('password');
             $table->string('alamat');
+            $table->string('role');
             $table->string('no_telp', 13);
             $table->rememberToken();
             $table->timestamps();
@@ -27,7 +29,8 @@ class CreateUsersTable extends Migration
         DB::table('users')->insert(
             array(
                 'email' => 'fahviary21@gmail.com',
-                'password' => \Hash::make('123')
+                'password' => \Hash::make('123'),
+                'role'  => 'User'
             )
         );
     }
@@ -42,3 +45,4 @@ class CreateUsersTable extends Migration
         Schema::drop('users');
     }
 }
+;

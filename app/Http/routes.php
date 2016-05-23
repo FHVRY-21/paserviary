@@ -20,10 +20,10 @@ Route::get('/register', function () {
 });
 
 Route::get('/shop', 'homecontoller@shop');
-Route::get('/orderptn', 'homecontoller@order');
+Route::get('/orderptn', 'homecontoller@orderptn');
 Route::get('/orderusr', 'homecontoller@orderusr');
 Route::get('/orderptnh', 'homecontoller@orderptnh');
-Route::get('/orderusrh', 'homecontoller@orderusr');
+Route::get('/orderusrh', 'homecontoller@orderusrh');
 Route::get('/prdkstab', 'homecontoller@prdkstab');
 Route::get('/single/{id}', 'homecontoller@single');
 Route::post('/single', 'homecontoller@single');
@@ -43,7 +43,7 @@ Route::get('/login','Auth\AuthController@getLogin');
 Route::post('/login','Auth\AuthController@postLogin');
 
 Route::get('/logout','Auth\AuthController@getLogout');
-Route::get('/setting','homecontoller@setting');
+Route::get('/settingusr','homecontoller@editusr');
 Route::get('/register', 'Auth\AuthController@getRegister');
 Route::post('/register', 'Auth\AuthController@postRegister');
 

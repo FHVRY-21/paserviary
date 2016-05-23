@@ -185,27 +185,18 @@
           <ul class="sidebar-menu">
             <li class="header">Navigasi Utama</li>
             <li class=" treeview">
-            <a href="/ptnusr">
+            <a href="/usrdsh">
                 <i class="fa fa-dashboard"></i>
                 <span>Dashboard</span>
                 <span class="label label-primary pull-right"></span>
               </a>
-              <li class="active treeview">
-              <a href="#">
-                <i class="fa fa-leav"></i> <span>Produksi</span> <i class="fa fa-angle-left pull-right"></i>
-              </a>
-              <ul class="treeview-menu">
-                <li class="active"><a href="/inputprdks"><i class="fa fa-circle-o"></i> Input Hasil Produksi </a></li>
-                <li><a href="/prdkstab"><i class="fa fa-circle-o"></i>Data Hasi Produksi</a></li>
-              </ul>
-            </li>
                                       <li class=" treeview">
               <a href="#">
                 <i class="fa  fa-envelope"></i> <span>Pesanan</span> <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li class=""><a href="/inputprdks"><i class="fa fa-circle-o"></i> Daftar Pesanan </a></li>
-                <li><a href="/prdkstab"><i class="fa fa-circle-o"></i>Data Hasi Produksi</a></li>
+                <li class=""><a href="/orderusr"><i class="fa fa-circle-o"></i> Daftar Pesanan </a></li>
+                <li><a href="/orderusrh"><i class="fa fa-circle-o"></i>Riwayat Pesanan</a></li>
               </ul>
             </li>
           
@@ -245,7 +236,7 @@
                 <input type="hidden" name="id_petani" value="{{ $data->id_petani }} ">
                 <input type="hidden" name="id_user" value="{{ \Auth::user()->id }}">
                    <input type="hidden" name="nama" value="{{ $data->nama }} ">                    
-                   <input type="hidden" name="id" value="{{ $data->id }} ">   
+                   <input type="hidden" name="id_cart" value="{{ $data->id }} ">   
                    <input type="hidden" name="id_prdks" value="{{ $data->id_prdks }} ">                     
 
                                     <label for="exampleInputEmail1">Jumlah</label>

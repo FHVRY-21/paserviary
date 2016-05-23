@@ -122,7 +122,7 @@
                   <li class="user-header">
                     <img src="/css/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
                     <p>
-                      {{ \Auth::user()->nama_depan }} {{ \Auth::user()->nama_belakang }} - Web Developer
+                      {{ \Auth::user()->nama_depan }} {{ \Auth::user()->nama_belakang }} - {{ \Auth::user()->role }}
                       <small>Member since Nov. 2012</small>
                     </p>
                   </li>
@@ -144,7 +144,7 @@
                       <a href="#" class="btn btn-default btn-flat">Profile</a>
                     </div>
                     <div class="pull-right">
-                      <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                      <a href="/logout" class="btn btn-default btn-flat">Sign out</a>
                     </div>
                   </li>
                 </ul>
@@ -204,10 +204,16 @@
                 <i class="fa  fa-envelope"></i> <span>Pesanan</span> <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="/inputprdks"><i class="fa fa-circle-o"></i> Daftar Pesanan </a></li>
-                <li><a href="/prdkstab"><i class="fa fa-circle-o"></i>Data Hasi Produksi</a></li>
+                <li><a href="/orderptn"><i class="fa fa-circle-o"></i> Daftar Pesanan </a></li>
+                <li><a href="/orderptnh"><i class="fa fa-circle-o"></i>Data Hasi Produksi</a></li>
               </ul>
             </li>
+              <li class=" treeview">
+            <a href="/shop">
+                <i class="fa fa-shopping-chart"></i>
+                <span>Belanja</span>
+                <span class="label label-primary pull-right"></span>
+              </a>
               
         </section>
         <!-- /.sidebar -->
@@ -235,46 +241,46 @@
               <!-- small box -->
               <div class="small-box bg-aqua">
                 <div class="inner">
-                  <h3>150</h3>
-                  <p>New Orders</p>
+                  <h3>{{ \App\Pembayaran::where(['id_petani' => \Auth::user()->id, 'status' => "Belum Dikonfirmasi"])->get()->count() }}</h3>
+                  <p>Order Baru</p>
                 </div>
                 <div class="icon">
                   <i class="ion ion-bag"></i>
                 </div>
-                <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                <a href="/orderptn" class="small-box-footer">Lihat <i class="fa fa-arrow-circle-right"></i></a>
               </div>
             </div><!-- ./col -->
             <div class="col-lg-3 col-xs-6">
               <!-- small box -->
               <div class="small-box bg-green">
                 <div class="inner">
-                  <h3>53<sup style="font-size: 20px">%</sup></h3>
-                  <p>Bounce Rate</p>
+                  <h3>{{ \App\Prdks::where(['id_petani' => \Auth::user()->id])->get()->count() }}</h3>
+                  <p>Hasil Produksi</p>
                 </div>
                 <div class="icon">
-                  <i class="ion ion-stats-bars"></i>
+                  <i class="ion ion-leaf"></i>
                 </div>
-                <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                <a href="/prdkstab" class="small-box-footer">Lihat <i class="fa fa-arrow-circle-right"></i></a>
               </div>
             </div><!-- ./col -->
             <div class="col-lg-3 col-xs-6">
               <!-- small box -->
               <div class="small-box bg-yellow">
                 <div class="inner">
-                  <h3>44</h3>
-                  <p>User Registrations</p>
+                  <h3>{{ \App\Pembayaran::where(['id_petani' => \Auth::user()->id, 'status' => "Sudah Dikonfirmasi"])->get()->count() }}</h3>
+                  <p>Order Terproses</p>
                 </div>
                 <div class="icon">
-                  <i class="ion ion-person-add"></i>
+                  <i class="ion ion-bag"></i>
                 </div>
-                <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                <a href="/orderptnh" class="small-box-footer">Lihat <i class="fa fa-arrow-circle-right"></i></a>
               </div>
             </div><!-- ./col -->
             <div class="col-lg-3 col-xs-6">
               <!-- small box -->
               <div class="small-box bg-red">
                 <div class="inner">
-                  <h3>65</h3>
+                  <h3>{{ \App\Pembayaran::where(['id_petani' => \Auth::user()->id, 'status' => "Sudah Dikonfirmasi"] )->get()->count() }}</h3>
                   <p>Unique Visitors</p>
                 </div>
                 <div class="icon">
