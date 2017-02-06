@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use DB;
+use Auth;
 
 use App\Prdks;
 use App\Pembelian;
@@ -17,9 +19,12 @@ class homecontoller extends Controller
 
     	public function shop()
 	{
+
 		$data = \App\Prdks::all();
-		return view('shop')->with('data',$data);
+	// $bebek = DB::table('pembelian')->where('id_user',$Auth::user()->id)->count();
+	return view('shop')->with('data',$data);	
 	}
+
 
 	   public function login()
 	{
@@ -39,6 +44,11 @@ class homecontoller extends Controller
 			public function ptnusr()
 	{
 		return view('ptnusr');
+	}
+
+				public function dc1()
+	{
+		return view('dc1');
 	}
 
 			public function orderptnh()
@@ -131,7 +141,7 @@ $data = \App\Pembayaran::where('status',"Sudah Dikonfirmasi")->get();
 		$data->nama = Input::get('nama');
 		$data->id_user = Input::get('id_user');
 		$data->id_petani = Input::get('id_petani');
-		$data->satuanharga = Input::get('satuanharga');
+		$data->satuanharga = Input::get('harga');
 		$data->jumlah = Input::get('jumlah');
 		$data->id_prdks = Input::get('id_prdks');
 		$data->no_rekening = Input::get('no_rekening');
@@ -166,8 +176,8 @@ return view('single')->with('data',$data);
 public function deleteprod($id)
 {
 $p = \App\Pembelian::where('id_prdks', $id)->first();
-$satus_role = "Dihapus";
-$p->status_role = $satus_role;
+$status_role = "Dihapus";
+$p->status_role = $status_role;
 $p->save();
 	
 $data = \App\Prdks::find($id);
@@ -226,21 +236,26 @@ public function updateprdks(Request $r){
 }
 
 public function updateusr(Request $r){
-	$s= \App\User::find($r->id);
+	$s= \App\User::find(Auth::user()->id);
 	$s->nama_depan = $r->nama_depan;
 	$s->nama_belakang = $r->nama_belakang;
-	$s->email = $r->email;
+	
 	$s->alamat = $r->alamat;
 	$s->no_rekening = $r->no_rekening;
 	$s->no_telp = $r->no_telp;
-	$s->save();
-	return \Redirect::to('/shop');
+	   
+
+
+        $s->save();
+	return \Redirect::to('/ptnusr');
 }
 
 					public function inputpembayaran(Request $request)
 	{
 
-				$data = new \App\Pembayaran;
+
+
+		$data = new \App\Pembayaran;
 		$data->nama = Input::get('nama');
 		$data->total_pembayaran = Input::get('total_pembayaran');
 		$data->tanggal_bayar = Input::get('tanggal_bayar');
@@ -252,13 +267,16 @@ public function updateusr(Request $r){
 		$data->jumlah = Input::get('jumlah');
 		$data->no_rekening = Input::get('no_rekening');
 		$data->status = "Belum Dikonfirmasi";
+$data->save();
+
+	$data= \App\Pembelian::find($data->id_cart);
+	 $data->status_pembayaran = "Menunggu Konfirmasi";
+	 $data->save();
 		// $data->tgl_post =  date("Y-m-d H:i:s");
 				
 		$data->save();
 
-	$data= \App\Pembelian::find($request->id);
-	$data->status_pembayaran = "Menunggu Konfirmasi";
-	$data->save();
+
 
 
 				return \Redirect::to('/orderusr');
@@ -270,23 +288,18 @@ public function updateusr(Request $r){
 		$s->status = Input::get('bayar');
 		$s->save();
 
-		$r = \App\Pembelian::find($id)->first();
+		$r = \App\Pembelian::find($s->id_cart);
 		$status_pembayaran = "Sudah Dikonfirmasi";
 		$r->status_pembayaran = $status_pembayaran;
 		$r->save();
 
-$id = \App\Prkds::orderBy('id', desc)->first();
+$id = \App\Prdks::orderBy('id', 'desc')->first();
 
-$p = \App\Prdks::find($id->id_prdks);
+$p = \App\Prdks::find($s->id_prdks);
 		$jumlah = $p->jumlah - $s->jumlah;
 		$p->jumlah = $jumlah;
 
 		$p->save();
-
-
-		// $z = \App\Pembelian::find($s->id_prdks)
-		// $z->status_pembayaran = Input::get('bayar');
-		// $z->save();
 
 		return \Redirect::to('/orderptn');
 

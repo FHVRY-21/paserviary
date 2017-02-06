@@ -171,11 +171,38 @@
             </div>
           </form>
           <!-- /.search form -->
-          <!-- sidebar menu: : style can be found in sidebar.less -->
           <ul class="sidebar-menu">
-            <li class="header">Navigasi Utama</li>
-
-           
+            <li class="header"  class="active">Navigasi Utama</li>
+            <li class="active treeview">
+            <a href="/ptnusr">
+                <i class="fa fa-dashboard"></i>
+                <span>Dashboard</span>
+                <span class="label label-primary pull-right"></span>
+              </a>
+              <li class="treeview">
+              <a href="#">
+                <i class="fa fa-leaf"></i> <span>Produksi</span> <i class="fa fa-angle-left pull-right"></i>
+              </a>
+              <ul class="treeview-menu">
+                <li><a href="/inputprdks"><i class="fa fa-circle-o"></i> Input Hasil Produksi </a></li>
+                <li><a href="/prdkstab"><i class="fa fa-circle-o"></i>Data Hasi Produksi</a></li>
+              </ul>
+            </li>
+                                      <li class="treeview">
+              <a href="#">
+                <i class="fa  fa-envelope"></i> <span>Pesanan</span> <i class="fa fa-angle-left pull-right"></i>
+              </a>
+              <ul class="treeview-menu">
+                <li><a href="/orderptn"><i class="fa fa-circle-o"></i> Daftar Pesanan </a></li>
+                <li><a href="/orderptnh"><i class="fa fa-circle-o"></i>Data Hasi Produksi</a></li>
+              </ul>
+            </li>
+              <li class=" treeview">
+            <a href="/shop">
+                <i class="fa fa-shopping-chart"></i>
+                <span>Belanja</span>
+                <span class="label label-primary pull-right"></span>
+              </a>
         </section>
         <!-- /.sidebar -->
       </aside>
@@ -185,13 +212,13 @@
         <!-- Content Header (Page header) -->
         <section class="content-header">
           <h1>
-            Data Hasil Produksi
-            <small>advanced tables</small>
+            Edit Profil
+            
           </h1>
           <ol class="breadcrumb">
-            <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-            <li><a href="#">Tables</a></li>
-            <li class="active">Data tables</li>
+            <li><a href="/ptnusr"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+            <li><a href="/">Setting</a></li>
+           
           </ol>
         </section>
 
@@ -201,11 +228,7 @@
             <div class="col-xs-12">
 <!-- /.box -->
 
-              <div class="box">
-                <div class="box-header">
-                  <h3 class="box-title">Data Table With Full Features</h3>
-                </div><!-- /.box-header -->
-                <div class="box-body">
+
                 
                 
           <div class="box box-primary">
@@ -222,7 +245,7 @@
   <div class="input-group">
                      
                     <span class="input-group-addon"><i class="fa fa-leaf"></i></span>
-                    <input type="text" class="form-control" name="nama_barang" value="{{ \Auth::user()->nama_depan }}">  </input>
+                    <input type="text" class="form-control" name="nama_depan value="{{ \Auth::user()->nama_depan }}">  </input>
                   </div>
 
                                     <label for="exampleInputEmail1">Foto Profil</label>
@@ -235,46 +258,46 @@
   <div class="input-group">
                      
                     <span class="input-group-addon"><i class="fa fa-leaf"></i></span>
-                    <input type="text" class="form-control" name="nama_barang" value="{{ \Auth::user()->nama_belakang }}">  </input>
+                    <input type="text" class="form-control" name="nama_belakang" value="{{ \Auth::user()->nama_belakang }}">  </input>
                   </div>
                   <br>
                                     <label for="exampleInputEmail1">Password</label>
   <div class="input-group">
                      
                     <span class="input-group-addon"><i class="fa fa-leaf"></i></span>
-                    <input type="password" class="form-control" name="nama_barang" value="">  </input>
+                    <input type="password" class="form-control" name="password" value="">  </input>
                                       <label for="exampleInputEmail1">Konfirmasi Password</label>
   <div class="input-group">
                      
                     <span class="input-group-addon"><i class="fa fa-leaf"></i></span>
-                    <input type="pasword" class="form-control" name="nama_barang" value="">  </input>
+                    <input type="pasword" class="form-control" name="password" value="">  </input>
                   </div>
                   </div>
                                     <label for="exampleInputEmail1">Alamat</label>
   <div class="input-group">
                      
                     <span class="input-group-addon"><i class="fa fa-leaf"></i></span>
-                    <input type="text" class="form-control" name="nama_barang" value="{{ \Auth::user()->alamat }}">  </input>
+                    <input type="text" class="form-control" name="alamat" value="{{ \Auth::user()->alamat }}">  </input>
                   </div>
                                             <label for="exampleInputEmail1">No. Telp</label>
   <div class="input-group">
                      
                     <span class="input-group-addon"><i class="fa fa-leaf"></i></span>
-                    <input type="text" class="form-control" name="nama_barang" value="{{ \Auth::user()->no_telp }}">  </input>
+                    <input type="text" class="form-control" name="no_telp" value="{{ \Auth::user()->no_telp }}">  </input>
                   </div>
         @if(Auth::user()->role="Petani")
                                     <label for="exampleInputEmail1">Nomor Rekening</label>
   <div class="input-group">
                      
                     <span class="input-group-addon"><i class="fa fa-leaf"></i></span>
-                    <input type="text" class="form-control" name="nama_barang" value="">  </input>
+                    <input type="text" class="form-control" name="no_rekening" value="{{ \Auth::user()->no_rekening  }}">  </input>
                   </div>
                   @endif
                                     
                   </div><!-- /.box-body -->
 
                   <div class="box-footer">
-                    <button type="submit" class="btn btn-primary" formmethod="POST" action="/updateprdks">Submit</button>
+                    <button type="submit" class="btn btn-primary" >Submit</button>
                   </div>
                 </form>
               </div>

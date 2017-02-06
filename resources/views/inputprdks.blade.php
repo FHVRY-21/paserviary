@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>PASR | Dashboard</title>
+    <title>PASR | Input Produksi</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.5 -->
@@ -218,12 +218,12 @@
         <!-- Content Header (Page header) -->
         <section class="content-header">
           <h1>
-            Dashboard
-            <small>Control panel</small>
+            Input Produksi
+            <small>Petani</small>
           </h1>
           <ol class="breadcrumb">
-            <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-            <li class="active">Dashboard</li>
+            <li><a href="/ptnusr"><i class="fa fa-dashboard"></i> Home</a></li>
+            <li class="active">Input Produksi</li>
           </ol>
         </section>
 
@@ -264,7 +264,8 @@
                         <option>Sayur</option>
                         <option>Jamur</option>
                         <option>Olahan</option>
-                        <option>option 5</option>
+                        <option>Daging Merah</option>
+                        <option>Daging Putih</option>
                       </select>
                     </div>
              
@@ -281,6 +282,14 @@
   <div class="input-group">                  
                     <span class="input-group-addon"><i class="fa fa-calculator"></i></span>
                     <input type="text" class="form-control" name="jumlah">
+                  </div>
+                  <br>
+
+                   <br>
+                  <label for="exampleInputEmail1">Deskripsi</label>
+  <div class="input-group">                  
+                    <span class="input-group-addon"><i class="fa fa-calculator"></i></span>
+                    <input type="textbox" class="form-control" name="deskripsi">
                   </div>
                   <br>
 <input type="hidden" name="id_petani" value="{{ \Auth::user()->id }} ">

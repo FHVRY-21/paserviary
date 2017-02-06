@@ -1,0 +1,193 @@
+.ybc-widget-display-home .ybc-widget-description-white > h3 {
+  text-transform: uppercase;
+}
+.ybc-widget-ybc-custom-5 li.ybc-widget-item:nth-child(3) {
+  border-right: medium none;
+}
+.ybc-widget-display-home .ybc-widget-description {
+  float: left;
+  padding-right: 39%;
+  position: relative;
+  width: 100%;
+}
+
+.header_bottom .container {
+  position: relative;
+}
+header #header_logo{
+    width: auto;
+}
+/*menu*/
+.ybc-menu {
+  position: static;
+
+}
+.ybc-menu-wrapper {
+  position: static;
+
+}
+
+#header > .nav nav h3 {
+  color: #fff;
+  font-family: poppins;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+#currencies-block-top ul,#languages-block-top ul {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: medium none;
+  position: static;
+  right: 0;
+  top: 37px;
+  width: 100%;
+  display: inline-block;
+  z-index: 2;
+}
+
+/* content tab */
+
+.daily-deals {
+  background: #f1f5f6 none repeat scroll 0 0;
+}
+.daily-deals::before {
+    background: #f1f5f6 none repeat scroll 0 0;
+  content: "";
+  height: 100%;
+  left: 100%;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+}
+.daily-deals::after {
+    background: #f1f5f6 none repeat scroll 0 0;
+  content: "";
+  height: 100%;
+  right: 100%;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+}
+/*slider*/
+.caption2 .caption-span {
+  text-transform: capitalize;
+}
+@media (min-width: 768px) and (max-width: 991px){
+    .ybc-layout-default .ybc-menu-wrapper {
+      padding: 0;
+      width: 100%;
+    }
+    #search_block_top #search_query_top,
+    #search_block_top .btn.button-search {
+      height: 40px;
+    }
+    .ybc_myaccout i {
+      font-size: 20px;
+      line-height: 40px;
+    }
+    .ybc_myaccout:hover .dropdown_myaccout {
+      opacity: 1;
+      visibility: visible;
+    }
+    .ybc-menu-wrapper::before {
+      background-color: #f1f1f1;
+      content: "";
+      height: 1px;
+      left: 100%;
+      position: absolute;
+      top: -1px;
+      width: 100vw;
+    }
+    .ybc-menu-wrapper::after {
+      background-color: #f1f1f1;
+      content: "";
+      height: 1px;
+      position: absolute;
+      right: 100%;
+      top: -1px;
+      width: 100vw;
+    }
+    .ybc-menu-wrapper {
+      border-top: 1px solid #f1f1f1;
+      position: relative;
+    }
+    #header .cart_block {
+      top: 69px;
+    }
+}
+@media (min-width: 768px){
+    body .ac_results {
+      left: -21px !important;
+      margin-top: 20px;
+      width: calc(100% + 42px) !important;
+    }
+    .header_bottom .row{
+        margin: 0;
+    }
+}
+@media (max-width: 767px){
+    div .ybc-widget-ybc-custom-5 li.ybc-widget-item:first-child,div .ybc-widget-ybc-custom-5 li.ybc-widget-item {
+      border-left: none;
+      border-right: medium none;
+    }
+    body .ac_results {
+      left: -16px !important;
+      margin-top: 15px;
+      top: 100% !important;
+      width: calc(100% + 32px) !important;
+    }
+    .ybc-widget-display-home .ybc-widget-description {
+      padding: 0 15px;
+    }
+    .parala_content {
+      opacity: 0.23;
+    }
+    .ybc-widget-ybc-custom-5 .ybc-widget-item {
+      float: left;
+      width: 100%;
+    }
+    .ybc-menu-main-content {
+      width: calc(100% + 30px);
+      width: -webkit-calc(100% + 30px);
+      width: -moz-calc(100% + 30px);
+      width: -ms-calc(100% + 30px);
+      width: -o-calc(100% + 30px);
+    }
+    .search_block_top_fixed {
+      width: calc(100% + 30px);
+      width: -webkit-calc(100% + 30px);
+      width: -moz-calc(100% + 30px);
+      width: -ms-calc(100% + 30px);
+      width: -o-calc(100% + 30px);
+      left: -15px;
+    }
+}
+@media (max-width: 479px){
+    
+    .content-tesimonial {
+      text-align: center;
+    }
+    #box-tesimonial .slider {
+      text-align: center;
+    }
+    .ybc-widget-ybc-custom-5 .ybc-widget-item {
+      float: left;
+      width: 100%;
+    }
+    #languages-block-top {
+      margin: 2px 0 0;
+    }
+    #currencies-block-top {
+      margin: 0;
+    }
+    div .main-menu {
+      margin-top: 15px;
+    }
+    body.ybc-layout-default .header_bottom .custom_block_cart {
+      top: auto;
+    }
+    .ybc-menu-wrapper .ybc-menu-toggle {
+      margin-top: 20px;
+    }
+}
+

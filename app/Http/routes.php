@@ -20,6 +20,7 @@ Route::get('/register', function () {
 });
 
 Route::get('/shop', 'homecontoller@shop');
+Route::get('/dc', 'homecontoller@dc1');
 Route::get('/orderptn', 'homecontoller@orderptn');
 Route::get('/orderusr', 'homecontoller@orderusr');
 Route::get('/orderptnh', 'homecontoller@orderptnh');
@@ -38,12 +39,13 @@ Route::get('/editprdks/{id}', 'homecontoller@editprdks');
 Route::get('/bayar/{id}', 'homecontoller@bayar');
 Route::get('/updateprdks/{id}', 'homecontoller@updateprdks');
 Route::post('/updateprdks', 'homecontoller@updateprdks');
+Route::post('/updateusr', 'homecontoller@updateusr');
 
 Route::get('/login','Auth\AuthController@getLogin');
 Route::post('/login','Auth\AuthController@postLogin');
 
 Route::get('/logout','Auth\AuthController@getLogout');
-Route::get('/settingusr','homecontoller@editusr');
+Route::get('/settingusr/{id}','homecontoller@editusr');
 Route::get('/register', 'Auth\AuthController@getRegister');
 Route::post('/register', 'Auth\AuthController@postRegister');
 
@@ -71,4 +73,13 @@ Route::get('/images/{filename}',
     $response->header("Content-Type", $type);
 
     return $response;
+});
+
+Route::get('/single/{filename}', function ($filename){ 	
+	$path = storage_path() . '/' .$filename; 	
+	$file = File::get($path); 	
+	$type = File::mimeType($path); 	
+	$data = Response::make($file,200); 	
+	$data->header("Content-Type", $type); 	
+	return $data; 
 });

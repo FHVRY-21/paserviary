@@ -202,7 +202,7 @@
         <!-- Content Header (Page header) -->
         <section class="content-header">
           <h1>
-            Data Hasil Produksi
+            Data Order
             <small>advanced tables</small>
           </h1>
           <ol class="breadcrumb">
@@ -220,7 +220,7 @@
 
               <div class="box">
                 <div class="box-header">
-                  <h3 class="box-title">Data Table With Full Features</h3>
+                  <h3 class="box-title">Data Order</h3>
                 </div><!-- /.box-header -->
                 <div class="box-body">
                 

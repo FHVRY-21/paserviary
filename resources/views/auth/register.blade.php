@@ -335,8 +335,8 @@
                      <div><input type="text" name="nama_depan" value="Nama Depan" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Nama Depan';}"></div>
                         <div><input type="text" name="nama_belakang" value="Nama Belakang (Optional)" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Nama Belakang (Optional)';}"></div>
                         <div><input type="text" name="email" value="E-Mail" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'E-Mail';}"></div>
-                        <div><input type="password" name="password" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}"></div>
-                         <div><input type="password" name="password_confirmation" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password Confirmation';}"></div>
+                        <div><input type="password" class="form-control" name="password" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}"></div>
+                         <div><input type="password" name="password_confirmation" class="form-control" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password Confirmation';}"></div>
                  
                     <div><input type="text" name="alamat" value="Alamat Lengkap" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Alamat Lengkap';}"></div>
                       <div><input type="text" name="no_telp" value="Nomor Telepon" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Nomor Telepon';}"></div>

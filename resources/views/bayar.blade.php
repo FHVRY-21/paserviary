@@ -243,7 +243,7 @@
   <div class="input-group">
                      
                     <span class="input-group-addon"><i class="fa fa-leaf"></i></span>
-                    <input type="text" class="form-control" name="jumlah">
+                    <input type="text" class="form-control" name="jumlah" value="{{ $data->jumlah }}">
                   </div>
                                     <label for="exampleInputEmail1">Jumlah Pembayaran</label>
   <div class="input-group">
@@ -261,7 +261,7 @@
   <div class="input-group">
                      
                     <span class="input-group-addon"><i class="fa fa-leaf"></i></span>
-                    <input type="text" class="form-control" name="no_rekening">
+                    <input type="text" class="form-control" name="no_rekening" value="{{ \Auth::user()->no_rekening }}">
                   </div>
                   </div><!-- /.box-body -->
 
