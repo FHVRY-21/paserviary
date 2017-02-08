@@ -1661,7 +1661,7 @@ body.ybc-skin-custom .ybc-menu-item.ybc_hot > span.ybc-menu-item-no-link:first-c
                                 <!-- Block user information module NAV  -->
     <h3>Akun</h3>
     <div class="header_user_info nav">
-              <a class="login" href="/login" rel="nofollow" title="Masuk atau Daftar Untuk Berbelanja">
+              <a class="login" href="{{ url('/login')}}" rel="nofollow" title="Masuk atau Daftar Untuk Berbelanja">
           Masuk atau Daftar
         </a>
     </div>

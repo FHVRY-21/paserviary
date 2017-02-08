@@ -1649,31 +1649,31 @@ body.ybc-skin-custom .ybc-menu-item.ybc_hot > span.ybc-menu-item-no-link:first-c
     <h3>Akun</h3>
     <div class="header_user_info nav">
      @if(Auth::user()->role == "Petani")
-                    <a class="login" href="/ptnusr" rel="nofollow" title="Dashboard">
+                    <a class="login" href="/{{ url('/ptnusr')}}" rel="nofollow" title="Dashboard">
                 Dashboard
             </a>
-            <a class="login" href="/inputprdks" rel="nofollow" title="Dashboard">
+            <a class="login" href="/{{ url('/inputprdks')}}" rel="nofollow" title="Dashboard">
                 Input Hasil Produksi
             </a>
-            <a class="login" href="/prdkstab" rel="nofollow" title="Dashboard">
+            <a class="login" href="/{{ url('/prdkstab')}}" rel="nofollow" title="Dashboard">
                 Daftar Hasil Produksi
             </a>
-            <a class="login" href="/orderptn" rel="nofollow" title="Dashboard">
+            <a class="login" href="/{{ url('/orderptnh')}}" rel="nofollow" title="Dashboard">
                 Pesanan
             </a>
 
       @elseif(Auth::user()->role == "User")
-      <a class="login" href="/usrdsh" rel="nofollow" title="Dashboard">
+      <a class="login" href="{{ url('/usrdsh')}}" rel="nofollow" title="Dashboard">
                 Dashboard
             </a>        
-            <a href="/orderusr" title="View my customer account" class="account" rel="nofollow">
+            <a href="{{ url('/orderusr')}}" title="View my customer account" class="account" rel="nofollow">
                 <span class="hidden_mobile">Daftar Pesanan</span>
             </a>
             
-                <a class="bt_wishlist_userinfor"    href="logind3db.html" title="My wishlists">
+                <a class="bt_wishlist_userinfor"    href="{{ url('/orderusrh')}}" title="My wishlists">
            <span>Riwayat Pesanan</span>
         </a>
-         <a class="bt_wishlist_userinfor"    href="/logout" title="My wishlists">
+         <a class="bt_wishlist_userinfor"    href="{{ url('/orderusr')}}" title="My wishlists">
            <span>Log out</span>
         </a>
         @endif
@@ -2028,7 +2028,7 @@ body.ybc-skin-custom .ybc-menu-item.ybc_hot > span.ybc-menu-item-no-link:first-c
                                                                                                                                                                                                                                                             <li class="nomargin hiddable col-lg-12">
                                                                                             <input type="checkbox" class="checkbox" name="layered_quantity_1" id="layered_quantity_1" value="1" /> 
                                                                                         <label for="layered_quantity_1">
-                                                                                                <a href="/shop" data-rel="nofollow">In stock<span> {{ $bebek }}</span></a>
+                                                                                                <a href="{{ url('/shop')}}" data-rel="nofollow">In stock<span> {{ $bebek }}</span></a>
                                                                                             </label>
                                         </li>
                                                                                                                                                                                             </ul>
@@ -2044,21 +2044,53 @@ body.ybc-skin-custom .ybc-menu-item.ybc_hot > span.ybc-menu-item-no-link:first-c
                                                                                                                                                                                 <li class="nomargin hiddable col-lg-12">
                                                                                             <input type="checkbox" class="checkbox" name="layered_condition_new" id="layered_condition_new" value="new" /> 
                                                                                         <label for="layered_condition_new">
-                                                                                                <a href="/ktg1" data-rel="nofollow">Buah<span> ({{$bebek2}})</span></a>
+                                                                                                <a href="/{{ url('/ktg1')}}" data-rel="nofollow">Buah<span> ({{$bebek2}})</span></a>
                                                                                             </label>
                                                                                              
                                                                                         <label for="layered_condition_new">
-                                                                                                <a href="/ktg1" data-rel="nofollow">Sayur<span> ({{$bebek1}})</span></a>
+                                                                                                <a href="/{{ url('/ktg1')}}" data-rel="nofollow">Sayur<span> ({{$bebek1}})</span></a>
                                                                                             </label>
 
                                                                                              <label for="layered_condition_new">
-                                                                                                <a href="/ktg1" data-rel="nofollow">Rempah-Rempah<span> ({{$bebek3}})</span></a>
+                                                                                                <a href="/{{ url('/ktg1')}}" data-rel="nofollow">Rempah-Rempah<span> ({{$bebek3}})</span></a>
                                                                                             </label>
                                         </li>
                                                                                                                                                                                                                                                                                                                                                     </ul>
                     </div>
-                                                                                                            <div class="layered_f
-                        
+                                                                                                            <div class="layered_filter">
+                                                <div class="layered_subtitle_heading">
+                            <span class="layered_subtitle">Manufacturer</span>
+                            <!--<span class="layered_close">
+                                <a href="#" data-rel="ul_layered_manufacturer_0"></a>
+                            </span>-->
+                        </div>
+                        <ul id="ul_layered_manufacturer_0" class="col-lg-12 layered_filter_ul">
+                                                                                                                                                                                <li class="nomargin hiddable col-lg-12">
+                                                                                            <input type="checkbox" class="checkbox" name="layered_manufacturer_1" id="layered_manufacturer_1" value="1" /> 
+                                                                                        <label for="layered_manufacturer_1">
+                                                                                                <a href="5-accessories.html#manufacturer-fashion_manufacturer" data-rel="nofollow">Fashion Manufacturer<span> (1)</span></a>
+                                                                                            </label>
+                                        </li>
+                                                                                                                                                                                            </ul>
+                    </div>
+                                                                                                            <div class="layered_price" style="display: none;">
+                                                <div class="layered_subtitle_heading">
+                            <span class="layered_subtitle">Price</span>
+                            <!--<span class="layered_close">
+                                <a href="#" data-rel="ul_layered_price_0"></a>
+                            </span>-->
+                        </div>
+                        <ul id="ul_layered_price_0" class="col-lg-12 layered_filter_ul">
+                                                                                                <li>
+                                    <label>
+                                        Range:
+                                    </label> 
+                                    <span id="layered_price_range"></span>
+                                    <div class="layered_slider_container">
+                                        <div class="layered_slider" id="layered_price_slider" data-type="price" data-format="1" data-unit="$"></div>
+                                    </div>
+                                    </li>
+                                                                                                                </ul>
                     </div>
                                                                                                             <div class="layered_filter">
                                                 <div class="layered_subtitle_heading">
@@ -2265,7 +2297,7 @@ body.ybc-skin-custom .ybc-menu-item.ybc_hot > span.ybc-menu-item-no-link:first-c
                                                 <div id="center_column" class="center_column col-xs-12 col-sm-9">
                 
 
-                        <h1 class="page-heading product-listing"><span class="cat-name">Belanja&nbsp;</span><span class="heading-counter">There is  product.</span>
+                        <h1 class="page-heading product-listing"><span class="cat-name">Belanja&nbsp;</span><span class="heading-counter">There is {{ $bebek }} product.</span>
 </h1>
                                     <div class="content_sortPagiBar clearfix">
                 <div class="sortPagiBar clearfix">
@@ -2342,7 +2374,7 @@ body.ybc-skin-custom .ybc-menu-item.ybc_hot > span.ybc-menu-item-no-link:first-c
                 </div>
                 <div class="right-block">
                     <h5 itemprop="name">
-                                                <a class="product-name" href="/single" title="Faded Short Sleeves T-shirt" itemprop="url" >
+                                                <a class="product-name" href="{{ url('/single')}}" title="Faded Short Sleeves T-shirt" itemprop="url" >
                             {{ $prdks->nama_barang }}
                         </a>
                         

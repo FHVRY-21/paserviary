@@ -98,10 +98,10 @@
                   <!-- Menu Footer-->
                   <li class="user-footer">
                     <div class="pull-left">
-                      <a href="/settingusr/{id}" class="btn btn-default btn-flat">Profile</a>
+                      <a href="{{ url('/settingusr/{id}')}}" class="btn btn-default btn-flat">Profile</a>
                     </div>
                     <div class="pull-right">
-                      <a href="/logout" class="btn btn-default btn-flat">Sign out</a>
+                      <a href="{{ url('/logout')}}" class="btn btn-default btn-flat">Sign out</a>
                     </div>
                   </li>
                 </ul>
@@ -142,7 +142,7 @@
           <ul class="sidebar-menu">
             <li class="header"  class="active">Navigasi Utama</li>
             <li class="active treeview">
-            <a href="/ptnusr">
+             <a href="{{ url('/ptnusr')}}">
                 <i class="fa fa-dashboard"></i>
                 <span>Dashboard</span>
                 <span class="label label-primary pull-right"></span>
@@ -152,8 +152,8 @@
                 <i class="fa fa-leaf"></i> <span>Produksi</span> <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="/inputprdks"><i class="fa fa-circle-o"></i> Input Hasil Produksi </a></li>
-                <li><a href="/prdkstab"><i class="fa fa-circle-o"></i>Data Hasi Produksi</a></li>
+                <li><a href="{{ url('/inputprdks')}}"><i class="fa fa-circle-o"></i> Input Hasil Produksi </a></li>
+                <li><a href="{{ url('/prdkstab')}}"><i class="fa fa-circle-o"></i>Data Hasi Produksi</a></li>
               </ul>
             </li>
                                       <li class="treeview">
@@ -161,17 +161,16 @@
                 <i class="fa  fa-envelope"></i> <span>Pesanan</span> <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="/orderptn"><i class="fa fa-circle-o"></i> Daftar Pesanan </a></li>
-                <li><a href="/orderptnh"><i class="fa fa-circle-o"></i>Data Hasi Produksi</a></li>
+                <li><a href="{{ url('/orderptn')}}""><i class="fa fa-circle-o"></i> Daftar Pesanan </a></li>
+                <li><a href="{{ url('/orderptnh')}}"><i class="fa fa-circle-o"></i>Data Hasi Produksi</a></li>
               </ul>
             </li>
               <li class=" treeview">
-            <a href="/shop">
+            <a href="{{ url('/shop')}}">
                 <i class="fa fa-shopping-chart"></i>
                 <span>Belanja</span>
                 <span class="label label-primary pull-right"></span>
               </a>
-              
         </section>
         <!-- /.sidebar -->
       </aside>
@@ -204,7 +203,7 @@
                 <div class="icon">
                   <i class="ion ion-bag"></i>
                 </div>
-                <a href="/orderptn" class="small-box-footer">Lihat <i class="fa fa-arrow-circle-right"></i></a>
+                <a href="{{ url('/orderptn')}}" class="small-box-footer">Lihat <i class="fa fa-arrow-circle-right"></i></a>
               </div>
             </div><!-- ./col -->
             <div class="col-lg-3 col-xs-6">
@@ -217,7 +216,7 @@
                 <div class="icon">
                   <i class="ion ion-leaf"></i>
                 </div>
-                <a href="/prdkstab" class="small-box-footer">Lihat <i class="fa fa-arrow-circle-right"></i></a>
+                <a href="{{ url('/prdkstab')}}" class="small-box-footer">Lihat <i class="fa fa-arrow-circle-right"></i></a>
               </div>
             </div><!-- ./col -->
             <div class="col-lg-3 col-xs-6">
@@ -230,7 +229,7 @@
                 <div class="icon">
                   <i class="ion ion-bag"></i>
                 </div>
-                <a href="/orderptnh" class="small-box-footer">Lihat <i class="fa fa-arrow-circle-right"></i></a>
+                <a href="{{ url('/orderptnh')}}" class="small-box-footer">Lihat <i class="fa fa-arrow-circle-right"></i></a>
               </div>
             </div><!-- ./col -->
             <div class="col-lg-3 col-xs-6">

@@ -78,17 +78,7 @@
                     </p>
                   </li>
                   <!-- Menu Body -->
-                  <li class="user-body">
-                    <div class="col-xs-4 text-center">
-                      <a href="#">Followers</a>
-                    </div>
-                    <div class="col-xs-4 text-center">
-                      <a href="#">Sales</a>
-                    </div>
-                    <div class="col-xs-4 text-center">
-                      <a href="#">Friends</a>
-                    </div>
-                  </li>
+                  
                   <!-- Menu Footer-->
                   <li class="user-footer">
                     <div class="pull-left">
@@ -136,24 +126,29 @@
           <ul class="sidebar-menu">
             <li class="header">Navigasi Utama</li>
             <li class=" treeview">
-            <a href="/usrdsh">
+            <a href="{{ url('/usrdsh')}}">
                 <i class="fa fa-dashboard"></i>
                 <span>Dashboard</span>
                 <span class="label label-primary pull-right"></span>
               </a>
-              </li>
-
-                          <li class="active treeview">
+                                      <li class="treeview">
               <a href="#">
                 <i class="fa  fa-envelope"></i> <span>Pesanan</span> <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li class="active"><a href="/orderusr"><i class="fa fa-circle-o"></i> Daftar Pesanan </a></li>
-                <li><a href="/orderusrh"><i class="fa fa-circle-o"></i>Riwayat Pemesanan</a></li>
+               <li class="active treeview"> 
+                <li><a href="'{{ url('/orderusr')}}'"><i class="fa fa-circle-o"></i> Daftar Pesanan </a></li>
+               
+                <li><a href="{{ url('/orderusrh')}}"><i class="fa fa-circle-o"></i>Riwayat Pesanan</a></li>
               </ul>
             </li>
-          
-           
+            <li class=" treeview">
+            <a href="{{ url('/shop')}}">
+                <i class="fa fa-shopping-chart"></i>
+                <span>Belanja</span>
+                <span class="label label-primary pull-right"></span>
+              </a>
+              
         </section>
         <!-- /.sidebar -->
       </aside>
@@ -220,11 +215,11 @@
                       </button>
                       <ul class="dropdown-menu" role="menu">
                       @if($pembelian->status_role=="Dihapus")
-                      <li><a href="/deletecart/{{ $pembelian->id }}">Hapus</a></li>
+                      <li><a href="{{ url('/deletecart/{{ $pembelian->id')}}">Hapus</a></li>
                       @else
-                        <li><a href="/bayar/{{ $pembelian->id}}">Konfirmasi Pembayaran</a></li>                      
-                        <li><a href="/editprdks">Edit</a></li>
-                        <li><a href="/deletecart/{{ $pembelian->id }}">Hapus</a></li>
+                        <li><a href="{{ url('bayar/{{ $pembelian->id')}}">Konfirmasi Pembayaran</a></li>    
+                        <li><a href="{{ url('/editprdks')}}">Edit</a></li>
+                        <li><a href="{{ url('/deletecart/{{ $pembelian->id')}}">Hapus</a></li>
                         @endif
                       </ul>
                     </div></td>

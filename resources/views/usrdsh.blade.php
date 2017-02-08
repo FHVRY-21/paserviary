@@ -92,10 +92,10 @@
                   <!-- Menu Footer-->
                   <li class="user-footer">
                     <div class="pull-left">
-                      <a href="/setting" class="btn btn-default btn-flat">Setting</a>
+                      <a href="{{ url('/setting')}}" class="btn btn-default btn-flat">Setting</a>
                     </div>
                     <div class="pull-right">
-                      <a href="/logout" class="btn btn-default btn-flat">Sign out</a>
+                      <a href="{{ url('/logout')}}" class="btn btn-default btn-flat">Sign out</a>
                     </div>
                   </li>
                 </ul>
@@ -136,7 +136,7 @@
           <ul class="sidebar-menu">
             <li class="header"  class="active">Navigasi Utama</li>
             <li class="active treeview">
-            <a href="/usrdsh">
+            <a href="{{ url('/usrdsh')}}">
                 <i class="fa fa-dashboard"></i>
                 <span>Dashboard</span>
                 <span class="label label-primary pull-right"></span>
@@ -146,12 +146,12 @@
                 <i class="fa  fa-envelope"></i> <span>Pesanan</span> <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="/orderusr"><i class="fa fa-circle-o"></i> Daftar Pesanan </a></li>
-                <li><a href="/orderusrh"><i class="fa fa-circle-o"></i>Riwayat Pesanan</a></li>
+                <li><a href="'{{ url('/orderusr')}}'"><i class="fa fa-circle-o"></i> Daftar Pesanan </a></li>
+                <li><a href="{{ url('/orderusrh')}}"><i class="fa fa-circle-o"></i>Riwayat Pesanan</a></li>
               </ul>
             </li>
             <li class=" treeview">
-            <a href="/shop">
+            <a href="{{ url('/shop')}}">
                 <i class="fa fa-shopping-chart"></i>
                 <span>Belanja</span>
                 <span class="label label-primary pull-right"></span>
@@ -189,7 +189,7 @@
                 <div class="icon">
                   <i class="ion ion-bag"></i>
                 </div>
-                <a href="/orderusr" class="small-box-footer">Lihat <i class="fa fa-arrow-circle-right"></i></a>
+                <a href="{{ url('/orderusr')}} class="small-box-footer">Lihat <i class="fa fa-arrow-circle-right"></i></a>
               </div>
             </div><!-- ./col -->
             <div class="col-lg-3 col-xs-6">
@@ -202,7 +202,7 @@
                 <div class="icon">
                   <i class="ion ion-bag"></i>
                 </div>
-                <a href="/orderusr" class="small-box-footer">Lihat <i class="fa fa-arrow-circle-right"></i></a>
+                <a href="{{ url('/orderusr')}}" class="small-box-footer">Lihat <i class="fa fa-arrow-circle-right"></i></a>
               </div>
             </div><!-- ./col -->
             <div class="col-lg-3 col-xs-6">
@@ -215,7 +215,8 @@
                 <div class="icon">
                   <i class="ion ion-leaf"></i>
                 </div>
-                <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+
+                <a href="{{ url('/orderusrh')}}" class="small-box-footer">Lihat <i class="fa fa-arrow-circle-right"></i></a>
               </div>
             </div><!-- ./col -->
             <div class="col-lg-3 col-xs-6">

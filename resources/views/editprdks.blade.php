@@ -116,25 +116,14 @@
                       <small>Member since Nov. 2012</small>
                     </p>
                   </li>
-                  <!-- Menu Body -->
-                  <li class="user-body">
-                    <div class="col-xs-4 text-center">
-                      <a href="#">Followers</a>
-                    </div>
-                    <div class="col-xs-4 text-center">
-                      <a href="#">Sales</a>
-                    </div>
-                    <div class="col-xs-4 text-center">
-                      <a href="#">Friends</a>
-                    </div>
-                  </li>
+                  
                   <!-- Menu Footer-->
                   <li class="user-footer">
                     <div class="pull-left">
-                      <a href="#" class="btn btn-default btn-flat">Profile</a>
+                      <a href="{{ url('/settingusr')}}" class="btn btn-default btn-flat">Profile</a>
                     </div>
                     <div class="pull-right">
-                      <a href="/logout" class="btn btn-default btn-flat">Sign out</a>
+                      <a href="{{ url('/logout')}}" class="btn btn-default btn-flat">Sign out</a>
                     </div>
                   </li>
                 </ul>
@@ -175,30 +164,35 @@
           <ul class="sidebar-menu">
             <li class="header">Navigasi Utama</li>
             <li class=" treeview">
-            <a href="/ptnusr">
+            <a href="{{ url('/ptnusr')}}">
                 <i class="fa fa-dashboard"></i>
                 <span>Dashboard</span>
                 <span class="label label-primary pull-right"></span>
               </a>
-              <li class=" treeview">
+              <li class="treeview">
               <a href="#">
                 <i class="fa fa-leaf"></i> <span>Produksi</span> <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="/inputprdks"><i class="fa fa-circle-o"></i> Input Hasil Produksi </a></li>
-                <li><a href="/prdkstab"><i class="fa fa-circle-o"></i>Data Hasi Produksi</a></li>
+                <li><a href="{{ url('/inputprdks')}}"><i class="fa fa-circle-o"></i> Input Hasil Produksi </a></li>
+                <li><a href="{{ url('/prdkstab')}}"><i class="fa fa-circle-o"></i>Data Hasi Produksi</a></li>
               </ul>
             </li>
-                          <li class="treeview">
+                                      <li class="treeview">
               <a href="#">
                 <i class="fa  fa-envelope"></i> <span>Pesanan</span> <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="/orderptn"><i class="fa fa-circle-o"></i> Daftar Pesanan </a></li>
-                <li><a href="/orderptnh"><i class="fa fa-circle-o"></i>Riwayat Pesanan</a></li>
+                <li><a href="{{ url('/orderptn')}}""><i class="fa fa-circle-o"></i> Daftar Pesanan </a></li>
+                <li><a href="{{ url('/orderptnh')}}"><i class="fa fa-circle-o"></i>Data Hasi Produksi</a></li>
               </ul>
             </li>
-           
+              <li class=" treeview">
+            <a href="{{ url('/shop')}}">
+                <i class="fa fa-shopping-chart"></i>
+                <span>Belanja</span>
+                <span class="label label-primary pull-right"></span>
+              </a>
         </section>
         <!-- /.sidebar -->
       </aside>
@@ -236,7 +230,7 @@
                   <h3 class="box-title">Edit Hasil Produksi</h3>
                 </div><!-- /.box-header -->
                 <!-- form start -->
-                <form role="form" method="POST" action="/updateprdks">
+                <form role="form" method="POST" action="{{ url('/updateprdks')}}">
                   <div class="box-body">
                   <input type="hidden" name="_token" value="{{csrf_token()}}">          
 
@@ -304,7 +298,7 @@
                   </div><!-- /.box-body -->
 
                   <div class="box-footer">
-                    <button type="submit" class="btn btn-primary" formmethod="POST" action="/updateprdks">Submit</button>
+                    <button type="submit" class="btn btn-primary" formmethod="POST" action="{{ url('/updateprdks')}}">Submit</button>
                   </div>
                 </form>
               </div>

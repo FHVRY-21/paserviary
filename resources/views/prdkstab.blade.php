@@ -135,19 +135,20 @@
           <!-- sidebar menu: : style can be found in sidebar.less -->
           <ul class="sidebar-menu">
             <li class="header">Navigasi Utama</li>
-            <li class=" treeview">
-            <a href="/ptnusr">
+           
+            <a href="{{ url('/ptnusr')}}">
                 <i class="fa fa-dashboard"></i>
                 <span>Dashboard</span>
                 <span class="label label-primary pull-right"></span>
               </a>
-              <li class="active treeview">
+              <li class="treeview">
               <a href="#">
                 <i class="fa fa-leaf"></i> <span>Produksi</span> <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="/inputprdks"><i class="fa fa-circle-o"></i> Input Hasil Produksi </a></li>
-                <li class="active"><a href="/prdkstab"><i class="fa fa-circle-o"></i>Data Hasi Produksi</a></li>
+                <li><a href="{{ url('/inputprdks')}}"><i class="fa fa-circle-o"></i> Input Hasil Produksi </a></li>
+                 <li class=" treeview">
+                <li><a href="{{ url('/prdkstab')}}"><i class="fa fa-circle-o"></i>Data Hasil Produksi</a></li>
               </ul>
             </li>
                                       <li class="treeview">
@@ -155,12 +156,16 @@
                 <i class="fa  fa-envelope"></i> <span>Pesanan</span> <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="/orderptn"><i class="fa fa-circle-o"></i> Daftar Pesanan </a></li>
-                <li><a href="/orderptnh"><i class="fa fa-circle-o"></i>Riwayat Pesanan</a></li>
+                <li><a href="{{ url('/orderptn')}}""><i class="fa fa-circle-o"></i> Daftar Pesanan </a></li>
+                <li><a href="{{ url('/orderptnh')}}"><i class="fa fa-circle-o"></i>Data Hasi Produksi</a></li>
               </ul>
             </li>
-          
-           
+              <li class=" treeview">
+            <a href="{{ url('/shop')}}">
+                <i class="fa fa-shopping-chart"></i>
+                <span>Belanja</span>
+                <span class="label label-primary pull-right"></span>
+              </a>
         </section>
         <!-- /.sidebar -->
       </aside>
@@ -225,8 +230,8 @@
                         <span class="sr-only">Toggle Dropdown</span>
                       </button>
                       <ul class="dropdown-menu" role="menu">
-                        <li><a href="/editprdks/{{ $prdks->id}}">Edit</a></li>
-                        <li><a href="/deleteprod/{{ $prdks->id}}">Hapus</a></li>
+                        <li><a href="{{ url('/editprdks/{{ $prdks->id')}}">Edit</a></li>
+                        <li><a href="{{ url('/deleteprod/{{ $prdks->id')}}">Hapus</a></li>
                       </ul>
                     </div></td>
                        

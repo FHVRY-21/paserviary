@@ -1634,7 +1634,7 @@ body.ybc-skin-custom .ybc-menu-item.ybc_hot > span.ybc-menu-item-no-link:first-c
                  <!-- Block user information module NAV  -->
     <h3>-----</h3>
     <div class="header_user_info nav">
-                    <a class="login" href="/" rel="nofollow" title="">
+                    <a class="login" href="{{ url('/')}}" rel="nofollow" title="">
                 Halaman Depan
             </a>
     </div>
@@ -1888,7 +1888,7 @@ body.ybc-skin-custom .ybc-menu-item.ybc_hot > span.ybc-menu-item-no-link:first-c
              {{csrf_field()}}
                 <h3 class="page-subheading">Daftar untuk Segera Berbelanja!</h3>
                 <div class="form_content clearfix">
-                   <a href="/register"> <p>Daftar Di Sini</p> </a>
+                   <a href="{{ url('/register')}}"> <p>Daftar Di Sini</p> </a>
                     <div class="alert alert-danger" id="create_account_error" style="display:none"></div>
                     <div class="form-group">
                     

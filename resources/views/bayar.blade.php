@@ -185,21 +185,29 @@
           <ul class="sidebar-menu">
             <li class="header">Navigasi Utama</li>
             <li class=" treeview">
-            <a href="/usrdsh">
+            <a href="{{ url('/usrdsh')}}">
                 <i class="fa fa-dashboard"></i>
                 <span>Dashboard</span>
                 <span class="label label-primary pull-right"></span>
               </a>
-                                      <li class=" treeview">
+                                      <li class="treeview">
               <a href="#">
                 <i class="fa  fa-envelope"></i> <span>Pesanan</span> <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li class=""><a href="/orderusr"><i class="fa fa-circle-o"></i> Daftar Pesanan </a></li>
-                <li><a href="/orderusrh"><i class="fa fa-circle-o"></i>Riwayat Pesanan</a></li>
+               <li class="active treeview"> 
+                <li><a href="'{{ url('/orderusr')}}'"><i class="fa fa-circle-o"></i> Daftar Pesanan </a></li>
+               
+                <li><a href="{{ url('/orderusrh')}}"><i class="fa fa-circle-o"></i>Riwayat Pesanan</a></li>
               </ul>
             </li>
-          
+            <li class=" treeview">
+            <a href="{{ url('/shop')}}">
+                <i class="fa fa-shopping-chart"></i>
+                <span>Belanja</span>
+                <span class="label label-primary pull-right"></span>
+              </a>
+              
         </section>
         <!-- /.sidebar -->
       </aside>
@@ -229,7 +237,7 @@
                   <h3 class="box-title">Pembayaran</h3>
                 </div><!-- /.box-header -->
                 <!-- form start -->
-                <form role="form" method="POST" action="/inputpembayaran">
+                <form role="form" method="POST" action="{{ url('/inputpembayaran')}}">
                   <div class="box-body">
                   
                                   <input type="hidden" name="_token" value="{{csrf_token()}}">          

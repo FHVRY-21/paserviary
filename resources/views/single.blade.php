@@ -1788,7 +1788,7 @@ body.ybc-skin-custom .ybc-menu-item.ybc_hot > span.ybc-menu-item-no-link:first-c
                     </div> <!-- end pb-left-column -->
         <!-- end left infos-->
         <!-- center infos -->
-         <form role="form" method="POST" action="/inputpembelian">
+         <form role="form" method="POST" action="{{ url('/inputpembelian')}}">
  <input type="hidden" name="_token" value="{{csrf_token()}}">  
         <div class="pb-center-column col-xs-12 col-sm-7">
                         <h1 itemprop="name">{{ $data->nama_barang }}</h1>
