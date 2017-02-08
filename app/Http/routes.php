@@ -20,6 +20,7 @@ Route::get('/register', function () {
 });
 
 Route::get('/shop', 'homecontoller@shop');
+Route::get('/ktg1', 'homecontoller@ktg1');
 Route::get('/dc', 'homecontoller@dc1');
 Route::get('/orderptn', 'homecontoller@orderptn');
 Route::get('/orderusr', 'homecontoller@orderusr');

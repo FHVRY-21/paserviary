@@ -1632,21 +1632,11 @@ body.ybc-skin-custom .ybc-menu-item.ybc_hot > span.ybc-menu-item-no-link:first-c
                                             <div class="nav nav_style_1">
                 <i class="fa fa-times" aria-hidden="true"></i>              
                  <!-- Block user information module NAV  -->
-    <h3>Account</h3>
+    <h3>-----</h3>
     <div class="header_user_info nav">
-                    <a class="login" href="loginfd9a.html" rel="nofollow" title="Log in to your customer account">
-                Log in
+                    <a class="login" href="/" rel="nofollow" title="">
+                Halaman Depan
             </a>
-            <a href="loginfd9a.html" title="View my customer account" class="account" rel="nofollow">
-                <span class="hidden_mobile">My Account</span>
-            </a>
-            
-                <a class="bt_wishlist_userinfor"    href="logind3db.html" title="My wishlists">
-           <span>My wishlists</span>
-        </a>
-        <a class="bt_compate-prod"  href="products-comparison.html" title="My comparision">
-           <span>My comparision</span>
-        </a>
     </div>
 <!-- /Block usmodule NAV -->
 <!-- Block languages module -->
@@ -1709,233 +1699,7 @@ body.ybc-skin-custom .ybc-menu-item.ybc_hot > span.ybc-menu-item-no-link:first-c
                         </a>
                     </div>
                     <!-- MODULE Block cart -->
-<div class="custom_block_cart ">
-    <div class="shopping_cart">
-        <a href="quick-order.html" title="View my shopping cart" rel="nofollow">
-            <span class="ajax_cart_quantity">
-                
-            </span>         
-                           
-            <span class="ajax_cart_total">
-                                                                                    $462.99
-                                                                </span>
-            
-                    </a>
-                    <div class="cart_block block exclusive">
-                <div class="block_content">
-                    <!-- block list of products -->
-                    <div class="cart_block_list">
-                                                    <dl class="products">
-<dt data-id="cart_block_product_9_0_0" class="first_item">
-                                        <a class="cart-images" href="home/9-faded-short-sleeves-t-shirt.html" title="Faded Short Sleeves T-shirt">
-                                        <img src="../49-cart_default/faded-short-sleeves-t-shirt.jpg" alt="Faded Short Sleeves T-shirt" /></a>
-                                        <div class="cart-info">
-                                            <div class="product-name">
-                                                <a class="cart_block_product_name" href="home/9-faded-short-sleeves-t-shirt.html" title="Faded Short Sleeves T-shirt">Faded Short Sleeves T-shirt</a>
-                                                <span class="quantity-formated">&nbsp;x&nbsp;<span class="quantity">2</span></span>
-                                            </div>
-                                                                                        <span class="price">
-                                                                                                    $68.00                                                    <div class="hookDisplayProductPriceBlock-price">
-                                                        
-                                                    </div>
-                                                                                            </span>
-                                        </div>
-                                        <span class="remove_link">
-                                                                                            <a class="ajax_cart_block_remove_link" href="quick-order.html?delete=1&amp;id_product=9&amp;ipa=0&amp;id_address_delivery=0&amp;token=9722816b1e0214a2b2c9d85ab2d0a397" rel="nofollow" title="remove this product from my cart">&nbsp;</a>
-                                                                                    </span>
-                                    </dt>
-                                                                        <!-- Customizable datas -->
-                                                                                                                                                                                                                    <dt data-id="cart_block_product_4_16_0" class="item">
-                                        <a class="cart-images" href="evening-dresses/4-printed-dress.html" title="Printed Dress">
-                                        <img src="../10-cart_default/printed-dress.jpg" alt="Printed Dress" /></a>
-                                        <div class="cart-info">
-                                            <div class="product-name">
-                                                <a class="cart_block_product_name" href="evening-dresses/4-printed-dress.html#/size-s/color-beige" title="Printed Dress">Printed Dress</a>
-                                                <span class="quantity-formated">&nbsp;x&nbsp;<span class="quantity">2</span></span>
-                                            </div>
-                                                                                            <div class="product-atributes">
-                                                    <a href="evening-dresses/4-printed-dress.html#/size-s/color-beige" title="Product detail">S, Beige</a>
-                                                </div>
-                                                                                        <span class="price">
-                                                                                                    $101.99                                                    <div class="hookDisplayProductPriceBlock-price">
-                                                        
-                                                    </div>
-                                                                                            </span>
-                                        </div>
-                                        <span class="remove_link">
-                                                                                            <a class="ajax_cart_block_remove_link" href="quick-order.html?delete=1&amp;id_product=4&amp;ipa=16&amp;id_address_delivery=0&amp;token=9722816b1e0214a2b2c9d85ab2d0a397" rel="nofollow" title="remove this product from my cart">&nbsp;</a>
-                                                                                    </span>
-                                    </dt>
-                                                                            <dd data-id="cart_block_combination_of_4_16_0" class="item">
-                                                                        <!-- Customizable datas -->
-                                                                        </dd>                                                                                                                                           <dt data-id="cart_block_product_5_19_0" class="item">
-                                        <a class="cart-images" href="summer-dresses/5-printed-summer-dress.html" title="Printed Summer Dress">
-                                        <img src="../12-cart_default/printed-summer-dress.jpg" alt="Printed Summer Dress" /></a>
-                                        <div class="cart-info">
-                                            <div class="product-name">
-                                                <a class="cart_block_product_name" href="summer-dresses/5-printed-summer-dress.html#/size-s/color-yellow" title="Printed Summer Dress">Printed Summer Dress</a>
-                                                <span class="quantity-formated">&nbsp;x&nbsp;<span class="quantity">2</span></span>
-                                            </div>
-                                                                                            <div class="product-atributes">
-                                                    <a href="summer-dresses/5-printed-summer-dress.html#/size-s/color-yellow" title="Product detail">S, Yellow</a>
-                                                </div>
-                                                                                        <span class="price">
-                                                                                                    $57.96                                                    <div class="hookDisplayProductPriceBlock-price">
-                                                        
-                                                    </div>
-                                                                                            </span>
-                                        </div>
-                                        <span class="remove_link">
-                                                                                            <a class="ajax_cart_block_remove_link" href="quick-order.html?delete=1&amp;id_product=5&amp;ipa=19&amp;id_address_delivery=0&amp;token=9722816b1e0214a2b2c9d85ab2d0a397" rel="nofollow" title="remove this product from my cart">&nbsp;</a>
-                                                                                    </span>
-                                    </dt>
-                                                                            <dd data-id="cart_block_combination_of_5_19_0" class="item">
-                                                                        <!-- Customizable datas -->
-                                                                        </dd>                                                                                                                                           <dt data-id="cart_block_product_6_31_0" class="item">
-                                        <a class="cart-images" href="summer-dresses/6-printed-summer-dress.html" title="Printed Summer Dress">
-                                        <img src="../16-cart_default/printed-summer-dress.jpg" alt="Printed Summer Dress" /></a>
-                                        <div class="cart-info">
-                                            <div class="product-name">
-                                                <a class="cart_block_product_name" href="summer-dresses/6-printed-summer-dress.html#/size-s/color-yellow" title="Printed Summer Dress">Printed Summer Dress</a>
-                                                <span class="quantity-formated">&nbsp;x&nbsp;<span class="quantity">2</span></span>
-                                            </div>
-                                                                                            <div class="product-atributes">
-                                                    <a href="summer-dresses/6-printed-summer-dress.html#/size-s/color-yellow" title="Product detail">S, Yellow</a>
-                                                </div>
-                                                                                        <span class="price">
-                                                                                                    $61.01                                                    <div class="hookDisplayProductPriceBlock-price">
-                                                        
-                                                    </div>
-                                                                                            </span>
-                                        </div>
-                                        <span class="remove_link">
-                                                                                            <a class="ajax_cart_block_remove_link" href="quick-order.html?delete=1&amp;id_product=6&amp;ipa=31&amp;id_address_delivery=0&amp;token=9722816b1e0214a2b2c9d85ab2d0a397" rel="nofollow" title="remove this product from my cart">&nbsp;</a>
-                                                                                    </span>
-                                    </dt>
-                                                                            <dd data-id="cart_block_combination_of_6_31_0" class="item">
-                                                                        <!-- Customizable datas -->
-                                                                        </dd>                                                                                                                                           <dt data-id="cart_block_product_3_13_0" class="item">
-                                        <a class="cart-images" href="casual-dresses/3-printed-dress.html" title="Printed Dress">
-                                        <img src="../39-cart_default/printed-dress.jpg" alt="Printed Dress" /></a>
-                                        <div class="cart-info">
-                                            <div class="product-name">
-                                                <a class="cart_block_product_name" href="casual-dresses/3-printed-dress.html#/size-s/color-orange" title="Printed Dress">Printed Dress</a>
-                                                <span class="quantity-formated">&nbsp;x&nbsp;<span class="quantity">3</span></span>
-                                            </div>
-                                                                                            <div class="product-atributes">
-                                                    <a href="casual-dresses/3-printed-dress.html#/size-s/color-orange" title="Product detail">S, Orange</a>
-                                                </div>
-                                                                                        <span class="price">
-                                                                                                    $66.00                                                    <div class="hookDisplayProductPriceBlock-price">
-                                                        
-                                                    </div>
-                                                                                            </span>
-                                        </div>
-                                        <span class="remove_link">
-                                                                                            <a class="ajax_cart_block_remove_link" href="quick-order.html?delete=1&amp;id_product=3&amp;ipa=13&amp;id_address_delivery=0&amp;token=9722816b1e0214a2b2c9d85ab2d0a397" rel="nofollow" title="remove this product from my cart">&nbsp;</a>
-                                                                                    </span>
-                                    </dt>
-                                                                            <dd data-id="cart_block_combination_of_3_13_0" class="item">
-                                                                        <!-- Customizable datas -->
-                                                                        </dd>                                                                                                                                           <dt data-id="cart_block_product_7_34_0" class="item">
-                                        <a class="cart-images" href="summer-dresses/7-printed-chiffon-dress.html" title="Printed Chiffon Dress">
-                                        <img src="../43-cart_default/printed-chiffon-dress.jpg" alt="Printed Chiffon Dress" /></a>
-                                        <div class="cart-info">
-                                            <div class="product-name">
-                                                <a class="cart_block_product_name" href="summer-dresses/7-printed-chiffon-dress.html#/size-s/color-yellow" title="Printed Chiffon Dress">Printed Chiffon Dress</a>
-                                                <span class="quantity-formated">&nbsp;x&nbsp;<span class="quantity">3</span></span>
-                                            </div>
-                                                                                            <div class="product-atributes">
-                                                    <a href="summer-dresses/7-printed-chiffon-dress.html#/size-s/color-yellow" title="Product detail">S, Yellow</a>
-                                                </div>
-                                                                                        <span class="price">
-                                                                                                    $46.50                                                    <div class="hookDisplayProductPriceBlock-price">
-                                                        
-                                                    </div>
-                                                                                            </span>
-                                        </div>
-                                        <span class="remove_link">
-                                                                                            <a class="ajax_cart_block_remove_link" href="quick-order.html?delete=1&amp;id_product=7&amp;ipa=34&amp;id_address_delivery=0&amp;token=9722816b1e0214a2b2c9d85ab2d0a397" rel="nofollow" title="remove this product from my cart">&nbsp;</a>
-                                                                                    </span>
-                                    </dt>
-                                                                            <dd data-id="cart_block_combination_of_7_34_0" class="item">
-                                                                        <!-- Customizable datas -->
-                                                                        </dd>                                                                                                                                           <dt data-id="cart_block_product_1_1_0" class="item">
-                                        <a class="cart-images" href="accessories/1-faded-short-sleeves-tshirt.html" title="Faded Short Sleeves T-shirt">
-                                        <img src="../1-cart_default/faded-short-sleeves-tshirt.jpg" alt="Faded Short Sleeves T-shirt" /></a>
-                                        <div class="cart-info">
-                                            <div class="product-name">
-                                                <a class="cart_block_product_name" href="accessories/1-faded-short-sleeves-tshirt.html#/size-s/color-orange" title="Faded Short Sleeves T-shirt">Faded Short Sleeves T-shirt</a>
-                                                <span class="quantity-formated">&nbsp;x&nbsp;<span class="quantity">3</span></span>
-                                            </div>
-                                                                                            <div class="product-atributes">
-                                                    <a href="accessories/1-faded-short-sleeves-tshirt.html#/size-s/color-orange" title="Product detail">S, Orange</a>
-                                                </div>
-                                                                                        <span class="price">
-                                                                                                    $34.53                                                    <div class="hookDisplayProductPriceBlock-price">
-                                                        
-                                                    </div>
-                                                                                            </span>
-                                        </div>
-                                        <span class="remove_link">
-                                                                                            <a class="ajax_cart_block_remove_link" href="quick-order.html?delete=1&amp;id_product=1&amp;ipa=1&amp;id_address_delivery=0&amp;token=9722816b1e0214a2b2c9d85ab2d0a397" rel="nofollow" title="remove this product from my cart">&nbsp;</a>
-                                                                                    </span>
-                                    </dt>
-                                                                            <dd data-id="cart_block_combination_of_1_1_0" class="item">
-                                                                        <!-- Customizable datas -->
-                                                                        </dd>                                                                                                                                           <dt data-id="cart_block_product_2_7_0" class="last_item">
-                                        <a class="cart-images" href="blouses/2-blouse.html" title="Blouse">
-                                        <img src="../7-cart_default/blouse.jpg" alt="Blouse" /></a>
-                                        <div class="cart-info">
-                                            <div class="product-name">
-                                                <a class="cart_block_product_name" href="blouses/2-blouse.html#/size-s/color-black" title="Blouse">Blouse</a>
-                                                <span class="quantity-formated">&nbsp;x&nbsp;<span class="quantity">1</span></span>
-                                            </div>
-                                                                                            <div class="product-atributes">
-                                                    <a href="blouses/2-blouse.html#/size-s/color-black" title="Product detail">S, Black</a>
-                                                </div>
-                                                                                        <span class="price">
-                                                                                                    $27.00                                                    <div class="hookDisplayProductPriceBlock-price">
-                                                        
-                                                    </div>
-                                                                                            </span>
-                                        </div>
-                                        <span class="remove_link">
-                                                                                            <a class="ajax_cart_block_remove_link" href="quick-order.html?delete=1&amp;id_product=2&amp;ipa=7&amp;id_address_delivery=0&amp;token=9722816b1e0214a2b2c9d85ab2d0a397" rel="nofollow" title="remove this product from my cart">&nbsp;</a>
-                                                                                    </span>
-                                    </dt>
-                                                                            <dd data-id="cart_block_combination_of_2_7_0" class="last_item">
-                                                                        <!-- Customizable datas -->
-                                                                        </dd>                                                           </dl>
-                                                <p class="cart_block_no_products unvisible">
-                            No products
-                        </p>
-                                                                        <div class="cart-prices">
-                            <div class="cart-prices-line first-line free-shipping">
-                                <span class="price cart_block_shipping_cost ajax_cart_shipping_cost">
-                                                                            $7.00
-                                                                    </span>
-                                <span>
-                                    Shipping
-                                </span>
-                            </div>
-                                                                                    <div class="cart-prices-line last-line">
-                                <span class="price cart_block_total ajax_block_cart_total">$469.99</span>
-                                <span>Total</span>
-                            </div>
-                                                    </div>
-                        <p class="cart-buttons">  
-                            <a id="button_order_cart" class="btn btn-default button button-small" href="quick-order.html" title="Check out" rel="nofollow">
-                                <span>
-                                    Check out
-                                </span>
-                            </a>
-                        </p>
-                    </div>
-                </div>
-            </div><!-- .cart_block -->
-            </div>
-</div>
+<div class="custom_block_cart ">    
 
     <div id="layer_cart">
         <div class="clearfix">
@@ -2059,194 +1823,15 @@ body.ybc-skin-custom .ybc-menu-item.ybc_hot > span.ybc-menu-item-no-link:first-c
         <div class="ybc-menu-main-content" id="ybc-menu-main-content">            
 
                 <ul class="ybc-menu">  
-                                                                        <li class="ybc-menu-has-sub ybc-menu-item  ybc-menu-sub-type-home ybc-menu-column-type-full  sub-type-title" id="ybc-menu-1">   
-                                    <!-- level 1 -->
-                                                                           <a class="ybc-menu-item-link" href="index.html"><span>Home</span> <span class="fa fa-submenu-exist"></span></a>
-                                                                        <!-- /leve 1 -->
-                                    <!-- Columns -->
-                                                                            <span class="ybc-mm-control closed"></span>
-                                        <div style="width: 100%;" class="ybc-menu-columns-wrapper ybc-mm-control-content" id="ybc-menu-columns-wrapper-1">
-                                                        <!-- Column content -->     
-                                                                                                                    <div class="ybc-menu-column-top">                                                 
-                                                          
-                                                        <!-- /Column content -->                                                        
-                                                        <!-- Blocks -->
-                                                                                                               <!-- /Blocks --> 
-                                                    </div>   
-                                                                                      
-                                                                                                                                                <div class="ybc-menu-column-item ybc-menu-column-size-3_12 " id="ybc-menu-column-27">
-                                                        <!-- Column content -->     
-                         
-                                                          
-                                                        <!-- /Column content -->                                                        
-                                                        <!-- Blocks -->
-                                                                                                               <!-- /Blocks --> 
-                                                    </div>   
-                                                                                      
-                                                                                                                                                <div class="ybc-menu-column-item ybc-menu-column-size-3_12 " id="ybc-menu-column-28">
-                                                        <!-- Column content -->     
-                                                                                                                    <div class="ybc-menu-column-top">                                                 
-
-                                                          
-                                                        <!-- /Column content -->                                                        
-                                                        <!-- Blocks -->
-                                                                                                               <!-- /Blocks --> 
-                                                    </div>   
-                                                                                      
-                                                                                                                                                <div class="ybc-menu-column-item ybc-menu-column-size-3_12 " id="ybc-menu-column-29">
-                                                        <!-- Column content -->     
-                                                                                                                    <div class="ybc-menu-column-top">                                                 
-<                                                            </div>
-                                                          
-                                                        <!-- /Column content -->                                                        
-                                                        <!-- Blocks -->
-                                                                                                               <!-- /Blocks --> 
-                                                    </div>   
-                                                                                      
-                                                                                                                                </div>
-                                                                     <!-- /Columns  -->     
-                            </li> 
-                                           
-                                                                        <li class="ybc-menu-has-sub ybc-menu-item  ybc-menu-sub-type-custom ybc-menu-column-type-full  sub-type-title" id="ybc-menu-2"> 
-                                    <!-- level 1 -->
-                                                                         <a class="ybc-menu-item-link" href="https://theme.yourbestcode.com/perfect/3-fashion"><span>Kategori</span> <span class="fa fa-submenu-exist"></span></a>
-                                                                        <!-- /leve 1 -->
-                                    <!-- Columns -->
-                                                                            <span class="ybc-mm-control closed"></span>
-                                        <div style="width: 100%;" class="ybc-menu-columns-wrapper ybc-mm-control-content" id="ybc-menu-columns-wrapper-2">
- <div class="ybc-menu-column-item ybc-menu-column-size-3_12 " id="ybc-menu-column-6">
-                                                        <!-- Column content -->     
-               <div class="ybc-menu-column-top">                                                 
-<h6>Buah</h6>
-<div class="ybc_description_block"><ul><li><a href="#">Belanja</a></li>
-<li><a href="#">Favorit</a></li>
-<li><a href="#">Pilihan</a></li>
-
-</ul></div>                                                            </div>
-                                                          
-                                                        <!-- /Column content -->                                                      
-                                                        <!-- Blocks -->
-                                                                                                               <!-- /Blocks --> 
-                                            </div>   
-                                                                                      
-<div class="ybc-menu-column-item ybc-menu-column-size-3_12 " id="ybc-menu-column-7">
-                                                        <!-- Column content -->     
-<div class="ybc-menu-column-top">                                                 
-<h6>Sayur</h6>                                                                                                                                <div class="ybc_description_block"><ul><li><a href="#">Belanja</a></li>
-<li><a href="#">Favorit</a></li>
-<li><a href="#">Pilihan</a></li>
-
-</ul></div>                                                            </div>
-                                                          
-                                                        <!-- /Column content -->                                                      
-                                                        <!-- Blocks -->
-                                                                                                               <!-- /Blocks --> 
-                                            </div>   
-                                                                                      
-                                                                                                                                  <div class="ybc-menu-column-item ybc-menu-column-size-3_12 " id="ybc-menu-column-8">
-                                                        <!-- Column content -->     
-                                                                                                                    <div class="ybc-menu-column-top">                                                 
-<h6>Daging Merah</h6>                                  
-<div class="ybc_description_block"><ul><li><a href="#">Belanja</a></li>
-<li><a href="#">Favorit</a></li>
-<li><a href="#">Pilihan</a></li>
-
-</ul></div>                                                            </div>
-                                                          
-                                                        <!-- /Column content -->                                                      
-                                                        <!-- Blocks -->
-                                                                                                               <!-- /Blocks --> 
-                                            </div>   
-                                                                                      
-                                                                                                                                  <div class="ybc-menu-column-item ybc-menu-column-size-3_12 " id="ybc-menu-column-9">
-                                                        <!-- Column content -->     
-                                                                                                                    <div class="ybc-menu-column-top">                                                 
-                                                                <h6>Daging Putih</h6>                                                         <div class="ybc_description_block"><ul><li><a href="#">Belanja</a></li>
-<li><a href="#">Favorit</a></li>
-<li><a href="#">Pilihan</a></li>
-</ul></div>                                                            </div>
-                                                          
-                                                        <!-- /Column content -->                                                      
-                                                        <!-- Blocks -->
-                                                                                                               <!-- /Blocks --> 
-                                            </div>   
-                                                                                      
-                                                                                                                                  <div class="ybc-menu-column-item ybc-menu-column-size-6_12 " id="ybc-menu-column-10">
-                                                        <!-- Column content -->     
-                                                                                                                    <div class="ybc-menu-column-top">                                                 
-                                                   <img src="modules/ybc_megamenu/images/column/bgmenu1.png" alt="image" />                                                                                                                            </div>
-                                                          
-                                                        <!-- /Column content -->                                                      
-                                                        <!-- Blocks -->
-                                                                                                               <!-- /Blocks --> 
-                                            </div>   
-                                                                                      
-      <div class="ybc-menu-column-item ybc-menu-column-size-6_12 " id="ybc-menu-column-11">
-                                                        <!-- Column content -->     
- <div class="ybc-menu-column-top">                                                 
-<img src="modules/ybc_megamenu/images/column/bgmenu2.png" alt="image" />                                                                                                                            </div>
-                                                          
-                                                        <!-- /Column content -->                                                      
-                                                        <!-- Blocks -->
-                                                                                                               <!-- /Blocks --> 
-                                            </div>   
-                                                                                      
-                                                                                                                          </div>
-                                                                     <!-- /Columns  -->   
-                    </li> 
-                                           
-                                                                        <li class=" ybc-menu-item  ybc-menu-sub-type-custom ybc-menu-column-type-full  sub-type-title" id="ybc-menu-17">    
-                                    <!-- level 1 -->
-                                                                           <a class="ybc-menu-item-link" href="24-cameras.html"><span>Cameras</span></a>
-                                                                        <!-- /leve 1 -->
-                                    <!-- Columns -->
-                                                                     <!-- /Columns  -->     
-                            </li> 
-                                           
-                                                                        <li class=" ybc-menu-item  ybc-menu-sub-type-custom ybc-menu-column-type-full  sub-type-title" id="ybc-menu-16">    
-                                    <!-- level 1 -->
-                                                                           <a class="ybc-menu-item-link" href="23-phones.html"><span>Phones</span></a>
-                                                                        <!-- /leve 1 -->
-                                    <!-- Columns -->
-                                                                     <!-- /Columns  -->     
-                            </li> 
-                                           
-                                                                        <li class="ybc-menu-has-sub ybc-menu-item  ybc-menu-sub-type-custom ybc-menu-column-type-left  sub-type-title" id="ybc-menu-8"> 
-                                    <!-- level 1 -->
-                                                                           <a class="ybc-menu-item-link" href="https://theme.yourbestcode.com/perfect/blog"><span>Blog</span> <span class="fa fa-submenu-exist"></span></a>
-                                                                        <!-- /leve 1 -->
-                                    <!-- Columns -->
-                                                                            <span class="ybc-mm-control closed"></span>
-                                        <div  class="ybc-menu-columns-wrapper ybc-mm-control-content" id="ybc-menu-columns-wrapper-8">
-                                                                                                                                                                                            <div class="ybc-menu-column-item ybc-menu-column-size-12_12 " id="ybc-menu-column-25">
-                                                        <!-- Column content -->     
-                                                                                                                    <div class="ybc-menu-column-top">                                                 
-                                                                                                                                                                                                <div class="ybc_description_block"><ul><li><a href="https://theme.yourbestcode.com/perfect/blog">Main page</a></li>
-<li><a href="https://theme.yourbestcode.com/perfect/blog/post/1-sample-post1.html">Post page</a></li>
-<li><a href="https://theme.yourbestcode.com/perfect/blog/category/1-fashion.html">Category page</a></li>
-<li><a href="https://theme.yourbestcode.com/perfect/blog/author/1-dola-nguyen">Author page</a></li>
-</ul></div>                                                            </div>
-                                                          
-                                                        <!-- /Column content -->                                                        
-                                                        <!-- Blocks -->
-                                                                                                               <!-- /Blocks --> 
-                                                    </div>   
-                                                                                      
-                                                                                                                                </div>
-                                                                     <!-- /Columns  -->     
-                            </li> 
-                                           
-                                                                        <li class="ybc-menu-has-sub ybc-menu-item  ybc-menu-sub-type-contact ybc-menu-column-type-left  sub-type-title" id="ybc-menu-5">    
-                                    <!-- level 1 -->
-                                                                           <a class="ybc-menu-item-link" href="contact-us.html"><span>Contact</span> <span class="fa fa-submenu-exist"></span></a>
+                                                                       </ul>
                                                                         <!-- /leve 1 -->
                                     <!-- Columns -->
                                                                             <span class="ybc-mm-control closed"></span>
                                         <div  class="ybc-menu-columns-wrapper ybc-mm-control-content" id="ybc-menu-columns-wrapper-5">
-                                                                                                                                                                                            <div class="ybc-menu-column-item ybc-menu-column-size-12_12 " id="ybc-menu-column-12">
+<div class="ybc-menu-column-item ybc-menu-column-size-12_12 " id="ybc-menu-column-12">
                                                         <!-- Column content -->     
-                                                                                                                    <div class="ybc-menu-column-top">                                                 
-                                                                                                                                                                                                <div class="ybc_description_block"><ul><li><a href="contact-usdb53.html?YBC_TC_CONTACT_FORM_LAYOUT=layout1">Contact page 1</a></li>
+\<div class="ybc-menu-column-top">                                                 
+<div class="ybc_description_block"><ul><li><a href="contact-usdb53.html?YBC_TC_CONTACT_FORM_LAYOUT=layout1">Contact page 1</a></li>
 <li><a href="contact-us2740.html?YBC_TC_CONTACT_FORM_LAYOUT=layout2">Contact page 2</a></li>
 <li><a href="contact-us34ed.html?YBC_TC_CONTACT_FORM_LAYOUT=layout3">Contact page 3</a></li>
 </ul></div>                                                            </div>
@@ -2308,36 +1893,20 @@ body.ybc-skin-custom .ybc-menu-item.ybc_hot > span.ybc-menu-item-no-link:first-c
              {{csrf_field()}}
                 <h3 class="page-subheading">Daftar untuk Segera Berbelanja!</h3>
                 <div class="form_content clearfix">
-                    <p>Lengkapi Data di Bawah.</p>
+                    <p>Harus Daftar!!</p>
                     <div class="alert alert-danger" id="create_account_error" style="display:none"></div>
                     <div class="form-group">
-                     <label for="email_create">Nama Depan</label>
-                        <input type="" class="is_required validate account_input form-control" name="nama_depan" value="" />
-                         <label for="email_create">Nama Belakang</label>
-                        <input type="" class="is_required validate account_input form-control" name="nama_belakang" value="" />
-                         <label for="email_create">Role</label>
-                        <input type="" class="is_required validate account_input form-control" name="role" value="" />
-                        <label for="email_create">Email</label>
-                        <input type="" class="is_required validate account_input form-control" data-validate="isEmail" id="email_create" name="email" value="" />
-                         <label for="">Kata Sandi</label>
-                        <input type="" class="is_required validate account_input form-control" name="password" value="" />
-                         <label for="emaik">Konfirmasi Kata Sandi</label>
-                        <input type="" class="is_required validate account_input form-control" name="email_create" value="" />
+                    
                     </div>
                     <div class="submit">
-                        <input type="hidden" class="hidden" name="register" value="register" />                     <button class="btn btn-default button button-medium exclusive" type="submit" id="SubmitCreate" name="SubmitCreate" >
+                        <input type="hidden" class="hidden" name="register" value="register" />                     <button class="btn btn-default button button-medium exclusive" href="/register">
                             <span>
                                 <i class="icon-user left"></i>
-                                Buat 
+                                Daftar 
                             </span>
                         </button>
 &nbsp;
-                         <input type="hidden" class="hidden" name="back" value="" />                     <button class="btn btn-default button button-medium exclusive" type="submit" id="SubmitCreate" name="SubmitCreate">
-                            <span>
-                                <i class="icon-user left"></i>
-                                Sebagai Petani
-                            </span>
-                        </button>
+                        
                         <input type="hidden" class="hidden" name="SubmitCreate" value="Create an account" />
                     </div>
                 </div>

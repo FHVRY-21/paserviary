@@ -21,9 +21,23 @@ class homecontoller extends Controller
 	{
 
 		$data = \App\Prdks::all();
-	// $bebek = DB::table('pembelian')->where('id_user',$Auth::user()->id)->count();
-	return view('shop')->with('data',$data);	
+	$bebek = DB::table('prdks')->count();
+	$bebek1 = DB::table('prdks')->where('kategori', "Sayur")->count();
+	$bebek2 = DB::table('prdks')->where('kategori', "Buah")->count();
+	$bebek3 = DB::table('prdks')->where('kategori', "Rempah-Rempah")->count();
+
+	return view('shop')->with('data',$data)->with('bebek', $bebek)->with('bebek1', $bebek1)->with('bebek2', $bebek2)->with('bebek3', $bebek3);	
 	}
+
+		public function ktg1()
+	{
+$data = \App\Prdks::where('kategori',"Buah")->get();
+$bebek = DB::table('prdks')->count();
+	$bebek1 = DB::table('prdks')->where('kategori', "Sayur")->count();
+	$bebek2 = DB::table('prdks')->where('kategori', "Buah")->count();
+	$bebek3 = DB::table('prdks')->where('kategori', "Rempah-Rempah")->count();
+		return view('shop')->with('data',$data)->with('bebek', $bebek)->with('bebek1', $bebek1)->with('bebek2', $bebek2)->with('bebek3', $bebek3);
+	}	
 
 
 	   public function login()
@@ -57,11 +71,14 @@ $data = \App\Pembayaran::where('status',"Sudah Dikonfirmasi")->get();
 		return view('orderptnh')->with('data',$data);
 	}
 
+		
+
 				public function orderusr()
 	{
 		$data = \App\Pembelian::where('status_pembayaran',"Belum Dibayar") ->orWhere(function ($query) {
                 $query->where('status_pembayaran',"Menunggu Konfirmasi");
             })->get();
+		
 		return view('orderusr')->with('data',$data);
 	}
 
@@ -92,6 +109,7 @@ $data = \App\Pembayaran::where('status',"Sudah Dikonfirmasi")->get();
 		$data->kategori = Input::get('kategori');
 		$data->tanggal_panen = Input::get('tanggal_panen');
 		$data->id_petani = Input::get('id_petani');
+		$data->desr = Input::get('desr');
 		$data->nama_petani = Input::get('nama_petani');
 		$data->no_rekening = Input::get('no_rekening');
 		$data->tgl_post =  date("Y-m-d H:i:s");
@@ -175,17 +193,26 @@ return view('single')->with('data',$data);
 
 public function deleteprod($id)
 {
-$p = \App\Pembelian::where('id_prdks', $id)->first();
-$status_role = "Dihapus";
-$p->status_role = $status_role;
-$p->save();
+// if ($p = \App\Pembelian::where('id_prdks', $id)->first()) {
+// 	$p->status_role = "Dihapus";
+// // $p->status = $status;
+// $p->save();
+
+// $p = \App\Prdks::find($id);
+// $p->delete();
+
+// return view('prdkstab')->with('data',$data);
+// }
+// else{
+
 	
-$data = \App\Prdks::find($id);
-$data->delete();
+// // $data = \App\Prdks::find($id);
+// // $data->delete();
 
 
-$data = \App\Prdks::all();
-return view('prdkstab')->with('data',$data);
+// // $data = \App\Prdks::all();
+// // return view('prdkstab')->with('data',$data);
+// }
 }
 public function deletecart($id)
 {
@@ -239,7 +266,6 @@ public function updateusr(Request $r){
 	$s= \App\User::find(Auth::user()->id);
 	$s->nama_depan = $r->nama_depan;
 	$s->nama_belakang = $r->nama_belakang;
-	
 	$s->alamat = $r->alamat;
 	$s->no_rekening = $r->no_rekening;
 	$s->no_telp = $r->no_telp;

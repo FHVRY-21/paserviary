@@ -274,7 +274,7 @@
                       <div class="input-group-addon">
                         <i class="fa fa-calendar"></i>
                       </div>
-                      <input name="tanggal_panen" type="text" class="form-control" data-inputmask="'alias': 'hh/bb/tttt'" data-mask>
+                      <input name="tanggal_panen" type="text" class="form-control" value="tttt/mm/dd">
                     </div><!-- /.input group -->
                   
                   <br>
@@ -289,7 +289,7 @@
                   <label for="exampleInputEmail1">Deskripsi</label>
   <div class="input-group">                  
                     <span class="input-group-addon"><i class="fa fa-calculator"></i></span>
-                    <input type="textbox" class="form-control" name="deskripsi">
+                    <textarea class="form-control" name="desr"></textarea>
                   </div>
                   <br>
 <input type="hidden" name="id_petani" value="{{ \Auth::user()->id }} ">

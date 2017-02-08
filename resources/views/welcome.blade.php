@@ -1923,6 +1923,8 @@ body.ybc-skin-custom .ybc-menu-item.ybc_hot > span.ybc-menu-item-no-link:first-c
             style="">
                 <div class="ybc-nivo-slider-wrapper">
               <div id="ybc-nivo-slider">
+
+
                                                                                 <a href="https://www.prestashop.com%26utm_campaign%3dback-office-en%26utm_content%3ddownload/index.html" 
                                     title="Women fashion and accessories">
                           <img data-id-slide="2" 
@@ -1966,7 +1968,7 @@ body.ybc-skin-custom .ybc-menu-item.ybc_hot > span.ybc-menu-item-no-link:first-c
                                           src="modules/ybc_nivoslider/images/093d9f8cb313c3542070929a42fa8b4bfc7c5cc5_slider1-2.jpg" 
                                           alt="Be the first of the changes" 
                                           title="Be the first of the changes" 
-                                          style="max-width: 100%; max-height: 100%;" 
+                                          style="max-width: 100%; max-height: 100%; " 
                                         />              
                                     </a>
                                                                            

@@ -1652,16 +1652,29 @@ body.ybc-skin-custom .ybc-menu-item.ybc_hot > span.ybc-menu-item-no-link:first-c
                     <a class="login" href="/ptnusr" rel="nofollow" title="Dashboard">
                 Dashboard
             </a>
+            <a class="login" href="/inputprdks" rel="nofollow" title="Dashboard">
+                Input Hasil Produksi
+            </a>
+            <a class="login" href="/prdkstab" rel="nofollow" title="Dashboard">
+                Daftar Hasil Produksi
+            </a>
+            <a class="login" href="/orderptn" rel="nofollow" title="Dashboard">
+                Pesanan
+            </a>
+
       @elseif(Auth::user()->role == "User")
       <a class="login" href="/usrdsh" rel="nofollow" title="Dashboard">
                 Dashboard
             </a>        
-            <a href="loginfd9a.html" title="View my customer account" class="account" rel="nofollow">
-                <span class="hidden_mobile">Cart</span>
+            <a href="/orderusr" title="View my customer account" class="account" rel="nofollow">
+                <span class="hidden_mobile">Daftar Pesanan</span>
             </a>
             
                 <a class="bt_wishlist_userinfor"    href="logind3db.html" title="My wishlists">
-           <span>Pesanan</span>
+           <span>Riwayat Pesanan</span>
+        </a>
+         <a class="bt_wishlist_userinfor"    href="/logout" title="My wishlists">
+           <span>Log out</span>
         </a>
         @endif
     </div>
@@ -1936,144 +1949,16 @@ body.ybc-skin-custom .ybc-menu-item.ybc_hot > span.ybc-menu-item-no-link:first-c
         <div class="ybc-menu-main-content" id="ybc-menu-main-content">            
 
                 <ul class="ybc-menu">  
-                                                                        <li class="ybc-menu-has-sub ybc-menu-item  ybc-menu-sub-type-home ybc-menu-column-type-full  sub-type-title" id="ybc-menu-1">   
-                                    <!-- level 1 -->
-                                                                           <a class="ybc-menu-item-link" href="index.html"><span>Home</span> <span class="fa fa-submenu-exist"></span></a>
-                                                                        <!-- /leve 1 -->
-                                    <!-- Columns -->
-                                                                            <span class="ybc-mm-control closed"></span>
-                                        <div style="width: 100%;" class="ybc-menu-columns-wrapper ybc-mm-control-content" id="ybc-menu-columns-wrapper-1">
-<div class="ybc-menu-column-item ybc-menu-column-size-3_12 " id="ybc-menu-column-26">
-                                                        <!-- Column content -->     
-                                                                                                                    <div class="ybc-menu-column-top">                                                 
-
-                                                        <!-- /Column content -->                                                        
-                                                        <!-- Blocks -->
-                                                                                                               <!-- /Blocks --> 
-                                                    </div>   
-                                                                                      
-                                                                                                                                </div>
-                                                                     <!-- /Columns  -->     
-                            </li> 
+                 
                                            
                                                                                     
-                                                          <li class="ybc-menu-has-sub ybc-menu-item  ybc-menu-sub-type-custom ybc-menu-column-type-full  sub-type-title" id="ybc-menu-2"> 
-                                    <!-- level 1 -->
-                                                                         <a class="ybc-menu-item-link" href="https://theme.yourbestcode.com/perfect/3-fashion"><span>Kategori</span> <span class="fa fa-submenu-exist"></span></a>
-                                                                        <!-- /leve 1 -->
-                                    <!-- Columns -->
-                                                                            <span class="ybc-mm-control closed"></span>
-                                        <div style="width: 100%;" class="ybc-menu-columns-wrapper ybc-mm-control-content" id="ybc-menu-columns-wrapper-2">
- <div class="ybc-menu-column-item ybc-menu-column-size-3_12 " id="ybc-menu-column-6">
-                                                        <!-- Column content -->     
-               <div class="ybc-menu-column-top">                                                 
-<h6>Buah</h6>
-<div class="ybc_description_block"><ul><li><a href="#">Belanja</a></li>
-<li><a href="#">Favorit</a></li>
-<li><a href="#">Pilihan</a></li>
-
-</ul></div>                                                            </div>
-                                                          
-                                                        <!-- /Column content -->                                                      
-                                                        <!-- Blocks -->
-                                                                                                               <!-- /Blocks --> 
-                                            </div>   
-                                                                                      
-<div class="ybc-menu-column-item ybc-menu-column-size-3_12 " id="ybc-menu-column-7">
-                                                        <!-- Column content -->     
-<div class="ybc-menu-column-top">                                                 
-<h6>Sayur</h6>                                                                                                                                <div class="ybc_description_block"><ul><li><a href="#">Belanja</a></li>
-<li><a href="#">Favorit</a></li>
-<li><a href="#">Pilihan</a></li>
-
-</ul></div>                                                            </div>
-                                                          
-                                                        <!-- /Column content -->                                                      
-                                                        <!-- Blocks -->
-                                                                                                               <!-- /Blocks --> 
-                                            </div>   
-                                                                                      
-                                                                                                                                  <div class="ybc-menu-column-item ybc-menu-column-size-3_12 " id="ybc-menu-column-8">
-                                                        <!-- Column content -->     
-                                                                                                                    <div class="ybc-menu-column-top">                                                 
-<h6>Daging Merah</h6>                                  
-<div class="ybc_description_block"><ul><li><a href="#">Belanja</a></li>
-<li><a href="#">Favorit</a></li>
-<li><a href="#">Pilihan</a></li>
-
-</ul></div>                                                            </div>
-                                                          
-                                                        <!-- /Column content -->                                                      
-                                                        <!-- Blocks -->
-                                                                                                               <!-- /Blocks --> 
-                                            </div>   
-                                                                                      
-                                                                                                                                  <div class="ybc-menu-column-item ybc-menu-column-size-3_12 " id="ybc-menu-column-9">
-                                                        <!-- Column content -->     
-                                                                                                                    <div class="ybc-menu-column-top">                                                 
-                                                                <h6>Daging Putih</h6>                                                         <div class="ybc_description_block"><ul><li><a href="#">Belanja</a></li>
-<li><a href="#">Favorit</a></li>
-<li><a href="#">Pilihan</a></li>
-</ul></div>                                                            </div>
-                                                          
-                                                        <!-- /Column content -->                                                      
-                                                        <!-- Blocks -->
-                                                                                                               <!-- /Blocks --> 
-                                            </div>   
-                                                                                      
-                                                                                                                                  <div class="ybc-menu-column-item ybc-menu-column-size-6_12 " id="ybc-menu-column-10">
-                                                        <!-- Column content -->     
-                                                                                                                    <div class="ybc-menu-column-top">                                                 
-                                                   <img src="modules/ybc_megamenu/images/column/bgmenu1.png" alt="image" />                                                                                                                            </div>
-                                                          
-                                                        <!-- /Column content -->                                                      
-                                                        <!-- Blocks -->
-                                                                                                               <!-- /Blocks --> 
-                                            </div>   
-                                                                                      
-      <div class="ybc-menu-column-item ybc-menu-column-size-6_12 " id="ybc-menu-column-11">
-                                                        <!-- Column content -->     
- <div class="ybc-menu-column-top">                                                 
-<img src="modules/ybc_megamenu/images/column/bgmenu2.png" alt="image" />                                                                                                                            </div>
-                                                          
-                                                        <!-- /Column content -->                                                      
-                                                        <!-- Blocks -->
-                                                                                                               <!-- /Blocks --> 
-                                            </div>   
-                                                                                      
-                                                                                                                          </div>
-                                                                     <!-- /Columns  -->   
-                    </li>                   
-                    @if(Auth::user()->role == "Petani")          
-                                           
-                                                                        <li class=" ybc-menu-item  ybc-menu-sub-type-custom ybc-menu-column-type-full  sub-type-title" id="ybc-menu-17">    
-                                    <!-- level 1 -->
-                                                                           <a class="ybc-menu-item-link" href="/ptnusr"><span>Dashboard</span></a>
-                                                                        <!-- /leve 1 -->
-                                    <!-- Columns -->
-                                                                     <!-- /Columns  -->     
-                            </li> 
-                                           
-                                                                        <li class=" ybc-menu-item  ybc-menu-sub-type-custom ybc-menu-column-type-full  sub-type-title" id="ybc-menu-16">    
-                                    <!-- level 1 -->
-                                                                           <a class="ybc-menu-item-link" href="23-phones.html"><span>Phones</span></a>
-                                                                        <!-- /leve 1 -->
-                                    <!-- Columns -->
-                                                                     <!-- /Columns  -->     
-                            </li> 
-                                  
-                                  @elseif(Auth::user()->role == "User")         
-                                                                        <li class="ybc-menu-has-sub ybc-menu-item  ybc-menu-sub-type-custom ybc-menu-column-type-left  sub-type-title" id="ybc-menu-8"> 
-                                    <!-- level 1 -->
-                                                                           <a class="ybc-menu-item-link" href="/usrdsh"><span>Dashboard</span> <span class="fa fa-submenu-exist"></span></a>
-                                                                        <!-- /leve 1 -->
-                                    <!-- Columns -->@endif
+                  
                                                                             <span class="ybc-mm-control closed"></span>
                                         <div  class="ybc-menu-columns-wrapper ybc-mm-control-content" id="ybc-menu-columns-wrapper-8">
-                                                                                                                                                                                            <div class="ybc-menu-column-item ybc-menu-column-size-12_12 " id="ybc-menu-column-25">
+<div class="ybc-menu-column-item ybc-menu-column-size-12_12 " id="ybc-menu-column-25">
                                                         <!-- Column content -->     
                                                                                                                     <div class="ybc-menu-column-top">                                                 
-                                                                                                                                                                                                <div class="ybc_description_block"><ul><li><a href="https://theme.yourbestcode.com/perfect/blog">Main page</a></li>
+<div class="ybc_description_block"><ul><li><a href="https://theme.yourbestcode.com/perfect/blog">Main page</a></li>
 <li><a href="https://theme.yourbestcode.com/perfect/blog/post/1-sample-post1.html">Post page</a></li>
 <li><a href="https://theme.yourbestcode.com/perfect/blog/category/1-fashion.html">Category page</a></li>
 <li><a href="https://theme.yourbestcode.com/perfect/blog/author/1-dola-nguyen">Author page</a></li>
@@ -2084,33 +1969,11 @@ body.ybc-skin-custom .ybc-menu-item.ybc_hot > span.ybc-menu-item-no-link:first-c
                                                                                                                <!-- /Blocks --> 
                                                     </div>   
                                                                                       
-                                                                                                                                </div>
+</div>
                                                                      <!-- /Columns  -->     
                             </li> 
                                            
-                                                                        <li class="ybc-menu-has-sub ybc-menu-item  ybc-menu-sub-type-contact ybc-menu-column-type-left  sub-type-title" id="ybc-menu-5">    
-                                    <!-- level 1 -->
-                                                                           <a class="ybc-menu-item-link" href="contact-us.html"><span>Contact</span> <span class="fa fa-submenu-exist"></span></a>
-                                                                        <!-- /leve 1 -->
-                                    <!-- Columns -->
-                                                                            <span class="ybc-mm-control closed"></span>
-                                        <div  class="ybc-menu-columns-wrapper ybc-mm-control-content" id="ybc-menu-columns-wrapper-5">
-                                                                                                                                                                                            <div class="ybc-menu-column-item ybc-menu-column-size-12_12 " id="ybc-menu-column-12">
-                                                        <!-- Column content -->     
-                                                                                                                    <div class="ybc-menu-column-top">                                                 
-                                                                                                                                                                                                <div class="ybc_description_block"><ul><li><a href="contact-usdb53.html?YBC_TC_CONTACT_FORM_LAYOUT=layout1">Contact page 1</a></li>
-<li><a href="contact-us2740.html?YBC_TC_CONTACT_FORM_LAYOUT=layout2">Contact page 2</a></li>
-<li><a href="contact-us34ed.html?YBC_TC_CONTACT_FORM_LAYOUT=layout3">Contact page 3</a></li>
-</ul></div>                                                            </div>
-                                                          
-                                                        <!-- /Column content -->                                                        
-                                                        <!-- Blocks -->
-                                                                                                               <!-- /Blocks --> 
-                                                    </div>   
-                                                                                      
-                                                                                                                                </div>
-                                                                     <!-- /Columns  -->     
-                            </li> 
+                                                                     
                                            
                                    </ul>
         </div>
@@ -2165,14 +2028,14 @@ body.ybc-skin-custom .ybc-menu-item.ybc_hot > span.ybc-menu-item-no-link:first-c
                                                                                                                                                                                                                                                             <li class="nomargin hiddable col-lg-12">
                                                                                             <input type="checkbox" class="checkbox" name="layered_quantity_1" id="layered_quantity_1" value="1" /> 
                                                                                         <label for="layered_quantity_1">
-                                                                                                <a href="5-accessories.html#availability-in_stock" data-rel="nofollow">In stock<span> (1)</span></a>
+                                                                                                <a href="/shop" data-rel="nofollow">In stock<span> {{ $bebek }}</span></a>
                                                                                             </label>
                                         </li>
                                                                                                                                                                                             </ul>
                     </div>
                                                                                                             <div class="layered_filter">
                                                 <div class="layered_subtitle_heading">
-                            <span class="layered_subtitle">Condition</span>
+                            <span class="layered_subtitle">Kategori</span>
                             <!--<span class="layered_close">
                                 <a href="#" data-rel="ul_layered_condition_0"></a>
                             </span>-->
@@ -2181,7 +2044,15 @@ body.ybc-skin-custom .ybc-menu-item.ybc_hot > span.ybc-menu-item-no-link:first-c
                                                                                                                                                                                 <li class="nomargin hiddable col-lg-12">
                                                                                             <input type="checkbox" class="checkbox" name="layered_condition_new" id="layered_condition_new" value="new" /> 
                                                                                         <label for="layered_condition_new">
-                                                                                                <a href="5-accessories.html#condition-new" data-rel="nofollow">New<span> (1)</span></a>
+                                                                                                <a href="/ktg1" data-rel="nofollow">Buah<span> ({{$bebek2}})</span></a>
+                                                                                            </label>
+                                                                                             
+                                                                                        <label for="layered_condition_new">
+                                                                                                <a href="/ktg1" data-rel="nofollow">Sayur<span> ({{$bebek1}})</span></a>
+                                                                                            </label>
+
+                                                                                             <label for="layered_condition_new">
+                                                                                                <a href="/ktg1" data-rel="nofollow">Rempah-Rempah<span> ({{$bebek3}})</span></a>
                                                                                             </label>
                                         </li>
                                                                                                                                                                                                                                                                                                                                                     </ul>
@@ -2475,13 +2346,14 @@ body.ybc-skin-custom .ybc-menu-item.ybc_hot > span.ybc-menu-item-no-link:first-c
         
     
     <!-- Products list -->
-      @foreach($data as $prdks)
+     
     <ul class="product_list grid row">
             
                 
-        
+        @foreach($data as $prdks)
         
                                 <li class=" wow zoomIn item ajax_block_product col-xs-12 col-sm-6 col-md-4 first-in-line last-line first-item-of-tablet-line first-item-of-mobile-line last-mobile-line">
+
             <div class="product-container" itemscope itemtype="schema.org/Product.html">
                 <div class="left-block">
                     <div class="product-image-container">
@@ -2513,10 +2385,10 @@ body.ybc-skin-custom .ybc-menu-item.ybc_hot > span.ybc-menu-item-no-link:first-c
                               
     <div class="comments_note" itemprop="aggregateRating" itemscope itemtype="../../../schema.org/AggregateRating.html">
         <div class="star_content clearfix">
-                                                <div class="star star_on"></div>
-                                                                <div class="star star_on"></div>
-                                                                <div class="star star_on"></div>
-                                                                <div class="star star_on"></div>
+                                                <div class="star"></div>
+                                                                <div class="star"></div>
+                                                                <div class="star"></div>
+                                                                <div class="star"></div>
                                                                 <div class="star"></div>
                                         <meta itemprop="worstRating" content = "0" />
             <meta itemprop="ratingValue" content = "4" />
@@ -2587,15 +2459,16 @@ body.ybc-skin-custom .ybc-menu-item.ybc_hot > span.ybc-menu-item-no-link:first-c
                         </div>
                     
                 </div>
-
+ @endforeach
                     
 
             </div><!-- .product-container> -->
             
         </li>
+
+
                 </ul>
 
-@endforeach
 
 
 

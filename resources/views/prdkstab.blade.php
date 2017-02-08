@@ -254,7 +254,7 @@
                         <td>{{ $prdks->kategori }}</td>
                         <td>{{ $prdks->jumlah }}</td>
                         <td>{{ $prdks->harga }} / {{ $prdks->satuan }}</td>
-                        <td>X</td>
+                        <td>{{ $prdks->desr }}</td>
                         <td>{{ $prdks->tanggal_panen }}</td>
                         <td>{{ $prdks->tgl_post }}
                         <td><div class="btn-group">

@@ -1729,7 +1729,6 @@ body.ybc-skin-custom .ybc-menu-item.ybc_hot > span.ybc-menu-item-no-link:first-c
                 <div id="columns" class="container">
                 <form role="form" method="POST" action="/inputpembelian">
  <input type="hidden" name="_token" value="{{csrf_token()}}">  
-
                 <input type="hidden" name="nama" value="{{ $data->nama_barang }} ">
                 <input type="hidden" name="id_petani" value="{{ $data->id_petani }} ">
                 <input type="hidden" name="id_prdks" value="{{ $data->id }} ">`
@@ -1757,7 +1756,7 @@ body.ybc-skin-custom .ybc-menu-item.ybc_hot > span.ybc-menu-item-no-link:first-c
             <div id="image-block" class="clearfix">
                        <span class="discount">Reduced price!</span>
                                                     <span id="view_full_size">
-                                                    <img id="bigpic" itemprop="image" src="{{ $data->gambar  }}" title="Printed Summer Dress" alt="Printed Summer Dress" width="600" height="600"/>
+                                                    <img id="bigpic" itemprop="image" src="{{ url('images/'.$data->gambar) }}" title="" alt="Printed Summer Dress" width="600" height="600"/>
                                                             <span class="span_link no-print"></span>
                                                                         </span>
                             </div> <!-- end image-block -->
@@ -1770,21 +1769,21 @@ body.ybc-skin-custom .ybc-menu-item.ybc_hot > span.ybc-menu-item-no-link:first-c
                         </span>
                                         <div id="thumbs_list">
                         <ul id="thumbs_list_frame">
-                                    <a href="{{ $data->gambar  }}"   data-fancybox-group="other-views" class="fancybox shown" title="Printed Summer Dress">
-                                        <img class="img-responsive" id="thumb_225" src="{{ $data->gambar  }}" alt="Printed Summer Dress" title="Printed Summer Dress" height="200" width="200" itemprop="image" />
+                                    <a href="{images/{{ $data->gambar }}"   data-fancybox-group="other-views" class="fancybox shown" title="Printed Summer Dress">
+                                        <img class="img-responsive" id="thumb_225" src="{{ url('images/'.$data->gambar) }}" alt="Printed Summer Dress" title="Printed Summer Dress" height="200" width="200" itemprop="image" />
                                     </a>
                                 </li>
 <li id="thumbnail_224">
-                                    <a href="{{ $data->gambar }}"   data-fancybox-group="other-views" class="fancybox" title="Printed Summer Dress">
+                                    <a href="images/{{ $data->gambar }}"   data-fancybox-group="other-views" class="fancybox" title="Printed Summer Dress">
                                         <img class="img-responsive" id="thumb_224" src="../../224-cart_default/printed-summer-dress.jpg" alt="Printed Summer Dress" title="Printed Summer Dress" height="200" width="200" itemprop="image" />
                                     </a>
                                 </li>
-                                    <a href="{{ $data->gambar }}"   data-fancybox-group="other-views" class="fancybox" title="Printed Summer Dress">
-                                        <img class="img-responsive" id="thumb_226" src="{{ $data->gambar }}" alt="Printed Summer Dress" title="Printed Summer Dress" height="200" width="200" itemprop="image" />
+                                    <a href="images/{{ $data->gambar }}"   data-fancybox-group="other-views" class="fancybox" title="Printed Summer Dress">
+                                        <img class="img-responsive" id="thumb_226" src="images/{{ $data->gambar }}" alt="Printed Summer Dress" title="Printed Summer Dress" height="200" width="200" itemprop="image" />
                                     </a>
                                 </li>
-                                    <a href="{{ $data->gambar }}"   data-fancybox-group="other-views" class="fancybox" title="Printed Summer Dress">
-                                        <img class="img-responsive" id="thumb_227" src="{{ $data->gambar }}" alt="Printed Summer Dress" title="Printed Summer Dress" height="200" width="200" itemprop="image" />
+                                    <a href="images/{{ $data->gambar }}"   data-fancybox-group="other-views" class="fancybox" title="Printed Summer Dress">
+                                        <img class="img-responsive" id="thumb_227" src="images/{{ $data->gambar }}" alt="Printed Summer Dress" title="Printed Summer Dress" height="200" width="200" itemprop="image" />
                                     </a>
                                 </li>
                                                                             </ul>
@@ -1892,7 +1891,7 @@ body.ybc-skin-custom .ybc-menu-item.ybc_hot > span.ybc-menu-item-no-link:first-c
                         <div class="content_prices clearfix">
                                     <!-- prices -->
                     <div>
-                        <p class="our_price_display" itemprop="offers" itemscope itemtype="../../../../schema.org/Offer.html"><link itemprop="availability" href="../../../../schema.org/InStock.html"/>{{ $data->harga }} </span><meta itemprop="priceCurrency" content="USD" /></p>
+                        <p class="our_price_display" itemprop="offers" itemscope itemtype="../../../../schema.org/Offer.html"><link itemprop="availability" href="../../../../schema.org/InStock.html"/>Rp. {{ $data->harga }} </span><meta itemprop="priceCurrency" content="Rp" /></p>
                         
                         <p id="reduction_amount"  style="display:none"><span id="reduction_amount_display"></span></p>
                         
@@ -1945,7 +1944,7 @@ body.ybc-skin-custom .ybc-menu-item.ybc_hot > span.ybc-menu-item-no-link:first-c
                                                             <!-- attributes -->
                                 <div id="attributes">
                                     <div class="clearfix"></div>
-                                                                                                                        <fieldset class="attribute_fieldset">
+<fieldset class="attribute_fieldset">
                                                 <label class="attribute_label" for="group_1">Size&nbsp;</label>
                                                                                                 <div class="attribute_list">
                                                                                                             <select name="group_1" id="group_1" class="form-control attribute_select no-print">
@@ -2026,7 +2025,7 @@ body.ybc-skin-custom .ybc-menu-item.ybc_hot > span.ybc-menu-item-no-link:first-c
             </h2>
             <div class="row">
                 <div class="product clearfix col-xs-12 col-sm-6">
-                    <img src="{{ $data->gambar }}" height="263" width="263" alt="Printed Summer Dress" />
+                    <img src="images/{{ $data->gambar }}" height="263" width="263" alt="Printed Summer Dress" />
                     <div class="product_desc">
                         <p class="product_name">
                             <strong>Printed Summer Dress</strong>
@@ -2232,7 +2231,7 @@ body.ybc-skin-custom .ybc-menu-item.ybc_hot > span.ybc-menu-item-no-link:first-c
             </h2>
             <div class="row">
                                     <div class="product clearfix  col-xs-12 col-sm-6">
-                        <img src="{{ $data->gambar  }}" height="125" width="125" alt="Printed Summer Dress" />
+                        <img src="images/{{ $data->gambar }}" height="125" width="125" alt="Printed Summer Dress" />
                         <div class="product_desc">
                             <p class="product_name">
                                 <strong>{{ $data->nama_barang }}</strong>
@@ -2657,7 +2656,7 @@ body.ybc-skin-custom .ybc-menu-item.ybc_hot > span.ybc-menu-item-no-link:first-c
                     <div class="left-block">
                     <div class="product-image-container">
                         <a href="../writing-instruments/28-printed-summer-dress.html" class="lnk_img product-image" title="Printed Summer Dress">
-                            <img src="{{ $data->gambar }}" alt="Printed Summer Dress" />
+                            <img src="images/{{ $data->gambar }}" alt="Printed Summer Dress" />
                             
                         </a>
                                                     <a class="new-box" href="../writing-instruments/28-printed-summer-dress.html">
