@@ -325,7 +325,7 @@
        <div class="register_account">
             <div class="wrap">
               <h4 class="title">Create an Account</h4>
-               <form method="POST" action="/register">
+               <form method="POST" action="{{ url('/register')}}">
                <input type="hidden" name="_token" value="{{csrf_token()}}">
                  <div class="col_1_of_2 span_1_of_2">
                  <select name="role">
