@@ -2057,40 +2057,8 @@ body.ybc-skin-custom .ybc-menu-item.ybc_hot > span.ybc-menu-item-no-link:first-c
                                         </li>
                                                                                                                                                                                                                                                                                                                                                     </ul>
                     </div>
-                                                                                                            <div class="layered_filter">
-                                                <div class="layered_subtitle_heading">
-                            <span class="layered_subtitle">Manufacturer</span>
-                            <!--<span class="layered_close">
-                                <a href="#" data-rel="ul_layered_manufacturer_0"></a>
-                            </span>-->
-                        </div>
-                        <ul id="ul_layered_manufacturer_0" class="col-lg-12 layered_filter_ul">
-                                                                                                                                                                                <li class="nomargin hiddable col-lg-12">
-                                                                                            <input type="checkbox" class="checkbox" name="layered_manufacturer_1" id="layered_manufacturer_1" value="1" /> 
-                                                                                        <label for="layered_manufacturer_1">
-                                                                                                <a href="5-accessories.html#manufacturer-fashion_manufacturer" data-rel="nofollow">Fashion Manufacturer<span> (1)</span></a>
-                                                                                            </label>
-                                        </li>
-                                                                                                                                                                                            </ul>
-                    </div>
-                                                                                                            <div class="layered_price" style="display: none;">
-                                                <div class="layered_subtitle_heading">
-                            <span class="layered_subtitle">Price</span>
-                            <!--<span class="layered_close">
-                                <a href="#" data-rel="ul_layered_price_0"></a>
-                            </span>-->
-                        </div>
-                        <ul id="ul_layered_price_0" class="col-lg-12 layered_filter_ul">
-                                                                                                <li>
-                                    <label>
-                                        Range:
-                                    </label> 
-                                    <span id="layered_price_range"></span>
-                                    <div class="layered_slider_container">
-                                        <div class="layered_slider" id="layered_price_slider" data-type="price" data-format="1" data-unit="$"></div>
-                                    </div>
-                                    </li>
-                                                                                                                </ul>
+                                                                                                            <div class="layered_f
+                        
                     </div>
                                                                                                             <div class="layered_filter">
                                                 <div class="layered_subtitle_heading">

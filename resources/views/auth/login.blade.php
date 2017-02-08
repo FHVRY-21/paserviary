@@ -1668,12 +1668,12 @@ body.ybc-skin-custom .ybc-menu-item.ybc_hot > span.ybc-menu-item-no-link:first-c
                         <ul id="first-currencies" class="currencies_ul toogle_content">
                                                                                                     <li class="selected">
                         <a href="javascript:setCurrency(1);" rel="nofollow" title="Dollar (USD)">
-                            Dollar (USD)
+                            Rupiah (Rp)
                         </a>
                     </li>
                                                                                                     <li >
                         <a href="javascript:setCurrency(2);" rel="nofollow" title="Euro (EUR)">
-                            Euro (EUR)
+                            Dollar (USD)
                         </a>
                     </li>
                                                                                                     <li >
@@ -1692,12 +1692,7 @@ body.ybc-skin-custom .ybc-menu-item.ybc_hot > span.ybc-menu-item-no-link:first-c
             </div>
                 <div class="header_bottom">
             <div class="container">
-                                        <div class="toggle-menu"><span></span><span></span></div>
-                    <div id="header_logo" class="">
-                        <a href="https://theme.yourbestcode.com/perfect/" title="Perfect">
-                            <img class="logo img-responsive" src="../modules/ybc_themeconfig/images/logo/light_blue.png" alt="Perfect" width="156" height="27"/>
-                        </a>
-                    </div>
+                                        
                     <!-- MODULE Block cart -->
 <div class="custom_block_cart ">    
 
@@ -1893,19 +1888,13 @@ body.ybc-skin-custom .ybc-menu-item.ybc_hot > span.ybc-menu-item-no-link:first-c
              {{csrf_field()}}
                 <h3 class="page-subheading">Daftar untuk Segera Berbelanja!</h3>
                 <div class="form_content clearfix">
-                    <p>Harus Daftar!!</p>
+                   <a href="/register"> <p>Daftar Di Sini</p> </a>
                     <div class="alert alert-danger" id="create_account_error" style="display:none"></div>
                     <div class="form-group">
                     
                     </div>
                     <div class="submit">
-                        <input type="hidden" class="hidden" name="register" value="register" />                     <button class="btn btn-default button button-medium exclusive" href="/register">
-                            <span>
-                                <i class="icon-user left"></i>
-                                Daftar 
-                            </span>
-                        </button>
-&nbsp;
+
                         
                         <input type="hidden" class="hidden" name="SubmitCreate" value="Create an account" />
                     </div>

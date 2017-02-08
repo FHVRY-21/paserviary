@@ -69,46 +69,7 @@
               <!-- Messages: style can be found in dropdown.less-->
               
               <!-- Notifications: style can be found in dropdown.less -->
-              <li class="dropdown notifications-menu">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                  <i class="fa fa-bell-o"></i>
-                  <span class="label label-warning"></span>
-                </a>
-                <ul class="dropdown-menu">
-                  <li class="header">Pemberitahuan</li>
-                  <li>
-                    <!-- inner menu: contains the actual data -->
-                    <ul class="menu">
-                      <li>
-                        <a href="#">
-                          <i class="fa fa-users text-aqua"></i> 5 new members joined today
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="fa fa-warning text-yellow"></i> Very long description here that may not fit into the page and may cause design problems
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="fa fa-users text-red"></i> 5 new members joined
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="fa fa-shopping-cart text-green"></i> 25 sales made
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="fa fa-user text-red"></i> You changed your username
-                        </a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="footer"><a href="#">View all</a></li>
-                </ul>
-              </li>
+              
               <!-- Tasks: style can be found in dropdown.less -->
               
               <!-- User Account: style can be found in dropdown.less -->
@@ -127,21 +88,11 @@
                     </p>
                   </li>
                   <!-- Menu Body -->
-                  <li class="user-body">
-                    <div class="col-xs-4 text-center">
-                      <a href="#">Followers</a>
-                    </div>
-                    <div class="col-xs-4 text-center">
-                      <a href="#">Sales</a>
-                    </div>
-                    <div class="col-xs-4 text-center">
-                      <a href="#">Friends</a>
-                    </div>
-                  </li>
+                  
                   <!-- Menu Footer-->
                   <li class="user-footer">
                     <div class="pull-left">
-                      <a href="/setting" class="btn btn-default btn-flat">Profile</a>
+                      <a href="/setting" class="btn btn-default btn-flat">Setting</a>
                     </div>
                     <div class="pull-right">
                       <a href="/logout" class="btn btn-default btn-flat">Sign out</a>
@@ -199,6 +150,12 @@
                 <li><a href="/orderusrh"><i class="fa fa-circle-o"></i>Riwayat Pesanan</a></li>
               </ul>
             </li>
+            <li class=" treeview">
+            <a href="/shop">
+                <i class="fa fa-shopping-chart"></i>
+                <span>Belanja</span>
+                <span class="label label-primary pull-right"></span>
+              </a>
               
         </section>
         <!-- /.sidebar -->

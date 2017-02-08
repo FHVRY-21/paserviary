@@ -1768,23 +1768,7 @@ body.ybc-skin-custom .ybc-menu-item.ybc_hot > span.ybc-menu-item-no-link:first-c
                             </a>
                         </span>
                                         <div id="thumbs_list">
-                        <ul id="thumbs_list_frame">
-                                    <a href="{images/{{ $data->gambar }}"   data-fancybox-group="other-views" class="fancybox shown" title="Printed Summer Dress">
-                                        <img class="img-responsive" id="thumb_225" src="{{ url('images/'.$data->gambar) }}" alt="Printed Summer Dress" title="Printed Summer Dress" height="200" width="200" itemprop="image" />
-                                    </a>
-                                </li>
-<li id="thumbnail_224">
-                                    <a href="images/{{ $data->gambar }}"   data-fancybox-group="other-views" class="fancybox" title="Printed Summer Dress">
-                                        <img class="img-responsive" id="thumb_224" src="../../224-cart_default/printed-summer-dress.jpg" alt="Printed Summer Dress" title="Printed Summer Dress" height="200" width="200" itemprop="image" />
-                                    </a>
-                                </li>
-                                    <a href="images/{{ $data->gambar }}"   data-fancybox-group="other-views" class="fancybox" title="Printed Summer Dress">
-                                        <img class="img-responsive" id="thumb_226" src="images/{{ $data->gambar }}" alt="Printed Summer Dress" title="Printed Summer Dress" height="200" width="200" itemprop="image" />
-                                    </a>
-                                </li>
-                                    <a href="images/{{ $data->gambar }}"   data-fancybox-group="other-views" class="fancybox" title="Printed Summer Dress">
-                                        <img class="img-responsive" id="thumb_227" src="images/{{ $data->gambar }}" alt="Printed Summer Dress" title="Printed Summer Dress" height="200" width="200" itemprop="image" />
-                                    </a>
+                      
                                 </li>
                                                                             </ul>
                     </div> <!-- end thumbs_list -->
@@ -1943,9 +1927,6 @@ body.ybc-skin-custom .ybc-menu-item.ybc_hot > span.ybc-menu-item-no-link:first-c
                             
                                                             <!-- attributes -->
                                 <div id="attributes">
-                                    <div class="clearfix"></div>
-<fieldset class="attribute_fieldset">
-                                                <label class="attribute_label" for="group_1">Size&nbsp;</label>
                                                                                                 <div class="attribute_list">
                                                                                                             <select name="group_1" id="group_1" class="form-control attribute_select no-print">
                                                                                                                             <option value="1" selected="selected" title="S">S</option>
@@ -1953,7 +1934,7 @@ body.ybc-skin-custom .ybc-menu-item.ybc_hot > span.ybc-menu-item-no-link:first-c
                                                                                                                             <option value="3" title="L">L</option>
                                                                                                                     </select>
                                                                                                     </div> <!-- end attribute_list -->
-                                            </fieldset>
+                                            
                                                                                                                                                                 <fieldset class="attribute_fieldset">
                                                 <label class="attribute_label attribute_label_color" >Color&nbsp;</label>
                                                                                                 <div class="attribute_list">
