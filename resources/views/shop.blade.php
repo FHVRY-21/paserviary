@@ -1649,16 +1649,16 @@ body.ybc-skin-custom .ybc-menu-item.ybc_hot > span.ybc-menu-item-no-link:first-c
     <h3>Akun</h3>
     <div class="header_user_info nav">
      @if(Auth::user()->role == "Petani")
-                    <a class="login" href="/{{ url('/ptnusr')}}" rel="nofollow" title="Dashboard">
+                    <a class="login" href="{{ url('/ptnusr')}}" rel="nofollow" title="Dashboard">
                 Dashboard
             </a>
-            <a class="login" href="/{{ url('/inputprdks')}}" rel="nofollow" title="Dashboard">
+            <a class="login" href="{{ url('/inputprdks')}}" rel="nofollow" title="Dashboard">
                 Input Hasil Produksi
             </a>
-            <a class="login" href="/{{ url('/prdkstab')}}" rel="nofollow" title="Dashboard">
+            <a class="login" href="{{ url('/prdkstab')}}" rel="nofollow" title="Dashboard">
                 Daftar Hasil Produksi
             </a>
-            <a class="login" href="/{{ url('/orderptnh')}}" rel="nofollow" title="Dashboard">
+            <a class="login" href="{{ url('/orderptnh')}}" rel="nofollow" title="Dashboard">
                 Pesanan
             </a>
 
