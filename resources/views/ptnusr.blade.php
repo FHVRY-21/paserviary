@@ -197,7 +197,7 @@
               <!-- small box -->
               <div class="small-box bg-aqua">
                 <div class="inner">
-                  <h3>{{ \App\Pembayaran::where(['id_petani' => \Auth::user()->id, 'status' => "Belum Dikonfirmasi"])->get()->count() }}</h3>
+                  <h3>{{ \App\Pembayaran::where(['id_petani' => \Auth::user()->id, 'status_pembayaran' => "Belum Dikonfirmasi"])->get()->count() }}</h3>
                   <p>Order Baru</p>
                 </div>
                 <div class="icon">
