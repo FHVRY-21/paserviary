@@ -1661,6 +1661,9 @@ body.ybc-skin-custom .ybc-menu-item.ybc_hot > span.ybc-menu-item-no-link:first-c
             <a class="login" href="{{ url('/orderptnh')}}" rel="nofollow" title="Dashboard">
                 Pesanan
             </a>
+            <a class="bt_wishlist_userinfor"    href="{{ url('/logout')}}" title="My wishlists">
+           <span>Log out</span>
+        </a>
 
       @elseif(Auth::user()->role == "User")
       <a class="login" href="{{ url('/usrdsh')}}" rel="nofollow" title="Dashboard">
@@ -1673,7 +1676,7 @@ body.ybc-skin-custom .ybc-menu-item.ybc_hot > span.ybc-menu-item-no-link:first-c
                 <a class="bt_wishlist_userinfor"    href="{{ url('/orderusrh')}}" title="My wishlists">
            <span>Riwayat Pesanan</span>
         </a>
-         <a class="bt_wishlist_userinfor"    href="{{ url('/orderusr')}}" title="My wishlists">
+         <a class="bt_wishlist_userinfor"    href="{{ url('/logout')}}" title="My wishlists">
            <span>Log out</span>
         </a>
         @endif
@@ -1726,7 +1729,7 @@ body.ybc-skin-custom .ybc-menu-item.ybc_hot > span.ybc-menu-item-no-link:first-c
                                         <div class="toggle-menu"><span></span><span></span></div>
                     <div id="header_logo" class="">
                         <a href="https://theme.yourbestcode.com/perfect/" title="Perfect">
-                            <img class="logo img-responsive" src="../modules/ybc_themeconfig/images/logo/light_blue.png" size="100%" alt="Perfect" width="156" height="27"/>
+                            <img class="logo img-responsive" src="{{ url('../modules/ybc_themeconfig/images/logo/light_blue.png')}}" size="100%" alt="Perfect" width="156" height="27"/>
                         </a>
                     </div>
                     <!-- MODULE Block cart -->
