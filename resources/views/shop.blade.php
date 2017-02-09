@@ -1729,7 +1729,7 @@ body.ybc-skin-custom .ybc-menu-item.ybc_hot > span.ybc-menu-item-no-link:first-c
                                         <div class="toggle-menu"><span></span><span></span></div>
                     <div id="header_logo" class="">
                         <a href="https://theme.yourbestcode.com/perfect/" title="Perfect">
-                            <img class="logo img-responsive" src="{{ url('../modules/ybc_themeconfig/images/logo/light_blue.png')}}" size="100%" alt="Perfect" width="156" height="27"/>
+                            <img class="logo img-responsive" src="{{ url('/modules/ybc_themeconfig/images/logo/light_blue.png')}}" size="100%" alt="Perfect" width="156" height="27"/>
                         </a>
                     </div>
                     <!-- MODULE Block cart -->
