@@ -2454,7 +2454,7 @@ body.ybc-skin-custom .ybc-menu-item.ybc_hot > span.ybc-menu-item-no-link:first-c
 
                             </div> 
                             
-                                                            <a class="quick-view bt_function_bt" data-toggle="tooltip" title="Quick view" data-placement="left" href="/single/{{ $prdks->id}}" rel="/single/{{ $prdks->id}}">
+                                                            <a class="quick-view bt_function_bt" data-toggle="tooltip" title="Quick view" data-placement="left" href="{{ url('/single/{{ $prdks->id}}')}}" rel="{{ url('/single/{{ $prdks->id}}')}}">
                                     <i class="fa fa-search" aria-hidden="true"></i>
                                     <span>Quick view</span>
                                 </a>
