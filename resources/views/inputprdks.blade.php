@@ -154,7 +154,7 @@
           <!-- Sidebar user panel -->
           <div class="user-panel">
             <div class="pull-left image">
-              <img src="/css/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+              <img src="{{ url('/css/dist/img/user2-160x160.jpg')}}" class="img-circle" alt="User Image">
             </div>
             <div class="pull-left info">
               <p>{{ \Auth::user()->nama_depan }} {{ \Auth::user()->nama_belakang }}</p>
