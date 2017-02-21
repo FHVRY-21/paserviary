@@ -260,7 +260,7 @@
                       </button>
                       <ul class="dropdown-menu" role="menu">
                         <li><button type="submit" class="btn">Konfirmasi Pembayaran</button></li>
-                        <li><a href="{{ url('/deleteprod')}}">Hapus</a></li>
+                        <li><a href="{{ url('/deletecart/{{$pembelian->id}}')}}">Hapus</a></li>
                       </ul>
                     </div></td>
                        </form>
