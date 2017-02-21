@@ -225,6 +225,14 @@ $data->delete();
 $data = \App\Pembelian::all();
 return view('orderusr')->with('data',$data);
 }
+
+public function deletecartptn($id)
+{
+$data = \App\Pembayaran::find($id);
+$data->delete();
+$data = \App\Pembayaran::all();
+return view('orderptn')->with('data',$data);
+}
 public function editprdks($id){
 $data = \App\Prdks::find($id);
 return view('editprdks')->with('data',$data);
