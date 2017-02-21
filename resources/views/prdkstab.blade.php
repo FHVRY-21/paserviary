@@ -231,8 +231,8 @@
                         <span class="sr-only">Toggle Dropdown</span>
                       </button>
                       <ul class="dropdown-menu" role="menu">
-                        <li><a href="{{ url('/editprdks/{{ $prdks->id')}}">Edit</a></li>
-                        <li><a href="{{ url('/deleteprod/{{ $prdks->id')}}">Hapus</a></li>
+                        <li><a href="{{ url('/editprdks',$prdks->id) }}">Edit</a></li>
+                        <li><a href="{{ url('/deleteprod',$prdks->id) }}">Hapus</a></li>
                       </ul>
                     </div></td>
                        
