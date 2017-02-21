@@ -197,7 +197,7 @@
               <!-- small box -->
               <div class="small-box bg-aqua">
                 <div class="inner">
-                  <h3>{{ \App\Pembayaran::where(['id_petani' => \Auth::user()->id, 'status_pembayaran' => "Belum Dikonfirmasi"])->get()->count() }}</h3>
+                  <h3>{{ \App\Pembayaran::where(['id_petani' => \Auth::user()->id, 'status' => "Belum Dikonfirmasi"])->get()->count() }}</h3>
                   <p>Order Baru</p>
                 </div>
                 <div class="icon">
@@ -223,7 +223,7 @@
               <!-- small box -->
               <div class="small-box bg-yellow">
                 <div class="inner">
-                  <h3>{{ \App\Pembayaran::where(['id_petani' => \Auth::user()->id, 'status_pembayaran' => "Sudah Dikonfirmasi"])->get()->count() }}</h3>
+                  <h3>{{ \App\Pembayaran::where(['id_petani' => \Auth::user()->id, 'status' => "Sudah Dikonfirmasi"])->get()->count() }}</h3>
                   <p>Order Terproses</p>
                 </div>
                 <div class="icon">
@@ -236,7 +236,7 @@
               <!-- small box -->
               <div class="small-box bg-red">
                 <div class="inner">
-                  <h3>{{ \App\Pembayaran::where(['id_petani' => \Auth::user()->id, 'status_pembayaran' => "Sudah Dikonfirmasi"] )->get()->count() }}</h3>
+                  <h3>{{ \App\Pembayaran::where(['id_petani' => \Auth::user()->id, 'status' => "Sudah Dikonfirmasi"] )->get()->count() }}</h3>
                   <p>Unique Visitors</p>
                 </div>
                 <div class="icon">

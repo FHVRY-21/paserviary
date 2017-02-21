@@ -67,7 +67,7 @@ $bebek = DB::table('prdks')->count();
 
 			public function orderptnh()
 	{
-$data = \App\Pembelian::where('status',"Sudah Dikonfirmasi")->get();
+$data = \App\Pembayaran::where('status',"Sudah Dikonfirmasi")->get();
 		return view('orderptnh')->with('data',$data);
 	}
 
@@ -90,7 +90,7 @@ $data = \App\Pembelian::where('status',"Sudah Dikonfirmasi")->get();
 
 						public function orderptn()
 	{
-		$data = \App\Pembelian::where('status',"Belum Dikonfirmasi")->get();
+		$data = \App\Pembayaran::where('status',"Belum Dikonfirmasi")->get();
 		return view('order')->with('data',$data);
 	}
 		public function usrdsh()
