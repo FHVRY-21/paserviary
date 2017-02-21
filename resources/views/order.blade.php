@@ -252,7 +252,7 @@
                         <td>{{ $pembelian->total_pembayaran }}</td>
                         <td>{{ $pembelian->tanggal_bayar }}</td>
                         <td>{{ $pembelian->no_rekening }}</td>
- <form action="{{route('konfirmasiorder',$pembelian->id)}}" method="POST">
+ <form action="{{url('/konfirmasiorder',$pembelian->id)}}" method="POST">
                 <input type="hidden" name="_token" value="{{csrf_token()}}">
                 <input type="hidden" name="bayar" value="Sudah Dikonfirmasi">
                         <td><div class="btn-group">
