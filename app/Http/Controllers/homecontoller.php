@@ -323,13 +323,13 @@ $data->save();
 
 
 	public function konfirmasiorder($id){
-		$s =  \App\Pembelian::find($id);
+		$s =  \App\Pembayaran::find($id);
 		$s->status = Input::get('bayar');
 		$s->save();
 
-		$r = \App\Pembayaran::find($s->id_cart);
+		$r = \App\Pembelian::find($s->id_cart);
 		$status_pembayaran = "Sudah Dikonfirmasi";
-		$r->status_pembayaran = $status;
+		$r->status_pembayaran = $status_pembayaran;
 		$r->save();
 
 $id = \App\Prdks::orderBy('id', 'desc')->first();
