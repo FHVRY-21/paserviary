@@ -251,7 +251,7 @@
                       </button>
                       <ul class="dropdown-menu" role="menu">
                         <li><a href="/editprdks">Edit</a></li>
-                        <li><a href="/deleteprod">Hapus</a></li>
+                        <li><a href="/deletecart">Hapus</a></li>
                       </ul>
                     </div></td>
                        
