@@ -28,6 +28,7 @@ Route::get('/orderptnh', 'homecontoller@orderptnh');
 Route::get('/orderusrh', 'homecontoller@orderusrh');
 Route::get('/prdkstab', 'homecontoller@prdkstab');
 Route::get('/single/{id}', 'homecontoller@single');
+Route::get('/pdf/{id}', 'homecontoller@pdf');
 Route::post('/single', 'homecontoller@single');
 Route::get('/', 'homecontoller@welcome');
 Route::get('/ptnusr', 'homecontoller@ptnusr');
@@ -61,6 +62,19 @@ Route::get('/deleteprod/{id}', 'homecontoller@deleteprod');
 Route::post('/deleteprod/{id}', 'homecontoller@deleteprod');
 Route::get('/deletecart/{id}', 'homecontoller@deletecart');
 Route::post('/deletecart/{id}', 'homecontoller@deletecart');
+// Route::get('/customer/pdf',[
+//     'uses'  =&amp;gt; 'CustomerController@getPdf',
+//     'as'    =&amp;gt; 'customer.pdf',
+// ]);
+
+
+
+Route::get('pdf/{id}', function($id){
+    $data = \App\Pembayaran::where('id_petani', $id)->get();
+    $pdf = PDF::loadView('pdf', ['data' => $data]);
+    return $pdf->download('detailpenjualan_pasr.pdf');
+});
+
 
 Route::get('/images/{filename}',
     function ($filename)
@@ -84,3 +98,7 @@ Route::get('/single/{filename}', function ($filename){
 	$data->header("Content-Type", $type); 	
 	return $data; 
 });
+Route::auth();
+
+Route::get('/home', 'HomeController@index');
+Route::get('user/activation/{token}', 'Auth\AuthController@activateUser')->name('user.activate');

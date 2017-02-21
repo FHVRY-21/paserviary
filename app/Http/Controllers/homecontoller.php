@@ -190,7 +190,11 @@ $data = \App\Prdks::find($id);
 return view('single')->with('data',$data);
 }
 
-
+// public function pdf($id)
+// 	{
+// 		$data = \App\Pembayaran::where('id_petani', $id)->get();
+// 		return view('pdf')->with('data',$data);
+// 	}
 public function deleteprod($id)
 {
 // if ($p = \App\Pembelian::where('id_prdks', $id)->first()) {
@@ -308,6 +312,7 @@ $data->save();
 				return \Redirect::to('/orderusr');
 
 	}
+
 
 	public function konfirmasiorder($id){
 		$s =  \App\Pembayaran::find($id);

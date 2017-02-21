@@ -7,6 +7,8 @@ use Validator;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
+// use Illuminate\Http\Request;
+// use App\ActivationService;
 
 class AuthController extends Controller
 {
@@ -61,6 +63,7 @@ class AuthController extends Controller
      * @param  array  $data
      * @return User
      */
+    // protected $activationService;
     protected function create(array $data)
     {
         return User::create([
@@ -74,5 +77,28 @@ class AuthController extends Controller
             'password' => bcrypt($data['password'])
         ]);
     }
+
+//     public function __construct(ActivationService $activationService)
+// {
+//     $this->middleware($this->guestMiddleware(), ['except' => 'logout']);
+//     $this->activationService = $activationService;
+// }
+
+// public function register(Request $request)
+// {
+//     $validator = $this->validator($request->all());
+
+//     if ($validator->fails()) {
+//         $this->throwValidationException(
+//             $request, $validator
+//         );
+//     }
+
+//     $user = $this->create($request->all());
+
+//     $this->activationService->sendActivationMail($user);
+
+//     return redirect('/login')->with('status', 'We sent you an activation code. Check your email.');
+// }
 
 }
