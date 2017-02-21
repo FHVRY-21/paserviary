@@ -218,7 +218,7 @@
                       @if($pembelian->status_role=="Dihapus")
                       <li><a href="{{ url('/deletecart/{{ $pembelian->id')}}">Hapus</a></li>
                       @else
-                        <li><a href="{{ url('/bayar/{{ $pembelian->id')}}">Bayar</a></li>    
+                        <li><a href="{{ url('/bayar',$pembelian->id) }}">Bayar</a></li>    
                         
                         <li><a href="{{ url('/deletecart/{{ $pembelian->id')}}">Hapus</a></li>
                         @endif
