@@ -134,8 +134,9 @@
                       <a href="/setting" class="btn btn-default btn-flat">Profile</a>
                     </div>
                     <div class="pull-right">
-                      <a href="/logout" class="btn btn-default btn-flat">Sign out</a>
-                    </div>
+<a href="{{ url('/logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();" id="jas" class="btn btn-default btn-flat"><i class="icon wb-power" aria-hidden="true"></i>Logout</a>
+    
+    <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">{{ csrf_field() }}</form>                    </div>
                   </li>
                 </ul>
               </li>

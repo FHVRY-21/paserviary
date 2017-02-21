@@ -1661,9 +1661,7 @@ body.ybc-skin-custom .ybc-menu-item.ybc_hot > span.ybc-menu-item-no-link:first-c
             <a class="login" href="{{ url('/orderptnh')}}" rel="nofollow" title="Dashboard">
                 Pesanan
             </a>
-            <a class="bt_wishlist_userinfor"    href="{{ url('/logout')}}" title="My wishlists">
-           <span>Log out</span>
-        </a>
+            
 
       @elseif(Auth::user()->role == "User")
       <a class="login" href="{{ url('/usrdsh')}}" rel="nofollow" title="Dashboard">
@@ -1676,9 +1674,7 @@ body.ybc-skin-custom .ybc-menu-item.ybc_hot > span.ybc-menu-item-no-link:first-c
                 <a class="bt_wishlist_userinfor"    href="{{ url('/orderusrh')}}" title="My wishlists">
            <span>Riwayat Pesanan</span>
         </a>
-         <a class="bt_wishlist_userinfor"    href="{{ url('/logout')}}" title="My wishlists">
-           <span>Log out</span>
-        </a>
+
         @endif
     </div>
 <!-- /Block usmodule NAV -->

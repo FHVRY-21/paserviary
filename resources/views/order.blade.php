@@ -124,7 +124,10 @@
                       <a href="{{ url('/Setting')}}" class="btn btn-default btn-flat">Setting</a>
                     </div>
                     <div class="pull-right">
-                      <a href="{{ url('/logout')}}" class="btn btn-default btn-flat">Sign out</a>
+                  <a href="{{ url('/logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();" id="jas" class="btn btn-default btn-flat"><i class="icon wb-power" aria-hidden="true"></i>Logout</a>
+    
+    <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">{{ csrf_field() }}</form>
+
                     </div>
                   </li>
                 </ul>

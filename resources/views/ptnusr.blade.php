@@ -101,10 +101,14 @@
                       <a href="{{ url('/settingusr/{id}')}}" class="btn btn-default btn-flat">Profile</a>
                     </div>
                     <div class="pull-right">
-                      <a href="{{ url('/logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();" id="jas" class="waves-effect waves-light"><i class="icon wb-power" aria-hidden="true"></i>Logout</a>
-
-                      <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">{{ csrf_field() }}</form>
+                    <li role="presentation">
+                <a href="{{ url('/logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();" id="jas" class="btn btn-default btn-flat"><i class="icon wb-power" aria-hidden="true"></i>Logout</a>
                 </li>
+    
+    <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">{{ csrf_field() }}</form>
+
+              </li>
+                      <!-- <a href="{{ url('/logout')}}" class="btn btn-default btn-flat">Sign out</a> -->
                     </div>
                   </li>
                 </ul>
