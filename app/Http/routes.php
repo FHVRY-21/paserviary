@@ -55,7 +55,7 @@ Route::post('/register', 'Auth\AuthController@postRegister');
 
 Route::get('/usrdsh','homecontoller@usrdsh');
 Route::post('inputprod','homecontoller@inputprod');
-Route::post('konfirmasiorder/{id}',['as'=>'konfirmasiorder','uses'=>'homecontoller@konfirmasiorder']);
+Route::post('konfirmasiorder/{id}','homecontoller@konfirmasiorder');
 Route::post('inputpembelian','homecontoller@inputpembelian');
 Route::post('inputpembayaran','homecontoller@inputpembayaran');
 Route::post('/inputpembayaran2','homecontoller@inputpembayaran2');
