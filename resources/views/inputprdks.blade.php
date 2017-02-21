@@ -236,7 +236,7 @@
                 <form role="form" method="POST" action="inputprod" enctype="multipart/form-data">
                   <div class="box-body">
                   
-                                  <input type="hidden" name="_token" value="{{csrf_token()}}">  
+                                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
                                   <input type="hidden" name="nama_petani" value=" ">            
 
                   <label for="exampleInputEmail1">Nama Hasil Produksi</label>

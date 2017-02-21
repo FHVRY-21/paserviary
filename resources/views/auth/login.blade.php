@@ -1906,7 +1906,8 @@ body.ybc-skin-custom .ybc-menu-item.ybc_hot > span.ybc-menu-item-no-link:first-c
                 <div class="form_content clearfix">
                     <div class="form-group">
                      <form method="POST">
-                        {{csrf_field()}}
+                       <input type="hidden" name="_token" value="{{ csrf_token() }}">
+
                         <label for="email">Email</label>
                         <input class="is_required validate account_input form-control" type="email" id="email" name="email" value="" />
                     </div>
