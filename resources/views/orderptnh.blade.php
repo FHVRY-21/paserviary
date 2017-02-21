@@ -154,7 +154,7 @@
           <!-- search form -->
           <form action="#" method="get" class="sidebar-form">
             <div class="input-group">
-              <input type="text" name="q" class="form-control" placeholder="Search...">
+              <input type="text" name="q" class="form-control" placeholder="Cari...">
               <span class="input-group-btn">
                 <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i></button>
               </span>
@@ -222,7 +222,8 @@
 
               <div class="box">
                 <div class="box-header">
-                  <h3 class="box-title">Data Table With Full Features</h3>
+                 
+                <a href="pdf/{{ \Auth::user()->id }}"><button type="button" class="btn btn-info btn-flat">Eksport PDF</button></a>
                 </div><!-- /.box-header -->
                 <div class="box-body">
                
