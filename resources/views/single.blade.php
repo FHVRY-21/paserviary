@@ -1727,7 +1727,7 @@ body.ybc-skin-custom .ybc-menu-item.ybc_hot > span.ybc-menu-item-no-link:first-c
                 </div>
             </div>
                 <div id="columns" class="container">
-                <form role="form" method="POST" action="/inputpembelian">
+                <form role="form" method="POST" action="{{ url('/inputpembelian')}}">
  <input type="hidden" name="_token" value="{{csrf_token()}}">  
                 <input type="hidden" name="nama" value="{{ $data->nama_barang }} ">
                 <input type="hidden" name="id_petani" value="{{ $data->id_petani }} ">
