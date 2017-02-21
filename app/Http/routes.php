@@ -25,6 +25,7 @@ Route::get('/dc', 'homecontoller@dc1');
 Route::get('/orderptn', 'homecontoller@orderptn');
 Route::get('/orderusr', 'homecontoller@orderusr');
 Route::get('/orderptnh', 'homecontoller@orderptnh');
+Route::get('/deletecartptn', 'homecontoller@deletecartptn');
 Route::get('/orderusrh', 'homecontoller@orderusrh');
 Route::get('/prdkstab', 'homecontoller@prdkstab');
 Route::get('/single/{id}', 'homecontoller@single');
