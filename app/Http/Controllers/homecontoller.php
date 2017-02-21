@@ -197,26 +197,26 @@ return view('single')->with('data',$data);
 // 	}
 public function deleteprod($id)
 {
-// if ($p = \App\Pembelian::where('id_prdks', $id)->first()) {
-// 	$p->status_role = "Dihapus";
-// // $p->status = $status;
-// $p->save();
+if ($p = \App\Pembelian::where('id_prdks', $id)->first()) {
+	$p->status_role = "Dihapus";
+// $p->status = $status;
+$p->save();
 
-// $p = \App\Prdks::find($id);
-// $p->delete();
+$p = \App\Prdks::find($id);
+$p->delete();
 
-// return view('prdkstab')->with('data',$data);
-// }
-// else{
+return view('prdkstab')->with('data',$data);
+}
+else{
 
 	
-// // $data = \App\Prdks::find($id);
-// // $data->delete();
+$data = \App\Prdks::find($id);
+$data->delete();
 
 
-// // $data = \App\Prdks::all();
-// // return view('prdkstab')->with('data',$data);
-// }
+$data = \App\Prdks::all();
+return view('prdkstab')->with('data',$data);
+}
 }
 public function deletecart($id)
 {
