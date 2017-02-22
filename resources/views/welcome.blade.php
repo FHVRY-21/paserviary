@@ -1728,48 +1728,7 @@ body.ybc-skin-custom .ybc-menu-item.ybc_hot > span.ybc-menu-item-no-link:first-c
                     </div>
                     <!-- MODULE Block cart -->
 <div class="custom_block_cart ">
-  <div class="shopping_cart">
-    <a href="quick-order.html" title="View my shopping cart" rel="nofollow">
-      <span class="ajax_cart_quantity unvisibles">
-                0
-            </span>     
-                           
-            <span class="ajax_cart_total unvisibles">
-                                                                    $0.00
-              </span>
-      
-          </a>
-          <div class="cart_block block exclusive">
-        <div class="block_content">
-          <!-- block list of products -->
-          <div class="cart_block_list">
-                        <p class="cart_block_no_products">
-              No products
-            </p>
-                                    <div class="cart-prices">
-              <div class="cart-prices-line first-line free-shipping">
-                <span class="price cart_block_shipping_cost ajax_cart_shipping_cost unvisible">
-                                       To be determined                                 </span>
-                <span class="unvisible">
-                  Shipping
-                </span>
-              </div>
-                                          <div class="cart-prices-line last-line">
-                <span class="price cart_block_total ajax_block_cart_total">$0.00</span>
-                <span>Total</span>
-              </div>
-                          </div>
-            <p class="cart-buttons">  
-              <a id="button_order_cart" class="btn btn-default button button-small" href="quick-order.html" title="Check out" rel="nofollow">
-                <span>
-                  Check out
-                </span>
-              </a>
-            </p>
-          </div>
-        </div>
-      </div><!-- .cart_block -->
-      </div>
+
 </div>
 
   <div id="layer_cart">
@@ -1849,19 +1808,7 @@ body.ybc-skin-custom .ybc-menu-item.ybc_hot > span.ybc-menu-item-no-link:first-c
 <div id="search_block_top" class="search_layout_1 no-categories-dropdown">
     <span class="toogle_nav"><i class="fa fa-cog" aria-hidden="true"></i></span>
   <span class="toogle_search_top"></span>
-    <div class="search_block_top_fixed">
-        <div class="search_block_top_content">
-            <form id="searchbox" method="get" action="https://theme.yourbestcode.com/perfect/en/search" >
-            <input type="hidden" name="controller" value="search" />
-            <input type="hidden" name="orderby" value="position" />
-            <input type="hidden" name="orderway" value="desc" />
-                            <input class="search_query form-control" type="text" id="search_query_top" name="search_query" placeholder="Search for products ..." value="" />
-            <button type="submit" name="submit_search" class="btn btn-default button-search">
-          <span>Search</span>
-            </button>
-          </form>
-         </div>
-     </div>
+    
 </div>
 <!-- /Block search module TOP -->
     <div class="ybc-menu-wrapper fixed-full 
@@ -1990,30 +1937,7 @@ body.ybc-skin-custom .ybc-menu-item.ybc_hot > span.ybc-menu-item-no-link:first-c
                     </div>
              
   <!-- /Module ybc_nivoslider -->
-                        <div class="home_widget_top_column">
-                    <div class="container">
-                        <ul class="ybc-widget-display-top-column">
-                                                            <li class="ybc-widget-item wow zoomIn">
-                                    <div class="ybc-widget-item-wrap">
-                                        <div class="ybc-widget-item-content">
-                                                                                                                                    
-                                                                                        <div class="ybc-widget-description-content"> 
-                                                                                                    <h4 class="ybc-widget-title">
-                                                        Welcome to our online store
-                                                                                                            </h4>
-                                                                                                                                                    <div class="ybc-widget-description">
-                                                        <p>In scelerisque fermentum ipsum id lobortis. Phasellus feugiat nulla sit amet massa interdum finibus. Curabitur accumsan nibh metus sodales tristique volutpat.</p>
-<div class="box-bt-shop"><a class="bt bt-shop" href="#">Shop Online Now</a></div>
-                                                    </div>
-                                                                                            </div>
-                                                                                    </div>
-                                    </div>
-                                </li>
-                                                    </ul>
-                    </div>                        
-            </div>
-            
-                            </div>
+             
                       </div>
                             <div id="columns" class="container">
           <div class="row">

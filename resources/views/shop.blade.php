@@ -1729,102 +1729,7 @@ body.ybc-skin-custom .ybc-menu-item.ybc_hot > span.ybc-menu-item-no-link:first-c
                         </a>
                     </div>
                     <!-- MODULE Block cart -->
-<div class="custom_block_cart ">
-    <div class="shopping_cart">
-        <a href="/orderusr" title="Lihat kantong belanja" rel="nofollow">
-            <span class="ajax_cart_quantity">
-                            </span>         
-                           
-            <span class="ajax_cart_total">
-                                                                                    $462.99
-                                                                </span>
-            
-                    </a>
-                    <div class="cart_block block exclusive">
-                <div class="block_content">
-                    <!-- block list of products -->
-                    <div class="cart_block_list">
-                                                    <dl class="products">
-<dt data-id="cart_block_product_9_0_0" class="first_item">
-                                        <a class="cart-images" href="home/9-faded-short-sleeves-t-shirt.html" title="Faded Short Sleeves T-shirt">
-                                        <img src="../49-cart_default/faded-short-sleeves-t-shirt.jpg" alt="Faded Short Sleeves T-shirt" /></a>
-                                        <div class="cart-info">
-                                            <div class="product-name">
-                                                <a class="cart_block_product_name" href="home/9-faded-short-sleeves-t-shirt.html" title="Faded Short Sleeves T-shirt">Faded Short Sleeves T-shirt</a>
-                                                <span class="quantity-formated">&nbsp;x&nbsp;<span class="quantity">2</span></span>
-                                            </div>
-                                                                                        <span class="price">
-                                                                                                    $68.00                                                    <div class="hookDisplayProductPriceBlock-price">
-                                                        
-                                                    </div>
-                                                                                            </span>
-                                        </div>
-                                        <span class="remove_link">
-                                                                                            <a class="ajax_cart_block_remove_link" href="quick-order.html?delete=1&amp;id_product=9&amp;ipa=0&amp;id_address_delivery=0&amp;token=9722816b1e0214a2b2c9d85ab2d0a397" rel="nofollow" title="remove this product from my cart">&nbsp;</a>
-                                                                                    </span>
-                                    </dt>
-                                                                        <!-- Customizable datas -->
-<dt data-id="cart_block_product_4_16_0" class="item">
-                                        <a class="cart-images" href="evening-dresses/4-printed-dress.html" title="Printed Dress">
-                                        <img src="../10-cart_default/printed-dress.jpg" alt="Printed Dress" /></a>
-                                        <div class="cart-info">
-                                            <div class="product-name">
-                                                <a class="cart_block_product_name" href="evening-dresses/4-printed-dress.html#/size-s/color-beige" title="Printed Dress">Printed Dress</a>
-                                                <span class="quantity-formated">&nbsp;x&nbsp;<span class="quantity">2</span></span>
-                                            </div>
-                                                                                            <div class="product-atributes">
-                                                    <a href="evening-dresses/4-printed-dress.html#/size-s/color-beige" title="Product detail">S, Beige</a>
-                                                </div>
-                                                                                        <span class="price">
-                                                                                                    $101.99                                                    <div class="hookDisplayProductPriceBlock-price">
-                                                        
-                                                    </div>
-                                                                                            </span>
-                                        </div>
-                                        <span class="remove_link">
-                                                                                            <a class="ajax_cart_block_remove_link" href="quick-order.html?delete=1&amp;id_product=4&amp;ipa=16&amp;id_address_delivery=0&amp;token=9722816b1e0214a2b2c9d85ab2d0a397" rel="nofollow" title="remove this product from my cart">&nbsp;</a>
-                                                                                    </span>
-                                    </dt>
-                                                                            <dd data-id="cart_block_combination_of_4_16_0" class="item">
-                                                                        <!-- Customizable datas -->
-                                                                        </dd>                                                                                                                                           <dt data-id="cart_block_product_5_19_0" class="item">
-   
-                                        <span class="remove_link">
-                                                                                            <a class="ajax_cart_block_remove_link" href="quick-order.html?delete=1&amp;id_product=2&amp;ipa=7&amp;id_address_delivery=0&amp;token=9722816b1e0214a2b2c9d85ab2d0a397" rel="nofollow" title="remove this product from my cart">&nbsp;</a>
-                                                                                    </span>
-                                    </dt>
-                                                                            <dd data-id="cart_block_combination_of_2_7_0" class="last_item">
-                                                                        <!-- Customizable datas -->
-                                                                        </dd>                                                           </dl>
-                                                <p class="cart_block_no_products unvisible">
-                            No products
-                        </p>
-                                                                        <div class="cart-prices">
-                            <div class="cart-prices-line first-line free-shipping">
-                                <span class="price cart_block_shipping_cost ajax_cart_shipping_cost">
-                                                                            $7.00
-                                                                    </span>
-                                <span>
-                                    Shipping
-                                </span>
-                            </div>
-                                                                                    <div class="cart-prices-line last-line">
-                                <span class="price cart_block_total ajax_block_cart_total">$469.99</span>
-                                <span>Total</span>
-                            </div>
-                                                    </div>
-                        <p class="cart-buttons">  
-                            <a id="button_order_cart" class="btn btn-default button button-small" href="quick-order.html" title="Check out" rel="nofollow">
-                                <span>
-                                    Check out
-                                </span>
-                            </a>
-                        </p>
-                    </div>
-                </div>
-            </div><!-- .cart_block -->
-            </div>
-</div>
+
 
     <div id="layer_cart">
         <div class="clearfix">
@@ -1999,8 +1904,7 @@ body.ybc-skin-custom .ybc-menu-item.ybc_hot > span.ybc-menu-item-no-link:first-c
                     
 <!-- Breadcrumb -->
 <div class="breadcrumb clearfix">
-    <a class="home" href="/" title="Balik ke Awal">Home</a>
-            <span class="navigation-pipe">&gt;</span>
+   
                     <span class="navigation_page"><span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="/shop" title="Belanja" ><span itemprop="title">Belanja</span></a></span>
                 </div>
 
@@ -2058,7 +1962,7 @@ body.ybc-skin-custom .ybc-menu-item.ybc_hot > span.ybc-menu-item-no-link:first-c
                     </div>
                                                                                                             <div class="layered_filter">
                                                 <div class="layered_subtitle_heading">
-                            <span class="layered_subtitle">Manufacturer</span>
+                            <span class="layered_subtitle">Petani/Penjual</span>
                             <!--<span class="layered_close">
                                 <a href="#" data-rel="ul_layered_manufacturer_0"></a>
                             </span>-->
@@ -2066,9 +1970,7 @@ body.ybc-skin-custom .ybc-menu-item.ybc_hot > span.ybc-menu-item-no-link:first-c
                         <ul id="ul_layered_manufacturer_0" class="col-lg-12 layered_filter_ul">
                                                                                                                                                                                 <li class="nomargin hiddable col-lg-12">
                                                                                             <input type="checkbox" class="checkbox" name="layered_manufacturer_1" id="layered_manufacturer_1" value="1" /> 
-                                                                                        <label for="layered_manufacturer_1">
-                                                                                                <a href="5-accessories.html#manufacturer-fashion_manufacturer" data-rel="nofollow">Fashion Manufacturer<span> (1)</span></a>
-                                                                                            </label>
+                                                                                        
                                         </li>
                                                                                                                                                                                             </ul>
                     </div>
