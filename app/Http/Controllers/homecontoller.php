@@ -199,12 +199,14 @@ public function deleteprod($id)
 {
 if ($p = \App\Pembelian::where('id_prdks', $id)->first()) {
 	$p->status_role = "Dihapus";
-$p->status = $status;
+$p->status_role = $status_role;
+
+
+$z = \App\Prdks::find($id);
+$z->delete();
 $p->save();
 
-$p = \App\Prdks::find($id);
-$p->delete();
-
+$data = \App\Prdks::all();
 return view('prdkstab')->with('data',$data);
 }
 else{

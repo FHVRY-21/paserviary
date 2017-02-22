@@ -220,7 +220,7 @@
                       @else
                         <li><a href="{{ url('/bayar',$pembelian->id) }}">Bayar</a></li>    
                         
-                        <li><a href="{{ url('/deletecart/{{ $pembelian->id')}}">Hapus</a></li>
+                        <li><a href="{{ url('/deletecart', $pembelian->id)}}">Hapus</a></li>
                         @endif
                       </ul>
                     </div></td>
