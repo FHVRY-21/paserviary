@@ -9,7 +9,7 @@
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 <head>
         <meta charset="utf-8" />
-        <title>Daftar - PASR</title>
+        <title>Masuk - PASR</title>
                         <meta name="generator" content="PrestaShop" />
         <meta name="robots" content="index,follow" />
         <meta name="viewport" content="width=device-width, minimum-scale=0.25, maximum-scale=1, initial-scale=1.0" />
@@ -1884,8 +1884,6 @@ body.ybc-skin-custom .ybc-menu-item.ybc_hot > span.ybc-menu-item-no-link:first-c
     <div class="row">
         <div class="col-xs-12 col-sm-6">
 
-            <form method="POST">
-             {{csrf_field()}}
                 <h3 class="page-subheading">Daftar untuk Segera Berbelanja!</h3>
                 <div class="form_content clearfix">
                    <a href="{{ url('/register')}}"> <p>Daftar Di Sini</p> </a>
@@ -1904,23 +1902,45 @@ body.ybc-skin-custom .ybc-menu-item.ybc_hot > span.ybc-menu-item-no-link:first-c
         <div class="col-xs-12 col-sm-6">
                 <h3 class="page-subheading">Sudah Terdaftar?</h3>
                 <div class="form_content clearfix">
-                    < <form method="POST" action="{{ url('/register')}}">
-               <input type="hidden" name="_token" value="{{csrf_token()}}">
-                        {{csrf_field()}}
-                        <label for="email">Nama Depan</label>
-                        <input class="is_required validate account_input form-control" type="nama_depan" id="nama_depan" name="nama_depan" value="" />
-                    </div>
                     <div class="form-group">
-                        <label for="passwd">Password</label>
+                     <form method="POST">
+                      <form role="form" method="POST" action="{{url('/register')}}" enctype="multipart/form-data">
+                       <input type="hidden" name="_token" value="{{ csrf_token() }}">
+
+                        <label for="nama_depan">Nama Depan</label>
+                        <input class="is_required validate account_input form-control" type="nama_depan" id="nama_depan" name="nama_depan" value="" />
+                         <label for="nama_depan">Nama Belakang</label>
+                        <input class="is_required validate account_input form-control" type="nama_belakang" id="nama_belakang" name="nama_belakang" value="" />
+                        <label for="email">Email</label>
+                        <input class="is_required validate account_input form-control" type="email" id="email" name="email" value="" />
+                          <label for="no_telp">No. Telepon</label>
+                        <input class="is_required validate account_input form-control" type="no_telp" id="no_telp" name="no_telp" value="" />
+                        <label for="role">Role</label>
+                        <select class="is_required validate account_input form-control" type="role" id="role" name="role" value="" />
+                        <option> Petani </option>
+                        <option> User </option>
+                        </select>
+                         <label for="no_rekening">No. Rekening</label>
+                        <input class="is_required validate account_input form-control" type="no_rekening" id="no_rekening" name="no_rekening" value="" />
+                        <label for="alamat">alamat</label>
+                        <input class="is_required validate account_input form-control" type="alamat" id="alamat" name="alamat" value="" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
                         <input class="is_required validate account_input form-control" type="password" id="password" name="password" value="" />
                     </div>
-                    <p class="lost_password form-group"><a href="password-recovery.html" title="Recover your forgotten password" rel="nofollow">Forgot your password?</a></p>
+                     <div class="form-group">
+                        <label for="password_confirmation">Konfirmasi Password</label>
+                        <input class="is_required validate account_input form-control" type="password_confirmation" id="password_confirmation" name="password_confirmation" value="" />
+                    </div>
+                   
                     <p class="submit">
-                        <input type="hidden" class="hidden" name="login" value="Login" />                       
-                        <button type="submit" id="SubmitLogin" name="login" class="button btn btn-default button-medium" value="Login">
+                        <input type="hidden" class="hidden" name="register" value="Register" />                       
+                        <button type="submit" id="SubmitRegister" name="register" class="button btn btn-default button-medium" value="Register">
                             <span>
                                 <i class="icon-lock left"></i>
-                                Sign in
+                                Daftar
                             </span>
                         </button>
                     </p>
