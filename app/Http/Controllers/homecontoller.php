@@ -199,7 +199,7 @@ public function deleteprod($id)
 {
 if ($p = \App\Pembelian::where('id_prdks', $id)->first()) {
 	$p->status_role = "Dihapus";
-// $p->status = $status;
+$p->status = $status;
 $p->save();
 
 $p = \App\Prdks::find($id);
@@ -216,6 +216,7 @@ $data->delete();
 
 $data = \App\Prdks::all();
 return view('prdkstab')->with('data',$data);
+}
 }
 }
 public function deletecart($id)
