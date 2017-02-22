@@ -101,5 +101,5 @@ Route::get('/single/{filename}', function ($filename){
 });
 Route::auth();
 
-Route::get('/home', 'HomeController@index');
+Route::get('/home', 'homecontoller@index');
 Route::get('user/activation/{token}', 'Auth\AuthController@activateUser')->name('user.activate');

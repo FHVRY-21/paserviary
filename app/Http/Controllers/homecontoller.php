@@ -220,7 +220,6 @@ $data = \App\Prdks::all();
 return view('prdkstab')->with('data',$data);
 }
 }
-}
 public function deletecart($id)
 {
 $data = \App\Pembelian::find($id);
