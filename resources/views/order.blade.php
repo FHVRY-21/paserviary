@@ -263,7 +263,7 @@
                       </button>
                       <ul class="dropdown-menu" role="menu">
                         <li><button type="submit" class="btn">Konfirmasi Pembayaran</button></li>
-                        <li><a href="{{ url('/deletecartptn',$pembelian->id) }}">Hapus</a></li>
+                        <li><a href="{{ url('/deletecartptn',$pembelian->id) }}">Belum Membayar</a></li>
                       </ul>
                     </div></td>
                        </form>

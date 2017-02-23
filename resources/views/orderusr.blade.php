@@ -217,6 +217,8 @@
                       <ul class="dropdown-menu" role="menu">
                       @if($pembelian->status_role=="Dihapus")
                       <li><a href="{{ url('/deletecart', $pembelian->id)}}">Hapus</a></li>
+                      @elseif($pembelian->status_role=="Tidak Ditemukan Pembayaran")
+                       <li><a href="{{ url('/bayar', $pembelian->id)}}">Bayar Ulang</a></li>
                       @else
                         <li><a href="{{ url('/bayar',$pembelian->id) }}">Bayar</a></li>    
                         

@@ -230,8 +230,9 @@ return view('orderusr')->with('data',$data);
 
 public function deletecartptn($id)
 {
-$data = \App\Pembayaran::find($id);
-$data->delete();
+$data = \App\Pembelian::find($id, 'id_cart');
+$data->status = "Tidak Ditemukan Pembayaran";
+$data->save();
 $data = \App\Pembayaran::all();
 return view('orderptn')->with('data',$data);
 }
