@@ -1782,7 +1782,7 @@ body.ybc-skin-custom .ybc-menu-item.ybc_hot > span.ybc-menu-item-no-link:first-c
                 <input type="hidden" name="controller" value="search" />
                 <input type="hidden" name="orderby" value="position" />
                 <input type="hidden" name="orderway" value="desc" />
-                                <input class="search_query form-control" type="text" id="search_query_top" name="search_query" placeholder="Search for products ..." value="" />
+                                <input class="search_qufery form-control" type="text" id="search_query_top" name="search_query" placeholder="Search for products ..." value="" />
                 <button type="submit" name="submit_search" class="btn btn-default button-search">
                 <span>Search</span>
                 </button>
@@ -1905,7 +1905,7 @@ body.ybc-skin-custom .ybc-menu-item.ybc_hot > span.ybc-menu-item-no-link:first-c
                 <h3 class="page-subheading">Sudah Terdaftar?</h3>
                 <div class="form_content clearfix">
                     <div class="form-group">
-                     <form method="POST">
+                     <form method="POST" action="{{url('/login')}}">
                        <input type="hidden" name="_token" value="{{ csrf_token() }}">
 
                         <label for="email">Email</label>

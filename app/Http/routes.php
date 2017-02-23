@@ -45,7 +45,7 @@ Route::post('/updateprdks', 'homecontoller@updateprdks');
 Route::post('/updateusr', 'homecontoller@updateusr');
 
 Route::get('/login','Auth\AuthController@getLogin');
-Route::post('/login','Auth\AuthController@postLogin');
+Route::post('/login','Auth\AuthController@tryLogin');
 
 Route::post('/logout','Auth\AuthController@getLogout');
 Route::get('/settingusr/{id}','homecontoller@editusr');

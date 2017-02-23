@@ -78,6 +78,40 @@ class AuthController extends Controller
         ]);
     }
 
+    public function tryLogin(Request $r)
+    {
+        $email = $r->input('email');
+        $password = $r->input('password');
+        $checkEmail = User::where('email', $email)->first();
+        
+        
+        if (count($checkEmail) == 0) {
+            // kalo error
+            $r->session()->put('error', 'Email tidak ditemukan!');
+            // echo session()->get('error');
+            return redirect(url('login'));
+        }
+        else {
+            // kalo password cocok
+            if (Auth::attempt(['email' => $email, 'password' => $password])) {
+                // Authentication passed...
+                if(Auth::user()->type=="Petani"){
+                return redirect(url('/ptnusr'));
+                }
+                else{
+                return redirect(url('/shop'));    
+                }
+            }
+            else {
+                // kalo error
+                $r->session()->put('error', 'Password tidak cocok!');
+                return redirect(url('login'));
+            }
+        }
+    }
+
+
+
 //     public function __construct(ActivationService $activationService)
 // {
 //     $this->middleware($this->guestMiddleware(), ['except' => 'logout']);

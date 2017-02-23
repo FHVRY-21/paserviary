@@ -1968,128 +1968,39 @@ body.ybc-skin-custom .ybc-menu-item.ybc_hot > span.ybc-menu-item-no-link:first-c
                             </span>-->
                         </div>
                         <ul id="ul_layered_manufacturer_0" class="col-lg-12 layered_filter_ul">
-                                                                                                                                                                                <li class="nomargin hiddable col-lg-12">
+<li class="nomargin hiddable col-lg-12">
                                                                                             <input type="checkbox" class="checkbox" name="layered_manufacturer_1" id="layered_manufacturer_1" value="1" /> 
                                                                                         
                                         </li>
-                                                                                                                                                                                            </ul>
+</ul>
                     </div>
                                                                                                             <div class="layered_price" style="display: none;">
-                                                <div class="layered_subtitle_heading">
-                            <span class="layered_subtitle">Price</span>
-                            <!--<span class="layered_close">
-                                <a href="#" data-rel="ul_layered_price_0"></a>
-                            </span>-->
-                        </div>
+                                               
                         <ul id="ul_layered_price_0" class="col-lg-12 layered_filter_ul">
-                                                                                                <li>
-                                    <label>
-                                        Range:
-                                    </label> 
-                                    <span id="layered_price_range"></span>
-                                    <div class="layered_slider_container">
-                                        <div class="layered_slider" id="layered_price_slider" data-type="price" data-format="1" data-unit="$"></div>
-                                    </div>
-                                    </li>
                                                                                                                 </ul>
                     </div>
+                                                                                                            
                                                                                                             <div class="layered_filter">
-                                                <div class="layered_subtitle_heading">
-                            <span class="layered_subtitle">Size</span>
-                            <!--<span class="layered_close">
-                                <a href="#" data-rel="ul_layered_id_attribute_group_1"></a>
-                            </span>-->
-                        </div>
-                        <ul id="ul_layered_id_attribute_group_1" class="col-lg-12 layered_filter_ul">
-                                                                                                                                                                                <li class="nomargin hiddable col-lg-12">
-                                                                                            <input type="checkbox" class="checkbox" name="layered_id_attribute_group_1" id="layered_id_attribute_group_1" value="1_1" /> 
-                                                                                        <label for="layered_id_attribute_group_1">
-                                                                                                <a href="5-accessories.html#size-s">S<span> (1)</span></a>
-                                                                                            </label>
-                                        </li>
-                                                                                                                                                            <li class="nomargin hiddable col-lg-12">
-                                                                                            <input type="checkbox" class="checkbox" name="layered_id_attribute_group_2" id="layered_id_attribute_group_2" value="2_1" /> 
-                                                                                        <label for="layered_id_attribute_group_2">
-                                                                                                <a href="5-accessories.html#size-m">M<span> (1)</span></a>
-                                                                                            </label>
-                                        </li>
-                                                                                                                                                            <li class="nomargin hiddable col-lg-12">
-                                                                                            <input type="checkbox" class="checkbox" name="layered_id_attribute_group_3" id="layered_id_attribute_group_3" value="3_1" /> 
-                                                                                        <label for="layered_id_attribute_group_3">
-                                                                                                <a href="5-accessories.html#size-l">L<span> (1)</span></a>
-                                                                                            </label>
-                                        </li>
-                                                                                                                                                                                            </ul>
-                    </div>
-                                                                                                            <div class="layered_filter">
-                                                <div class="layered_subtitle_heading">
-                            <span class="layered_subtitle">Color</span>
-                            <!--<span class="layered_close">
-                                <a href="#" data-rel="ul_layered_id_attribute_group_3"></a>
-                            </span>-->
-                        </div>
+                                                
                         <ul id="ul_layered_id_attribute_group_3" class="col-lg-12 layered_filter_ul color-group">
-                                                                                                                                                                                <li class="nomargin hiddable col-lg-12">
-                                                                                            <input value=" " class="color-option  " type="button" name="layered_id_attribute_group_13" data-rel="13_3" id="layered_id_attribute_group_13"  style="background: #F39C11;" />
-                                                                                                                                        <label for="layered_id_attribute_group_13" class="layered_color" data-rel="13_3">
-                                                                                                <a href="5-accessories.html#color-orange">Orange<span> (1)</span></a>
-                                                                                            </label>
-                                        </li>
-                                                                                                                                                            <li class="nomargin hiddable col-lg-12">
-                                                                                            <input value=" " class="color-option  " type="button" name="layered_id_attribute_group_14" data-rel="14_3" id="layered_id_attribute_group_14"  style="background: #5D9CEC;" />
-                                                                                                                                        <label for="layered_id_attribute_group_14" class="layered_color" data-rel="14_3">
-                                                                                                <a href="5-accessories.html#color-blue">Blue<span> (1)</span></a>
-                                                                                            </label>
-                                        </li>
+
                                                                                                                                                                                             </ul>
                     </div>
                                                                                                             <div class="layered_filter">
-                                                <div class="layered_subtitle_heading">
-                            <span class="layered_subtitle">Compositions</span>
-                            <!--<span class="layered_close">
-                                <a href="#" data-rel="ul_layered_id_feature_5"></a>
-                            </span>-->
-                        </div>
+                                               
                         <ul id="ul_layered_id_feature_5" class="col-lg-12 layered_filter_ul">
-                                                                                                                                                                                <li class="nomargin hiddable col-lg-12">
-                                                                                            <input type="checkbox" class="checkbox" name="layered_id_feature_5" id="layered_id_feature_5" value="5_5" /> 
-                                                                                        <label for="layered_id_feature_5">
-                                                                                                <a href="5-accessories.html#compositions-cotton">Cotton<span> (1)</span></a>
-                                                                                            </label>
-                                        </li>
+
                                                                                                                                                                                             </ul>
                     </div>
                                                                                                             <div class="layered_filter">
-                                                <div class="layered_subtitle_heading">
-                            <span class="layered_subtitle">Styles</span>
-                            <!--<span class="layered_close">
-                                <a href="#" data-rel="ul_layered_id_feature_6"></a>
-                            </span>-->
-                        </div>
+                                                
                         <ul id="ul_layered_id_feature_6" class="col-lg-12 layered_filter_ul">
-                                                                                                                                                                                <li class="nomargin hiddable col-lg-12">
-                                                                                            <input type="checkbox" class="checkbox" name="layered_id_feature_11" id="layered_id_feature_11" value="11_6" /> 
-                                                                                        <label for="layered_id_feature_11">
-                                                                                                <a href="5-accessories.html#styles-casual">Casual<span> (1)</span></a>
-                                                                                            </label>
-                                        </li>
-                                                                                                                                                                                            </ul>
+                                                                                                                                           </ul>
                     </div>
                                                                                                             <div class="layered_filter">
-                                                <div class="layered_subtitle_heading">
-                            <span class="layered_subtitle">Properties</span>
-                            <!--<span class="layered_close">
-                                <a href="#" data-rel="ul_layered_id_feature_7"></a>
-                            </span>-->
-                        </div>
+                                                
                         <ul id="ul_layered_id_feature_7" class="col-lg-12 layered_filter_ul">
-                                                                                                                                                                                <li class="nomargin hiddable col-lg-12">
-                                                                                            <input type="checkbox" class="checkbox" name="layered_id_feature_17" id="layered_id_feature_17" value="17_7" /> 
-                                                                                        <label for="layered_id_feature_17">
-                                                                                                <a href="5-accessories.html#properties-short_sleeve">Short Sleeve<span> (1)</span></a>
-                                                                                            </label>
-                                        </li>
-                                                                                                                                                                                            </ul>
+
                     </div>
                                                 </div>
             <input type="hidden" name="id_category_layered" value="5" />
@@ -2103,71 +2014,25 @@ body.ybc-skin-custom .ybc-menu-item.ybc_hot > span.ybc-menu-item-no-link:first-c
     </div>
 </div>
 <!-- Block Viewed products -->
-<div id="viewed-products_block_left" class="block">
-    <h4 class="title_block">Viewed products</h4>
-    <div class="block_content products-block">
-        <ul>
-                            <li class="clearfix first_item">
-                    <a
-                    class="products-block-image" 
-                    href="home/9-faded-short-sleeves-t-shirt.html" 
-                    title="More about Faded Short Sleeves T-shirt" >
-                        <img 
-                        src="../49-small_default/faded-short-sleeves-t-shirt.jpg" 
-                        alt="" />
-                    </a>
-                    <div class="product-content">
-                        <h5>
-                            <a class="product-name" 
-                            href="home/9-faded-short-sleeves-t-shirt.html" 
-                            title="More about Faded Short Sleeves T-shirt">
-                                Faded Short Sleeves...
-                            </a>
-                        </h5>
-                        <p class="product-description">Faded short sleeves t-shirt with high...</p>
-                    </div>
-                </li>
-                            <li class="clearfix last_item">
-                    <a
-                    class="products-block-image" 
-                    href="summer-dresses/7-printed-chiffon-dress.html" 
-                    title="More about Printed Chiffon Dress" >
-                        <img 
-                        src="../43-small_default/printed-chiffon-dress.jpg" 
-                        alt="" />
-                    </a>
-                    <div class="product-content">
-                        <h5>
-                            <a class="product-name" 
-                            href="summer-dresses/7-printed-chiffon-dress.html" 
-                            title="More about Printed Chiffon Dress">
-                                Printed Chiffon Dress
-                            </a>
-                        </h5>
-                        <p class="product-description">Printed chiffon knee length dress...</p>
-                    </div>
-                </li>
-                    </ul>
-    </div>
-</div>
+
 
 
     <!-- Block CMS module -->
             <div id="informations_block_left_1" class="block informations_block_left">
             <h4 class="title_block">
                 <a href="content/category/1-home.html">
-                    Information             </a>
+                    Informasi             </a>
             </h4>
             <div class="block_content list-block">
                 <ul>
                                                                                             <li>
                                 <a href="content/1-delivery.html" title="Delivery">
-                                    Delivery
+                                    Pengiriman
                                 </a>
                             </li>
                                                                                                 <li>
                                 <a href="content/2-legal-notice.html" title="Legal Notice">
-                                    Legal Notice
+                                    Ketentuan
                                 </a>
                             </li>
                                                                                                 <li>
@@ -2177,19 +2042,10 @@ body.ybc-skin-custom .ybc-menu-item.ybc_hot > span.ybc-menu-item-no-link:first-c
                             </li>
                                                                                                 <li>
                                 <a href="content/4-about-us.html" title="About us">
-                                    About us
+                                    Tentang Kami
                                 </a>
                             </li>
-                                                                                                <li>
-                                <a href="content/5-secure-payment.html" title="Secure payment">
-                                    Secure payment
-                                </a>
-                            </li>
-                                                                                        <li>
-                            <a href="stores.html" title="Our stores">
-                                Our stores
-                            </a>
-                        </li>
+                                                                                              
                                     </ul>
             </div>
         </div>
@@ -2306,10 +2162,10 @@ body.ybc-skin-custom .ybc-menu-item.ybc_hot > span.ybc-menu-item-no-link:first-c
                                         <div class="content_price">
                                                     
                             <span class="price product-price">
-                                {{ $prdks->harga }}                          </span>
+                                {{ $prdks->harga }}/                         </span>
                                                             
                                 <span class="price product-price">
-                                    {{ $prdks->satuan }}
+                                {{ $prdks->satuan }}
                                 </span>
                                                         
                                                             
@@ -2382,7 +2238,7 @@ body.ybc-skin-custom .ybc-menu-item.ybc_hot > span.ybc-menu-item-no-link:first-c
         
             </div>
     <div class="product-count">
-                                                                            Showing 1 - 1 of 1 item
+                                                                            Showing {{ $bebek }}- {{ $bebek }} of {{ $bebek }} item
             </div>
     <!-- /Pagination -->
 
@@ -2508,7 +2364,7 @@ body.ybc-skin-custom .ybc-menu-item.ybc_hot > span.ybc-menu-item-no-link:first-c
 <!-- MODULE Block contact infos -->
 <section id="block_contact_infos" class="footer-block col-xs-12 col-sm-3">
     <div>
-        <h4 class="">About us</h4>
+        <h4 class="">Tentang Kami</h4>
             <div class="box-content-contact">
                                     <div class="bg_footer">
                         <img src="../modules/ybc_themeconfig/images/config/contact_bg.png" alt="Background Contactinfo" title="Payment methods" />
@@ -2516,9 +2372,9 @@ body.ybc-skin-custom .ybc-menu-item.ybc_hot > span.ybc-menu-item-no-link:first-c
                                  <ul class="toggle-footer">
                                         <li>
                                                     <!--<i class="fa fa-map-marker" aria-hidden="true"></i>-->
-                                Your company, 
+                                PASR, 
                                                                             <!--<i class="fa fa-map-marker" aria-hidden="true"></i>-->
-                             Puffin street 12345 Puffinville France                                            </li>
+                             Indonesia                                           </li>
                                                                 <li>
                             Call us now: 
                             <!--<i class="fa fa-phone" aria-hidden="true"></i>-->
