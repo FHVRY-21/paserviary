@@ -1756,7 +1756,7 @@ body.ybc-skin-custom .ybc-menu-item.ybc_hot > span.ybc-menu-item-no-link:first-c
             <div id="image-block" class="clearfix">
                        <span class="discount">Reduced price!</span>
                                                     <span id="view_full_size">
-                                                    <img id="bigpic" itemprop="image" src="{{ url('images/'.$data->gambar) }}" title="" alt="Printed Summer Dress" width="600" height="600"/>
+                                                    <img id="bigpic" itemprop="image" src="{{ url('images/'.$data->gambar) }}" title="" alt="" width="600" height="600"/>
                                                             <span class="span_link no-print"></span>
                                                                         </span>
                             </div> <!-- end image-block -->
@@ -1929,33 +1929,21 @@ body.ybc-skin-custom .ybc-menu-item.ybc_hot > span.ybc-menu-item-no-link:first-c
                                 <div id="attributes">
                                                                                                 <div class="attribute_list">
                                                                                                             <select name="group_1" id="group_1" class="form-control attribute_select no-print">
-                                                                                                                            <option value="1" selected="selected" title="S">S</option>
-                                                                                                                            <option value="2" title="M">M</option>
-                                                                                                                            <option value="3" title="L">L</option>
+<option value="1" selected="" title="S">Meilih Jumlah</option>
+<option value="2" title="M">M</option>
+<option value="3" title="L">L</option>
                                                                                                                     </select>
                                                                                                     </div> <!-- end attribute_list -->
                                             
-                                                                                                                                                                <fieldset class="attribute_fieldset">
-                                                <label class="attribute_label attribute_label_color" >Color&nbsp;</label>
+<fieldset class="attribute_fieldset">
+                                               
                                                                                                 <div class="attribute_list">
                                                                                                             <ul id="color_to_pick_list" class="clearfix">
-                                                                                                                                                                                                                                                        <li>
-                                                                    <a href="29-printed-summer-dress.html" id="color_11"  class="color_pick color_Black" style="background:#434A54;" title="Black">
+<li>
+                                                                   
                                                                                                                                             </a>
-                                                                </li>
-                                                                                                                                                                                                                                                            <li>
-                                                                    <a href="29-printed-summer-dress.html" id="color_13"  class="color_pick color_Orange" style="background:#F39C11;" title="Orange">
-                                                                                                                                            </a>
-                                                                </li>
-                                                                                                                                                                                                                                                            <li>
-                                                                    <a href="29-printed-summer-dress.html" id="color_14"  class="color_pick color_Blue" style="background:#5D9CEC;" title="Blue">
-                                                                                                                                            </a>
-                                                                </li>
-                                                                                                                                                                                                                                                            <li class="selected">
-                                                                    <a href="29-printed-summer-dress.html" id="color_16"  class="color_pick color_Yellow selected" style="background:#F1C40F;" title="Yellow">
-                                                                                                                                            </a>
-                                                                </li>
-                                                                                                                                                                                                                                                                                                                        </ul>
+                                                               
+                                                                                                                                                                                                                                                            <li class="selected"/ul>
                                                         <input type="hidden" class="color_pick_hidden" name="group_3" value="16" />
                                                                                                     </div> <!-- end attribute_list -->
                                             </fieldset>
